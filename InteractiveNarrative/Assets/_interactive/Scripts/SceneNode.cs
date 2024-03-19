@@ -62,6 +62,20 @@ public class SceneNode : MonoBehaviour
     public void UpdateChoice()
     {
         currentText.text = choices[ChoiceIndex].ChoiceText;
+
+        foreach (Button item in Buttons)
+        {
+            if (choices[ChoiceIndex].EnableChoices)
+            {
+                item.gameObject.SetActive(true); //als in de inspector is aangegeven dat er choices zichbaar zijn voor deze keuze dan zetten we ze aan
+            }
+            else
+            {
+                item.gameObject.SetActive(false); // en andersom
+            }
+        }
+
+        //als laatste wil ik pas de choice index updaten
         ChoiceIndex++;
     }
     public void MakeChoice(int Index)
