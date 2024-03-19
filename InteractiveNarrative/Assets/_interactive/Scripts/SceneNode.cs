@@ -16,7 +16,9 @@ public class SceneNode : MonoBehaviour
     /// - een array met de keuzes
     /// 
     /// </summary>
-    public List<Choice> choices = new();
+    public Choice[] choices;
+    public float ChoiceImpact = 0.2f;
+    private int ChoiceIndex = 0;
     private Text currentText;
     public string Description;
     public Canvas canvas;
@@ -41,23 +43,26 @@ public class SceneNode : MonoBehaviour
     {
 
     }
-    public void Initialise(){
-            Button[] buttonsArray = canvas.GetComponentsInChildren<Button>();
+    public void Initialise()
+    {
+        Button[] buttonsArray = canvas.GetComponentsInChildren<Button>();
 
-            foreach (var item in buttonsArray)
+        for (int i = 0; i < buttonsArray.Length; i++)
+        {
+            Buttons.Add(buttonsArray[i]);
+            int buttonIndex = i; // Vang de huidige index
+            buttonsArray[i].onClick.AddListener(delegate
             {
-
-            }
-            for (int i = 0; i < buttonsArray.Length; i++)
-            {
-                Buttons.Add(buttonsArray[i]);
-                int buttonIndex = i; // Vang de huidige index
-                buttonsArray[i].onClick.AddListener(delegate
-                {
-                    MakeChoice(buttonIndex); //stop hem in de public bool zodat er iets mee kan gebeuren
-                });
-            }
-            currentText = canvas.GetComponentInChildren<Text>();
+                MakeChoice(buttonIndex); //stop hem in de public bool zodat er iets mee kan gebeuren
+            });
+        }
+        currentText = canvas.GetComponentInChildren<Text>();
+        UpdateChoice();
+    }
+    public void UpdateChoice()
+    {
+        currentText.text = choices[ChoiceIndex].ChoiceText;
+        ChoiceIndex++;
     }
     public void MakeChoice(int Index)
     {
@@ -66,8 +71,10 @@ public class SceneNode : MonoBehaviour
         switch (Index)
         {
             case 0: //speler heeft ja gedrukt
+                GlobalPersonalityMeter.Instance.UpdateGoodBadIndex?.Invoke(ChoiceImpact);
                 break;
             case 1: //speler heeft nee gedrukt
+                GlobalPersonalityMeter.Instance.UpdateGoodBadIndex?.Invoke(-ChoiceImpact);
                 break;
             default:
                 break;
