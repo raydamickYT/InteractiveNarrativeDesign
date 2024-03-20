@@ -31,14 +31,13 @@ public class SceneNode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(choices[ChoiceIndex].EnableChoices);
-        // if (choices[ChoiceIndex].EnableChoices)
-        // {
-        //     if (Input.GetKeyDown(KeyCode.Space))
-        //     {
-        //         UpdateChoice();
-        //     }
-        // }
+        if (!choices[ChoiceIndex-1].EnableChoices)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                UpdateChoice();
+            }
+        }
     }
     public void Initialise()
     {
