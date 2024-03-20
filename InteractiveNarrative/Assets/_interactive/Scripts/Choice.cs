@@ -13,3 +13,9 @@ public class Choice
 
     //hieronder kan je andere dingen toevoegen, zoals welke sprite er op beeld moet komen en welke keuzes er zijn.
 }
+
+[System.Serializable]
+public class Scenes
+{
+    public SceneNode[] ScenesList;
+}

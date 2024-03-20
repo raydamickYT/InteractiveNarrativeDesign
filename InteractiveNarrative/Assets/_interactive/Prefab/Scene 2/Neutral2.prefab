@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1999246688377715563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5478705837194469002}
+  - component: {fileID: 1982855961688149637}
+  - component: {fileID: 6600314393313976975}
+  m_Layer: 0
+  m_Name: Neutral2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5478705837194469002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999246688377715563}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1982855961688149637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999246688377715563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dcf67a63984a649b554d47fcbeee39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextNodeBad: {fileID: 1137033683484041150, guid: 12212c360dd82e04d874c45b8ca039bd, type: 3}
+  NextNodeGood: {fileID: 1817452032837561186, guid: 727f5f0016af0994ba2982c3e21ee3a6, type: 3}
+  NextNeutralNode: {fileID: 1982855961688149637, guid: e6dd7b503b90a4c4683a7e9bfbbd6b2b, type: 3}
+  choices:
+  - ChoiceText: 57
+    EnableChoices: 1
+  - ChoiceText: 76
+    EnableChoices: 1
+  - ChoiceText: 6
+    EnableChoices: 1
+  ChoiceImpact: 0.2
+  Description: Eerste Scene
+  canvas: {fileID: 0}
+  Buttons: []
+--- !u!114 &6600314393313976975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999246688377715563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9402b846746ed3499551242437c8977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NeutralScenes:
+    ScenesList: []
+  GoodScenes:
+    ScenesList: []
+  BadScenes:
+    ScenesList: []
+  SceneIndex: 0

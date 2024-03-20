@@ -8,6 +8,8 @@ public class GlobalPersonalityMeter : MonoBehaviour
     public static GlobalPersonalityMeter Instance;
 
     protected float GoodOrBadIndex;
+    public float PublicIndex => GoodOrBadIndex;
+    public readonly float PersonalityBorder = 0.4f;
     public Action<float> UpdateGoodBadIndex;
 
 

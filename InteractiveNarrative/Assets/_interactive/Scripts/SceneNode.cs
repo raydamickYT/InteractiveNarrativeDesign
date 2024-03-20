@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.WebSockets;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SceneNode : MonoBehaviour
 {
-    public SceneNode NextNode;
+    public SceneNode NextNodeBad, NextNodeGood, NextNeutralNode;
 
     //TODO:
     /// <summary>
@@ -30,6 +32,14 @@ public class SceneNode : MonoBehaviour
         if (canvas != null)
         {
             Initialise();
+        }
+        else
+        {
+            Debug.LogError("canvas is niet assigned"); ;
+        }
+        if (NextNodeBad == null || NextNodeGood == null)
+        {
+            Debug.LogWarning("next scenes zijn niet assigned");
         }
     }
 
@@ -59,6 +69,14 @@ public class SceneNode : MonoBehaviour
         currentText = canvas.GetComponentInChildren<Text>();
         UpdateChoice();
     }
+    private void OnDestroy()
+    {
+        foreach (var item in Buttons)
+        {
+            item.onClick.RemoveAllListeners();
+        }
+    }
+
     public void UpdateChoice()
     {
         currentText.text = choices[ChoiceIndex].ChoiceText;
@@ -74,21 +92,86 @@ public class SceneNode : MonoBehaviour
                 item.gameObject.SetActive(false); // en andersom
             }
         }
-
         //als laatste wil ik pas de choice index updaten
         ChoiceIndex++;
+        if (ChoiceIndex >= choices.Length)
+        {
+            LoadNextScene();
+        }
+    }
+    public void LoadNextScene()
+    {
+        var sceneIndex = SceneManager.Instance.SceneIndex++;
+        Debug.Log(sceneIndex);
+        Debug.LogWarning("alle choices zijn op");
+        var tempIndex = GlobalPersonalityMeter.Instance.PublicIndex;
+        var tempBorder = GlobalPersonalityMeter.Instance.PersonalityBorder;
+        SceneNode TempNode;
+
+        if (tempIndex >= tempBorder) //on good path
+        {
+            if (sceneIndex < SceneManager.Instance.GoodScenes.ScenesList.Length)
+            {
+                TempNode = SceneManager.Instance.GoodScenes.ScenesList[sceneIndex];
+            }
+            else
+            {
+                TempNode = null;
+                Debug.LogWarning("er zijn geen nieuwe scenes meer om te laden");
+            }
+        }
+        else if (tempIndex <= -tempBorder) //on bad Path
+        {
+            if (sceneIndex < SceneManager.Instance.BadScenes.ScenesList.Length)
+            {
+                TempNode = SceneManager.Instance.BadScenes.ScenesList[sceneIndex];
+            }
+            else
+            {
+                TempNode = null;
+                Debug.LogWarning("er zijn geen nieuwe scenes meer om te laden");
+            }
+        }
+        else //else we're inbetween and thus on neutral.
+        {
+            if (sceneIndex < SceneManager.Instance.NeutralScenes.ScenesList.Length)
+            {
+                TempNode = SceneManager.Instance.NeutralScenes.ScenesList[sceneIndex];
+            }
+            else
+            {
+                TempNode = null;
+                Debug.LogWarning("er zijn geen nieuwe scenes meer om te laden");
+            }
+        }
+        if (TempNode != null)
+        {
+            choices = TempNode.choices;
+            NextNodeBad = TempNode.NextNodeBad;
+            NextNodeGood = TempNode.NextNodeGood;
+            NextNeutralNode = TempNode.NextNeutralNode;
+        }
+        ChoiceIndex = 0;
+        UpdateChoice();
+        //voer hier einde scene logica uit
     }
     public void MakeChoice(int Index)
     {
-        Debug.Log(Index);
+        // Debug.Log(Index);
 
         switch (Index)
         {
             case 0: //speler heeft ja gedrukt
                 GlobalPersonalityMeter.Instance.UpdateGoodBadIndex?.Invoke(ChoiceImpact);
+                UpdateChoice();
                 break;
             case 1: //speler heeft nee gedrukt
                 GlobalPersonalityMeter.Instance.UpdateGoodBadIndex?.Invoke(-ChoiceImpact);
+                UpdateChoice();
+                break;
+            case 2: //neutral button
+                GlobalPersonalityMeter.Instance.UpdateGoodBadIndex?.Invoke(0); //omdat neutraal geen impact heeft
+                UpdateChoice();
                 break;
             default:
                 break;
