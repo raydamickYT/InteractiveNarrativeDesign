@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class SceneNode : MonoBehaviour
 {
-    public SceneNode NextNodeBad, NextNodeGood, NextNeutralNode;
+    // private SceneNode NextNodeBad, NextNodeGood, NextNeutralNode;
 
     //TODO:
     /// <summary>
@@ -22,7 +22,7 @@ public class SceneNode : MonoBehaviour
     public float ChoiceImpact = 0.2f;
     private int ChoiceIndex = 0;
     private Text currentText;
-    public string Description;
+    // public string Description;
     public Canvas canvas;
     public List<Button> Buttons = new();
 
@@ -37,10 +37,10 @@ public class SceneNode : MonoBehaviour
         {
             Debug.LogError("canvas is niet assigned"); ;
         }
-        if (NextNodeBad == null || NextNodeGood == null)
-        {
-            Debug.LogWarning("next scenes zijn niet assigned");
-        }
+        // if (NextNodeBad == null || NextNodeGood == null)
+        // {
+        //     Debug.LogWarning("next scenes zijn niet assigned");
+        // }
     }
 
     // Update is called once per frame
@@ -48,13 +48,9 @@ public class SceneNode : MonoBehaviour
     {
 
     }
-
-    public void ActivateNode()
-    {
-
-    }
     public void Initialise()
     {
+        SetupStarterScene();
         Button[] buttonsArray = canvas.GetComponentsInChildren<Button>();
 
         for (int i = 0; i < buttonsArray.Length; i++)
@@ -79,6 +75,12 @@ public class SceneNode : MonoBehaviour
 
     public void UpdateChoice()
     {
+        Debug.Log("choice index: " + ChoiceIndex + " choices.length: " +choices.Length);
+        if (ChoiceIndex == choices.Length)
+        {
+            LoadNextScene();
+            return;
+        }
         currentText.text = choices[ChoiceIndex].ChoiceText;
 
         foreach (Button item in Buttons)
@@ -94,14 +96,12 @@ public class SceneNode : MonoBehaviour
         }
         //als laatste wil ik pas de choice index updaten
         ChoiceIndex++;
-        if (ChoiceIndex >= choices.Length)
-        {
-            LoadNextScene();
-        }
+
     }
     public void LoadNextScene()
     {
-        var sceneIndex = SceneManager.Instance.SceneIndex++;
+        SceneManager.Instance.SceneIndex++;
+        var sceneIndex = SceneManager.Instance.SceneIndex;
         Debug.Log(sceneIndex);
         Debug.LogWarning("alle choices zijn op");
         var tempIndex = GlobalPersonalityMeter.Instance.PublicIndex;
@@ -147,13 +147,23 @@ public class SceneNode : MonoBehaviour
         if (TempNode != null)
         {
             choices = TempNode.choices;
-            NextNodeBad = TempNode.NextNodeBad;
-            NextNodeGood = TempNode.NextNodeGood;
-            NextNeutralNode = TempNode.NextNeutralNode;
+            // NextNodeBad = TempNode.NextNodeBad;
+            // NextNodeGood = TempNode.NextNodeGood;
+            // NextNeutralNode = TempNode.NextNeutralNode;
         }
         ChoiceIndex = 0;
         UpdateChoice();
         //voer hier einde scene logica uit
+    }
+
+
+    public void SetupStarterScene()
+    {
+        SceneNode TempNode = SceneManager.Instance.NeutralScenes.ScenesList[0]; //moet sowieso altijd 0 zijn
+        choices = TempNode.choices;
+        // NextNodeBad = TempNode.NextNodeBad;
+        // NextNodeGood = TempNode.NextNodeGood;
+        // NextNeutralNode = TempNode.NextNeutralNode;
     }
     public void MakeChoice(int Index)
     {

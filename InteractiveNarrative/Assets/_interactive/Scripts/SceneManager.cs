@@ -6,6 +6,7 @@ using UnityEngine;
 public class SceneManager : MonoBehaviour
 {
     public static SceneManager Instance;
+    public SceneNode sceneNode;
     // public SceneNode NextNodeBad, NextNodeGood, NextNeutralNode;
     // public GameObject ScenePrefab;
     public Scenes NeutralScenes, GoodScenes, BadScenes;
@@ -25,5 +26,6 @@ public class SceneManager : MonoBehaviour
     {
 
     }
+
 
 }

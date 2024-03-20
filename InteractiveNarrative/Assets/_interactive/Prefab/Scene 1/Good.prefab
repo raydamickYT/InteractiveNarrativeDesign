@@ -44,16 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dcf67a63984a649b554d47fcbeee39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextNodeBad: {fileID: 1137033683484041150, guid: 7091b2f084c1ae946a9e02cb4839de10, type: 3}
-  NextNodeGood: {fileID: 1817452032837561186, guid: bbf56f370838a7c49a9dc5a902806d66, type: 3}
-  NextNeutralNode: {fileID: 1982855961688149637, guid: 476b36d139493f644849e5a72557e588, type: 3}
   choices:
-  - ChoiceText: "Hmm, They must\u2019ve felt terrified as well. \r"
-    EnableChoices: 0
-  - ChoiceText: "But perhaps they were so convinced of their opinion that they dared
-      to continue anyway..\r"
+  - ChoiceText: "Ah man, today will be a wonderful day. They said the sun\u2019d
+      be shining and I can\u2019t wait to go to that party tonight. \r"
     EnableChoices: 1
   ChoiceImpact: 0.2
-  Description: Eerste Scene
-  canvas: {fileID: 0}
   Buttons: []

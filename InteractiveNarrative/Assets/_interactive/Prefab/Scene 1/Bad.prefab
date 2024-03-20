@@ -44,16 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dcf67a63984a649b554d47fcbeee39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextNodeBad: {fileID: 1137033683484041150, guid: 7091b2f084c1ae946a9e02cb4839de10, type: 3}
-  NextNodeGood: {fileID: 1817452032837561186, guid: bbf56f370838a7c49a9dc5a902806d66, type: 3}
-  NextNeutralNode: {fileID: 1982855961688149637, guid: 476b36d139493f644849e5a72557e588, type: 3}
   choices:
-  - ChoiceText: "Can\u2019t believe it, really!"
-    EnableChoices: 0
-  - ChoiceText: " Man, just imagine walking around without a care in the world and
-      all of a sudden it\u2019s all over. just with the click of a button. "
+  - ChoiceText: "He must\u2019ve been completely off his knocker. Though they say
+      that some people are so convinced by their opinion that they dare to do anything.
+      and then there\u2019s the people that died, imagine how they felt?"
     EnableChoices: 1
   ChoiceImpact: 0.2
-  Description: Eerste Scene
-  canvas: {fileID: 0}
   Buttons: []

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1580973451065574997
+--- !u!1 &1999246688377715563
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 919902907429521999}
-  - component: {fileID: 1817452032837561186}
+  - component: {fileID: 5478705837194469002}
+  - component: {fileID: 1982855961688149637}
   m_Layer: 0
-  m_Name: GoodBranch
+  m_Name: Neutral3rd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &919902907429521999
+--- !u!4 &5478705837194469002
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580973451065574997}
+  m_GameObject: {fileID: 1999246688377715563}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,26 +32,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1817452032837561186
+--- !u!114 &1982855961688149637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580973451065574997}
+  m_GameObject: {fileID: 1999246688377715563}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2dcf67a63984a649b554d47fcbeee39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextNodeBad: {fileID: 1137033683484041150, guid: 7091b2f084c1ae946a9e02cb4839de10, type: 3}
-  NextNodeGood: {fileID: 1817452032837561186, guid: bbf56f370838a7c49a9dc5a902806d66, type: 3}
-  NextNeutralNode: {fileID: 1982855961688149637, guid: 476b36d139493f644849e5a72557e588, type: 3}
   choices:
-  - ChoiceText: ' Good question, maybe they took a little liquid courage to let go
-      of all the rational thoughts. Or maybe something worse?'
-    EnableChoices: 0
+  - ChoiceText: "yeah, the people involved probably died a painless death as well.
+      I heard the weather might be good today, \u2026 got the timing perfect for
+      their party."
+    EnableChoices: 1
   ChoiceImpact: 0.2
-  Description: Eerste Scene
   canvas: {fileID: 0}
   Buttons: []
