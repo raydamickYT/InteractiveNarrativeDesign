@@ -7,17 +7,6 @@ using UnityEngine.UI;
 
 public class SceneNode : MonoBehaviour
 {
-    // private SceneNode NextNodeBad, NextNodeGood, NextNeutralNode;
-
-    //TODO:
-    /// <summary>
-    //deze class moet het volgende bevatten
-    /// - een class die tekst bevat,
-    /// - een array met dit ^
-    /// - een ui element waarin de tekst wordt aangepast
-    /// - een array met de keuzes
-    /// 
-    /// </summary>
     public Choice[] choices;
     public float ChoiceImpact = 0.2f;
     private int ChoiceIndex = 0;
@@ -37,16 +26,19 @@ public class SceneNode : MonoBehaviour
         {
             Debug.LogError("canvas is niet assigned"); ;
         }
-        // if (NextNodeBad == null || NextNodeGood == null)
-        // {
-        //     Debug.LogWarning("next scenes zijn niet assigned");
-        // }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(choices[ChoiceIndex].EnableChoices);
+        // if (choices[ChoiceIndex].EnableChoices)
+        // {
+        //     if (Input.GetKeyDown(KeyCode.Space))
+        //     {
+        //         UpdateChoice();
+        //     }
+        // }
     }
     public void Initialise()
     {
@@ -75,7 +67,7 @@ public class SceneNode : MonoBehaviour
 
     public void UpdateChoice()
     {
-        Debug.Log("choice index: " + ChoiceIndex + " choices.length: " +choices.Length);
+        Debug.Log("choice index: " + ChoiceIndex + " choices.length: " + choices.Length);
         if (ChoiceIndex == choices.Length)
         {
             LoadNextScene();
@@ -85,18 +77,25 @@ public class SceneNode : MonoBehaviour
 
         foreach (Button item in Buttons)
         {
-            if (choices[ChoiceIndex].EnableChoices)
+            item.gameObject.SetActive(choices[ChoiceIndex].EnableChoices);
+            // if (!choices[ChoiceIndex].EnableChoices) break; //als de enablechoices uit staat
+
+            var textComponent = item.GetComponentInChildren<Text>();
+            switch (item.name.ToLower())
             {
-                item.gameObject.SetActive(true); //als in de inspector is aangegeven dat er choices zichbaar zijn voor deze keuze dan zetten we ze aan
-            }
-            else
-            {
-                item.gameObject.SetActive(false); // en andersom
+                case "yes":
+                    textComponent.text = choices[ChoiceIndex].PositiveAnswer;
+                    break;
+                case "no":
+                    textComponent.text = choices[ChoiceIndex].NegativeAnswer;
+                    break;
+                default:
+                    textComponent.text = choices[ChoiceIndex].NeutralAnswer;
+                    break;
             }
         }
         //als laatste wil ik pas de choice index updaten
         ChoiceIndex++;
-
     }
     public void LoadNextScene()
     {
@@ -147,9 +146,6 @@ public class SceneNode : MonoBehaviour
         if (TempNode != null)
         {
             choices = TempNode.choices;
-            // NextNodeBad = TempNode.NextNodeBad;
-            // NextNodeGood = TempNode.NextNodeGood;
-            // NextNeutralNode = TempNode.NextNeutralNode;
         }
         ChoiceIndex = 0;
         UpdateChoice();
@@ -161,9 +157,6 @@ public class SceneNode : MonoBehaviour
     {
         SceneNode TempNode = SceneManager.Instance.NeutralScenes.ScenesList[0]; //moet sowieso altijd 0 zijn
         choices = TempNode.choices;
-        // NextNodeBad = TempNode.NextNodeBad;
-        // NextNodeGood = TempNode.NextNodeGood;
-        // NextNeutralNode = TempNode.NextNeutralNode;
     }
     public void MakeChoice(int Index)
     {

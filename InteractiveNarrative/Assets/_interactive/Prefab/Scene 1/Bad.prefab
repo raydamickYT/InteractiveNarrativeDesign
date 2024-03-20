@@ -48,6 +48,22 @@ MonoBehaviour:
   - ChoiceText: "He must\u2019ve been completely off his knocker. Though they say
       that some people are so convinced by their opinion that they dare to do anything.
       and then there\u2019s the people that died, imagine how they felt?"
+    NegativeAnswer: 
+    PositiveAnswer: 
+    NeutralAnswer: 
+    EnableChoices: 0
+  - ChoiceText: "Though they say that some people are so convinced by their opinion
+      that they dare to do anything. and then there\u2019s the people that died,
+      imagine how they felt?"
+    NegativeAnswer: 
+    PositiveAnswer: 
+    NeutralAnswer: 
+    EnableChoices: 0
+  - ChoiceText: "And then there\u2019s the people that died, imagine how they felt?"
+    NegativeAnswer: 
+    PositiveAnswer: 
+    NeutralAnswer: 
     EnableChoices: 1
   ChoiceImpact: 0.2
+  canvas: {fileID: 0}
   Buttons: []

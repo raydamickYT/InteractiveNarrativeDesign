@@ -48,6 +48,15 @@ MonoBehaviour:
   - ChoiceText: "yeah, the people involved probably died a painless death as well.
       I heard the weather might be good today, \u2026 got the timing perfect for
       their party."
+    NegativeAnswer: 
+    PositiveAnswer: 
+    NeutralAnswer: 
+    EnableChoices: 0
+  - ChoiceText: "I heard the weather might be good today, \u2026 got the timing perfect
+      for their party."
+    NegativeAnswer: 
+    PositiveAnswer: 
+    NeutralAnswer: 
     EnableChoices: 1
   ChoiceImpact: 0.2
   canvas: {fileID: 0}

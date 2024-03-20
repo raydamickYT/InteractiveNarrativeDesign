@@ -48,6 +48,10 @@ MonoBehaviour:
   - ChoiceText: "man, What a world. Just incredible that there\u2019s horrible people
       that can do these kinds of things."
     EnableChoices: 1
+    NegativeAnswer: " right? must\u2019ve been horrible for the people there"
+    PositiveAnswer: "Well that\u2019s not true, just think from their perspective."
+    NeutralAnswer: " Well, it\u2019s far away. Not sure how this\u2019ll impact me
+      and there\u2019s always something going on."
   ChoiceImpact: 0.2
   canvas: {fileID: 0}
   Buttons: []

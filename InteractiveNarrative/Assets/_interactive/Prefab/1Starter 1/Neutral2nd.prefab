@@ -48,6 +48,10 @@ MonoBehaviour:
   - ChoiceText: "Yeah I think it\u2019s awful for all those people. Luckily I am
       not involved."
     EnableChoices: 1
+    NegativeAnswer: "But what in gods name must\u2019ve happened in the head of that
+      terrorist?"
+    PositiveAnswer: 'Right? all is good. '
+    NeutralAnswer: yeah, a shame is all it is really. nothing I can do about it.
   ChoiceImpact: 0.2
   canvas: {fileID: 0}
   Buttons: []
