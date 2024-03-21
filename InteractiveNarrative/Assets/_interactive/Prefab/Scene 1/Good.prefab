@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choices:
   - ChoiceText: "Ah man, today will be a wonderful day. They said the sun\u2019d
-      be shining and I can\u2019t wait to go to that party tonight. \r"
+      be shining and I can\u2019t wait to go to that party tonight. \n\n[end]\r"
     NegativeAnswer: 
     PositiveAnswer: 
     NeutralAnswer: 
