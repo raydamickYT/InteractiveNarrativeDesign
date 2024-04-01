@@ -1,0 +1,866 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  links:
+  - guid: ea82ee83-822d-4ded-a280-2a4f49f9406c
+    targetGuid: 852544f6-5096-4573-a017-587bbc84aadd
+    portId: 0
+  - guid: 852544f6-5096-4573-a017-587bbc84aadd
+    targetGuid: ae60edbf-e151-4dea-9dd2-15e48b5edf3c
+    portId: 1
+  - guid: 852544f6-5096-4573-a017-587bbc84aadd
+    targetGuid: e1d3a503-6051-431c-90a7-606fadf6b4cc
+    portId: 2
+  - guid: 852544f6-5096-4573-a017-587bbc84aadd
+    targetGuid: 6fb5f614-bee7-4222-b53c-bd4c50bfb4dd
+    portId: 3
+  - guid: 6fb5f614-bee7-4222-b53c-bd4c50bfb4dd
+    targetGuid: a54df68a-2220-4fa0-9c4f-45324267afd3
+    portId: 4
+  - guid: ae60edbf-e151-4dea-9dd2-15e48b5edf3c
+    targetGuid: 4e90e8fc-1bfe-46b1-b241-069e460d61aa
+    portId: 5
+  - guid: ae60edbf-e151-4dea-9dd2-15e48b5edf3c
+    targetGuid: c5f1b77d-1fa3-4942-97cc-0af76cd91648
+    portId: 6
+  - guid: ae60edbf-e151-4dea-9dd2-15e48b5edf3c
+    targetGuid: a4a29d53-b3a5-447a-bd2e-9b24fab7c7b4
+    portId: 7
+  nodes:
+  - guid: 6fb5f614-bee7-4222-b53c-bd4c50bfb4dd
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: But what could I possibly do?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 3
+    GoodOrBad: 0
+    choiceOptions:
+    - How about marching in there? Guns blazin, it'd be so cool!
+    - Send them some money, I'm sure they could use it.
+    - "He must\u2019ve been completely off his knocker. Though they say that some
+      people are so convinced by their opinion that they dare to do anything.  And
+      then there\u2019s the people that died, imagine how they felt?"
+    nodePosition:
+      serializedVersion: 2
+      x: 899
+      y: -92
+      width: 1154
+      height: 410
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 76f4a041-8cda-431f-834c-e21105c0c44d
+    characterSpr: {fileID: 0}
+    characterName: 
+    dialogueText: 'Meaning that there''s never a place with no evil, because something
+      evil is just our perception of justice.
+
+'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - So we'll always be in conflict?
+    - Well atleast, there'll also always be good in this world.
+    nodePosition:
+      serializedVersion: 2
+      x: 2936
+      y: 1147
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 217d494e-cd8e-4663-8ebe-208a3a2b3b45
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Yeah, that's pretty depressing. Evil will always persist.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3491
+      y: 970
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e7d4fbe0-0f14-4430-acb0-bbb7c359f76c
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'Yeah, we can''t save everyone. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3491
+      y: 1343
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 34fbedf7-341a-4440-8280-83b8a91bdd9a
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: In that case, as long as we're the one beeing attacked in a war
+      and we're losing, war and the enemies are evil.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Agreed
+    - Doesn't have to be, people who realise that their enemies are just people beeing
+      controlled, won't necessarily see them as evil.
+    nodePosition:
+      serializedVersion: 2
+      x: 2176
+      y: 1465
+      width: 742
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6710d97a-dd17-447a-ad9e-203642a21ded
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: "But they'll see whoever is controlling them as evil. Even if they
+      feel sorry for whoever they are fighting, \nthey'll still loathe someone from
+      the other side."
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2936
+      y: 1713
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a4a29d53-b3a5-447a-bd2e-9b24fab7c7b4
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'That''s true, but let''s be honest here: it''s life or death.
+      You fuck up, you''re dead...'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: -1
+    choiceOptions:
+    - That's true
+    - But what about your pride?
+    nodePosition:
+      serializedVersion: 2
+      x: 2180
+      y: -1783
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2a47a93a-6c29-4d2b-98cf-6aca86578de6
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: What about my pride? There's no pride in Death.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2778
+      y: -1654
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c4f10b7b-fdbc-44eb-a8aa-2d66309d2d7b
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Right? Might aswell leave it at that.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2778
+      y: -2006
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c5f1b77d-1fa3-4942-97cc-0af76cd91648
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Yeah, I don't want to die just yet. Hahaha
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2165
+      y: -1213
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 4e90e8fc-1bfe-46b1-b241-069e460d61aa
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Yeah no point really, this is just making me sad.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2165
+      y: -894
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: ae60edbf-e151-4dea-9dd2-15e48b5edf3c
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'I don''t know to be honest. I don'' think I''d hve the courage
+      to
+
+      fight with them. I''d just run.'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 3
+    GoodOrBad: 0
+    choiceOptions:
+    - Aren't you just a coward if you do?
+    - That's probably for the best
+    - What's the point in pondering over this?
+    nodePosition:
+      serializedVersion: 2
+      x: 1625
+      y: -1159
+      width: 499
+      height: 410
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a54df68a-2220-4fa0-9c4f-45324267afd3
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'It would be cool, just imagine the headlines... Suicidal man jumps
+      at terrorist and dies trying.
+
+      I may have lost my life, but atleast the
+      headline is cool.'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Okay, Maybe not the best idea
+    - Where'd you even get the weapons?
+    nodePosition:
+      serializedVersion: 2
+      x: 2165
+      y: -504
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b0b6327f-a7e5-4a84-8872-0801a5a4ff08
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'Just a kitchen knife I guess? Not really a fair chance against
+      a person with a gun...
+
+      I think I''m better off working my 9 to 5 job.'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2770
+      y: -343
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0b250346-bd73-46a1-81cb-5b6f33256d49
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Nope, let's go to work
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2770
+      y: -681
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7f3a0238-0334-4107-abf2-f4147333f66a
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Right, just proving that worrying about things that don't directly
+      affect you is just a waste of time.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2826
+      y: 773
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 781f8571-5c48-4999-a102-19e4d05848af
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: So what would we consider 'alive'?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Things with a conscience?
+    - things that breathe?
+    nodePosition:
+      serializedVersion: 2
+      x: 2828
+      y: 264
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: f25f8d05-86e3-4341-80c7-f3475267be5f
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: That'd be excluding almost all living beeings from this planet.
+      Meaning we can go on a killing spree right now and no one would bat an eye
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Well I don't think other people would appreciate that.
+    - Alright let's go!
+    nodePosition:
+      serializedVersion: 2
+      x: 3403
+      y: 264
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: baa13260-36dd-4fd2-8c39-cab8f02a8269
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: On second thought, maybe I'd get in trouble with the police...
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4007
+      y: 420
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0a62adb6-351e-43a2-8118-985adf1f2765
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: even if I think something is allowed doesn't mean other people
+      think it's okay.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4007
+      y: 77
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7b633b77-3f5f-4a5a-ae6a-01d0d1315492
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: I think that's all it will ever be.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2603
+      y: 2165
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 87f7a132-d3eb-43d1-acb6-50b5d6193593
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: That'd be nice. it'd mean no one would have to die a meaningless
+      death anymore
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Sounds like a dream.
+    - We'd quickly have problems with over population though.
+    nodePosition:
+      serializedVersion: 2
+      x: 2059
+      y: 2229
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 517cf885-1db9-4c22-824b-4aa097541669
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Yes, but because there's no evil in this world. People won't fight
+      about food or water.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - That's only if you think that evil can't exist in that world
+    - 'So people would just start dying willingly? '
+    nodePosition:
+      serializedVersion: 2
+      x: 2603
+      y: 2550
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: ba1bf0e3-b4a6-4d12-8d09-0f35e7145901
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: A world with no evil... I can't really imagine it
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - No more Fighting!
+    - No need for rules
+    nodePosition:
+      serializedVersion: 2
+      x: 1302
+      y: 2596
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: ea82ee83-822d-4ded-a280-2a4f49f9406c
+    characterSpr: {fileID: 0}
+    characterName: Radio
+    dialogueText: "*Static* ...aanslag heeft de levens van 30 mensen gekost en 3
+      soldaten, hulpverleners waren\u2026"
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: -1422
+      y: 383
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 852544f6-5096-4573-a017-587bbc84aadd
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Man, what a world. Just incredible that there's horrible people
+      that can do these kinds of things.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 5
+    GoodOrBad: 0
+    choiceOptions:
+    - What if I was there?
+    - I should do more to help these people
+    - What do I want for breakfast?
+    - Why is there so much hate in the world?
+    - It's such nice weather today!
+    nodePosition:
+      serializedVersion: 2
+      x: -849
+      y: 383
+      width: 499
+      height: 496
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e1d3a503-6051-431c-90a7-606fadf6b4cc
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Just some eggs and bacon as usual
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 238
+      y: 479
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6d1dc5db-a059-4ba7-a614-a9c3d3f5ff02
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: This world would be so much better of without it.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: -1
+    choiceOptions:
+    - Evil is necessary to balance the world
+    - What would the world look like without evil?
+    nodePosition:
+      serializedVersion: 2
+      x: 110
+      y: 1982
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d7aaacb3-6d25-4f3a-a66d-a9f11188918c
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'What is evil in the first place?
+
+'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Actions that cause harm to living organisms.
+    - Anything that goed against our moral values and norms.
+    nodePosition:
+      serializedVersion: 2
+      x: 1302
+      y: 976
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 8b68cea2-3d27-44b8-9bcf-d0a90e907f2f
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: That'd mean anything we do is evil. Just us walking around kills
+      a lot of bacteria, insects and whatever else we can't see.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - But can that really be considered a living organism though?
+    - That's a bit much to consider.
+    nodePosition:
+      serializedVersion: 2
+      x: 2104
+      y: 590
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 4a334acb-a868-41f0-bf4f-9fadc3a4c671
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'And that''s impossible. People can''t always just agree with each
+      other
+
+      At some point hunger would take over and chaos would break out.'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3293
+      y: 2444
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 178c4b0e-3467-4a36-a1c9-38c542fe1dbc
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'That sounds like a true dystopia. Who would''ve guessed that a
+      world without evil
+
+      would just turn out to be one of the most cruel worlds
+      you can imagine.'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3293
+      y: 2795
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 64034dad-53e6-453c-adf3-eff7fed1c457
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Would that really work? I don't trust people enough to just let
+      them do whatever they want.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - But in this world you can.
+    - I don't know if that'd be the best idea.
+    nodePosition:
+      serializedVersion: 2
+      x: 1801
+      y: 3047
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1320eac6-ccd4-4aa5-9910-7fd746b4b8ed
+    characterSpr: {fileID: 0}
+    characterName: Gregg
+    dialogueText: Okay, no rules means no problem with speeding and also no problem
+      with me just running over a couple of people.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Okay, but would you?
+    - Absolutely right. Though I think people wouldn't appreciate that.
+    nodePosition:
+      serializedVersion: 2
+      x: 2374
+      y: 3191
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 59eb5ad0-ec52-40bc-90cc-99bfcd8204a7
+    characterSpr: {fileID: 0}
+    characterName: Gregg
+    dialogueText: No but other people would.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3022
+      y: 3162
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1a805b9b-c1cc-4fe2-93b9-04b8a8720aa1
+    characterSpr: {fileID: 0}
+    characterName: Gregg
+    dialogueText: Right, other people... I couldn't give 2 fucks about those people
+      at that point.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3022
+      y: 3499
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 458833f0-b7f6-4b42-aee3-0c4517aa8028
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: And on that terrible dissapointment. We go to work
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2628
+      y: 4232
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d553dc00-54d9-4816-acc2-40891ac64a92
+    characterSpr: {fileID: 0}
+    characterName: Gregg
+    dialogueText: I guess I just think people are inherently evil
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: -1
+    choiceOptions:
+    - Are people evil or is it just the world that affects them that makes them make
+      evil decisions?
+    - No matter how you look at it. They'll always be selfish in the end
+    nodePosition:
+      serializedVersion: 2
+      x: 2019
+      y: 3827
+      width: 562
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7fdbabf8-fd53-4f1c-b442-fab6000f6b74
+    characterSpr: {fileID: 0}
+    characterName: Gregg
+    dialogueText: "I don't think people are born to be evil. I definitely think that
+      it's the conditions \nyou happen to grow up in that makes you a different person.\nMeaning
+      that how well you do in your life is just based on luck..."
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2711
+      y: 3863
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 32c0e1e1-5aa6-4988-b425-1461706e7f20
+    characterSpr: {fileID: 0}
+    characterName: Gregg
+    dialogueText: Let's just go to work
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3343
+      y: 3889
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
