@@ -46,14 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   choices:
   - ChoiceText: "yeah, the people involved probably died a painless death as well.
-      I heard the weather might be good today, \u2026 got the timing perfect for
-      their party."
+      \n\n\n[Press Space]"
     NegativeAnswer: 
     PositiveAnswer: 
     NeutralAnswer: 
     EnableChoices: 0
   - ChoiceText: "I heard the weather might be good today, \u2026 got the timing perfect
-      for their party."
+      for their party.\n\n\n\n[End]"
     NegativeAnswer: 
     PositiveAnswer: 
     NeutralAnswer: 
