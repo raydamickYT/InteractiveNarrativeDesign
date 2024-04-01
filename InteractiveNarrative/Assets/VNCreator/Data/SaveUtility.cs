@@ -21,46 +21,45 @@ namespace VNCreator
             List<NodeData> nodes = new List<NodeData>();
             List<Link> links = new List<Link>();
 
-            foreach (BaseNode _node in _graph.nodes.ToList().Cast<BaseNode>().ToList())
+            foreach (BaseNode node in _graph.nodes.ToList().Cast<BaseNode>())
             {
-                nodes.Add(
-                new NodeData
+                nodes.Add(new NodeData
                 {
-                    guid = _node.nodeData.guid,
-                    characterSpr = _node.nodeData.characterSpr,
-                    characterName = _node.nodeData.characterName,
-                    dialogueText = _node.nodeData.dialogueText,
-                    backgroundSpr = _node.nodeData.backgroundSpr,
-                    startNode = _node.nodeData.startNode,
-                    GoodOrBad = _node.nodeData.GoodOrBad,
-                    endNode = _node.nodeData.endNode,
-                    choices = _node.nodeData.choices,
-                    choiceOptions = _node.nodeData.choiceOptions,
-                    nodePosition = _node.GetPosition(),
-                    soundEffect = _node.nodeData.soundEffect,
-                    backgroundMusic = _node.nodeData.backgroundMusic
+                    guid = node.nodeData.guid,
+                    characterSpr = node.nodeData.characterSpr,
+                    characterName = node.nodeData.characterName,
+                    dialogueText = node.nodeData.dialogueText,
+                    backgroundSpr = node.nodeData.backgroundSpr,
+                    startNode = node.nodeData.startNode,
+                    GoodOrBad = node.nodeData.GoodOrBad,
+                    endNode = node.nodeData.endNode,
+                    choices = node.nodeData.choices,
+                    choiceOptions = node.nodeData.choiceOptions,
+                    nodePosition = node.GetPosition(),
+                    soundEffect = node.nodeData.soundEffect,
+                    backgroundMusic = node.nodeData.backgroundMusic
                 });
             }
 
-            List<Edge> _edges = _graph.edges.ToList();
-            for (int i = 0; i < _edges.Count; i++)
+            foreach (Edge edge in _graph.edges.ToList())
             {
-                BaseNode _output = (BaseNode)_edges[i].output.node;
-                BaseNode _input = (BaseNode)_edges[i].input.node;
+                BaseNode outputNode = (BaseNode)edge.output.node;
+                BaseNode inputNode = (BaseNode)edge.input.node;
+
+                // Vind de index van de output port binnen de outputContainer van de node.
+                int portIndex = outputNode.outputContainer.IndexOf(edge.output);
 
                 links.Add(new Link
                 {
-                    guid = _output.nodeData.guid,
-                    targetGuid = _input.nodeData.guid,
-                    portId = i
+                    guid = outputNode.nodeData.guid,
+                    targetGuid = inputNode.nodeData.guid,
+                    portId = portIndex // Gebruik de daadwerkelijke index van de port.
                 });
             }
 
             _story.SetLists(nodes, links);
-
-            //_story.nodes = nodes;
-            //_story.links = links;
         }
+
 
         public void LoadGraph(StoryObject _story, ExtendedGraphView _graph)
         {
@@ -100,6 +99,7 @@ namespace VNCreator
                 if (_outputPort == null)
                 {
                     Debug.LogWarning($"Output port niet gevonden voor node {_outputNode.nodeData.guid} op port index {_link.portId}");
+                    Debug.Log($"Node {_outputNode.nodeData.guid} heeft {_outputNode.outputContainer.childCount} outputs.");
                     continue; // Sla deze link over als de output port niet gevonden is.
                 }
 
