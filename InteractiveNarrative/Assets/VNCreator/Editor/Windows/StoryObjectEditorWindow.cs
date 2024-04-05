@@ -44,12 +44,17 @@ namespace VNCreator.Editors
             graphView.RegisterCallback<MouseDownEvent>(MouseDown);
             graphView.StretchToParentSize();
             rootVisualElement.Add(graphView);
-            if (_nodeCount == 0) 
+            if (_nodeCount == 0)
             {
                 //graphView.GenerateNode(Vector2.zero, 1, true, false);
                 return;
             }
             save.LoadGraph(storyObj, graphView);
+        }
+        void OnDestroy()
+        {
+            save.SaveGraph(storyObj, graphView);
+            Debug.Log("Story is automatisch opgeslagen bij het afsluiten.");
         }
     }
 #endif

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 namespace VNCreator
 {
     public class VNCreator_DisplayUI : DisplayBase
@@ -32,7 +33,7 @@ namespace VNCreator
         public GameObject endScreen;
         [Header("Main menu")]
         [Scene]
-        public string mainMenu;
+        public string mainMenu, NextScene;
 
         void Start()
         {
@@ -70,14 +71,27 @@ namespace VNCreator
 
             StartCoroutine(DisplayCurrentNode());
         }
-
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                NextNode(0); //doe inprincipe hetzelfde als de ui button, maar dit is wat netter.
+            }
+        }
         protected override void NextNode(int _choiceId)
         {
             if (lastNode)
             {
                 if (endScreen != null)
                 {
-                    endScreen.SetActive(true);
+                    endScreen.SetActive(true); //dus laat de endscreen leeg als het niet de laatste scene is
+                }
+                else if (NextScene != null)
+                {
+                    if (NextScene != null)
+                    {
+                        SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
+                    }
                 }
                 return;
             }

@@ -2360,7 +2360,8 @@ MonoBehaviour:
   choiceBtn4: {fileID: 1249110311}
   choiceBtn5: {fileID: 570484973}
   endScreen: {fileID: 1844405013822904731, guid: 18998ed4cce662e45b06a2bd84f41fd6, type: 3}
-  mainMenu: Assets/_interactive/Scenes/TestScene.unity
+  mainMenu: 
+  NextScene: 
 --- !u!4 &1919610563
 Transform:
   m_ObjectHideFlags: 0
