@@ -843,10 +843,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2343,7 +2343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19bffdf8e809ebd439aaf9f444d2ea04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  story: {fileID: 11400000, guid: 628450cd6ad04754d8220f46f542c0ec, type: 2}
+  story: {fileID: 11400000, guid: 110e564e0e5886d40a11f886725e0b08, type: 2}
   characterNameTxt: {fileID: 250996258}
   dialogueTxt: {fileID: 734796160}
   characterImg: {fileID: 1865517015}
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   choiceBtn5: {fileID: 570484973}
   endScreen: {fileID: 1844405013822904731, guid: 18998ed4cce662e45b06a2bd84f41fd6, type: 3}
   mainMenu: 
-  NextScene: Assets/_interactive/Scenes/Scene 2.unity
+  NextScene: 
 --- !u!4 &1919610563
 Transform:
   m_ObjectHideFlags: 0

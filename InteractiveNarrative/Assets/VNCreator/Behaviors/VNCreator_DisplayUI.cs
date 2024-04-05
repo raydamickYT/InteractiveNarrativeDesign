@@ -34,6 +34,7 @@ namespace VNCreator
         [Header("Main menu")]
         [Scene]
         public string mainMenu, NextScene;
+        private bool CanPressSpace = false;
 
         void Start()
         {
@@ -73,7 +74,7 @@ namespace VNCreator
         }
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && CanPressSpace)
             {
                 NextNode(0); //doe inprincipe hetzelfde als de ui button, maar dit is wat netter.
             }
@@ -123,6 +124,7 @@ namespace VNCreator
                 if (nextBtn != null)
                 {
                     nextBtn.gameObject.SetActive(true);
+                    CanPressSpace = true;
                 }
 
                 choiceBtn1.gameObject.SetActive(false);
@@ -140,6 +142,7 @@ namespace VNCreator
                 if (nextBtn != null)
                 {
                     nextBtn.gameObject.SetActive(false);
+                    CanPressSpace = false;
                 }
 
                 choiceBtn1.gameObject.SetActive(true);
