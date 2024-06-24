@@ -178,10 +178,10 @@ MonoBehaviour:
       then there\u2019s the people that died, imagine how they felt?"
     nodePosition:
       serializedVersion: 2
-      x: 899.2
+      x: 899
       y: -92
-      width: 1155.2
-      height: 404
+      width: 1154
+      height: 410
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 76f4a041-8cda-431f-834c-e21105c0c44d
@@ -202,9 +202,9 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 2936
-      y: 1147.2
-      width: 499.19995
-      height: 362.40002
+      y: 1147
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 34fbedf7-341a-4440-8280-83b8a91bdd9a
@@ -224,9 +224,9 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 2176
-      y: 1465.6
-      width: 742.3999
-      height: 362.40002
+      y: 1466
+      width: 742
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 6710d97a-dd17-447a-ad9e-203642a21ded
@@ -245,9 +245,9 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 2936
-      y: 1713.6
-      width: 499.19995
-      height: 303.19995
+      y: 1714
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: a4a29d53-b3a5-447a-bd2e-9b24fab7c7b4
@@ -266,9 +266,9 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 2180
-      y: -1782.4
-      width: 499.19995
-      height: 362.40002
+      y: -1782
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 2a47a93a-6c29-4d2b-98cf-6aca86578de6
@@ -284,10 +284,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2778.4
-      y: -1653.6001
-      width: 499.2002
-      height: 303.20007
+      x: 2778
+      y: -1654
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: c4f10b7b-fdbc-44eb-a8aa-2d66309d2d7b
@@ -303,10 +303,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2778.4
-      y: -2005.6001
-      width: 499.2002
-      height: 303.20007
+      x: 2778
+      y: -2006
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: a54df68a-2220-4fa0-9c4f-45324267afd3
@@ -327,10 +327,10 @@ MonoBehaviour:
     - Where'd you even get the weapons?
     nodePosition:
       serializedVersion: 2
-      x: 2164.8
+      x: 2165
       y: -504
-      width: 499.19995
-      height: 362.40002
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: b0b6327f-a7e5-4a84-8872-0801a5a4ff08
@@ -349,10 +349,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2770.4
-      y: -342.4
-      width: 499.2002
-      height: 303.2
+      x: 2770
+      y: -342
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 0b250346-bd73-46a1-81cb-5b6f33256d49
@@ -368,10 +368,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2770.4
-      y: -680.8
-      width: 499.2002
-      height: 303.2
+      x: 2770
+      y: -681
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 7f3a0238-0334-4107-abf2-f4147333f66a
@@ -388,10 +388,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2826.4
-      y: 773.60004
-      width: 499.2002
-      height: 303.19995
+      x: 2826
+      y: 774
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 781f8571-5c48-4999-a102-19e4d05848af
@@ -410,8 +410,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 2828
       y: 264
-      width: 499.19995
-      height: 362.40002
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: f25f8d05-86e3-4341-80c7-f3475267be5f
@@ -429,10 +429,10 @@ MonoBehaviour:
     - Alright let's go!
     nodePosition:
       serializedVersion: 2
-      x: 3403.2
+      x: 3403
       y: 264
-      width: 499.19995
-      height: 362.40002
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: baa13260-36dd-4fd2-8c39-cab8f02a8269
@@ -448,10 +448,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 4007.2
+      x: 4007
       y: 420
-      width: 499.19995
-      height: 303.2
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 0a62adb6-351e-43a2-8118-985adf1f2765
@@ -468,10 +468,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 4007.2
-      y: 77.600006
-      width: 499.19995
-      height: 303.2
+      x: 4007
+      y: 78
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 7b633b77-3f5f-4a5a-ae6a-01d0d1315492
@@ -487,10 +487,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2603.2
-      y: 2165.5999
-      width: 499.19995
-      height: 303.2002
+      x: 2603
+      y: 2166
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 87f7a132-d3eb-43d1-acb6-50b5d6193593
@@ -508,10 +508,10 @@ MonoBehaviour:
     - We'd quickly have problems with over population though.
     nodePosition:
       serializedVersion: 2
-      x: 2059.2
-      y: 2229.5999
-      width: 499.19995
-      height: 362.40015
+      x: 2059
+      y: 2230
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 517cf885-1db9-4c22-824b-4aa097541669
@@ -529,10 +529,10 @@ MonoBehaviour:
     - 'So people would just start dying willingly? '
     nodePosition:
       serializedVersion: 2
-      x: 2603.2
-      y: 2550.4
-      width: 499.19995
-      height: 362.40015
+      x: 2603
+      y: 2550
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: d7aaacb3-6d25-4f3a-a66d-a9f11188918c
@@ -551,10 +551,10 @@ MonoBehaviour:
     - Anything that goed against our moral values and norms.
     nodePosition:
       serializedVersion: 2
-      x: 1302.4
+      x: 1302
       y: 976
-      width: 499.19995
-      height: 362.39996
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 8b68cea2-3d27-44b8-9bcf-d0a90e907f2f
@@ -573,9 +573,9 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 2104
-      y: 590.4
-      width: 499.19995
-      height: 362.39996
+      y: 590
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 4a334acb-a868-41f0-bf4f-9fadc3a4c671
@@ -594,10 +594,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 3292.8
+      x: 3293
       y: 2444
-      width: 499.19995
-      height: 303.19995
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 178c4b0e-3467-4a36-a1c9-38c542fe1dbc
@@ -617,10 +617,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 3292.8
-      y: 2795.2
-      width: 499.19995
-      height: 303.19995
+      x: 3293
+      y: 2795
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 1320eac6-ccd4-4aa5-9910-7fd746b4b8ed
@@ -638,10 +638,10 @@ MonoBehaviour:
     - Absolutely right. Though I think people wouldn't appreciate that.
     nodePosition:
       serializedVersion: 2
-      x: 2374.4
-      y: 3191.2
-      width: 499.2002
-      height: 362.3999
+      x: 2374
+      y: 3191
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 59eb5ad0-ec52-40bc-90cc-99bfcd8204a7
@@ -657,10 +657,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 3022.4
-      y: 3162.4
-      width: 499.2002
-      height: 303.19995
+      x: 3022
+      y: 3162
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 1a805b9b-c1cc-4fe2-93b9-04b8a8720aa1
@@ -677,10 +677,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 3022.4
-      y: 3499.2
-      width: 499.2002
-      height: 303.19995
+      x: 3022
+      y: 3499
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: d553dc00-54d9-4816-acc2-40891ac64a92
@@ -698,10 +698,10 @@ MonoBehaviour:
     - No matter how you look at it. They'll always be selfish in the end
     nodePosition:
       serializedVersion: 2
-      x: 2019.2
-      y: 3827.2
-      width: 563.19995
-      height: 362.3999
+      x: 2019
+      y: 3827
+      width: 562
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 7fdbabf8-fd53-4f1c-b442-fab6000f6b74
@@ -719,10 +719,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2711.2
-      y: 3863.2
-      width: 499.19995
-      height: 303.2002
+      x: 2711
+      y: 3863
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 32c0e1e1-5aa6-4988-b425-1461706e7f20
@@ -738,10 +738,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 3343.2
-      y: 3889.5999
-      width: 499.19995
-      height: 303.2002
+      x: 3343
+      y: 3890
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: e1d3a503-6051-431c-90a7-606fadf6b4cc
@@ -757,10 +757,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 132.8
+      x: 133
       y: 464
-      width: 499.2
-      height: 303.2
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 217d494e-cd8e-4663-8ebe-208a3a2b3b45
@@ -778,8 +778,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 3572
       y: 976
-      width: 499.19995
-      height: 303.2
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: e7d4fbe0-0f14-4430-acb0-bbb7c359f76c
@@ -796,9 +796,9 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 3572
-      y: 1335.2
-      width: 499.19995
-      height: 303.19995
+      y: 1335
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 458833f0-b7f6-4b42-aee3-0c4517aa8028
@@ -815,9 +815,9 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 2844
-      y: 4261.6
-      width: 499.19995
-      height: 303.2002
+      y: 4262
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 6d1dc5db-a059-4ba7-a614-a9c3d3f5ff02
@@ -834,10 +834,10 @@ MonoBehaviour:
     - What would the world look like without evil?
     nodePosition:
       serializedVersion: 2
-      x: 348.8
-      y: 1406.3999
-      width: 499.2
-      height: 362.40002
+      x: 349
+      y: 1406
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: ba1bf0e3-b4a6-4d12-8d09-0f35e7145901
@@ -854,10 +854,10 @@ MonoBehaviour:
     - No need for rules
     nodePosition:
       serializedVersion: 2
-      x: 1302.4
-      y: 2165.5999
-      width: 499.19995
-      height: 362.40015
+      x: 1302
+      y: 2166
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 64034dad-53e6-453c-adf3-eff7fed1c457
@@ -877,8 +877,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 1520
       y: 3008
-      width: 499.19995
-      height: 362.3999
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: ea82ee83-822d-4ded-a280-2a4f49f9406c
@@ -897,8 +897,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: -2296
       y: 392
-      width: 499.19995
-      height: 303.2
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 852544f6-5096-4573-a017-587bbc84aadd
@@ -919,10 +919,10 @@ MonoBehaviour:
     - It's such nice weather today!
     nodePosition:
       serializedVersion: 2
-      x: -1723.2
+      x: -1723
       y: 392
-      width: 499.19995
-      height: 487.2
+      width: 499
+      height: 496
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 6a827acc-39be-493b-9ce1-d5b9c79ebf91
@@ -938,10 +938,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: -1104.8
-      y: 1101.6
-      width: 499.20007
-      height: 303.19995
+      x: -1105
+      y: 1102
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: ae60edbf-e151-4dea-9dd2-15e48b5edf3c
@@ -962,10 +962,10 @@ MonoBehaviour:
     - What's the point in pondering over this?
     nodePosition:
       serializedVersion: 2
-      x: 1317.6
+      x: 1318
       y: -1168
-      width: 499.20007
-      height: 403.99994
+      width: 499
+      height: 410
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: c5f1b77d-1fa3-4942-97cc-0af76cd91648
@@ -981,10 +981,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 2164.8
-      y: -1350.4
-      width: 499.19995
-      height: 303.19995
+      x: 2165
+      y: -1350
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 2dd04d02-6393-487d-ab1f-3bc2b15dd2e3
@@ -1001,10 +1001,10 @@ MonoBehaviour:
     - Doesn't thinking just create more thoughts for you not to understand?
     nodePosition:
       serializedVersion: 2
-      x: 2840.8
-      y: -1145.6001
-      width: 499.19995
-      height: 362.40002
+      x: 2841
+      y: -1146
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: a13df0a6-f30c-41a2-ac69-be546f320689
@@ -1026,8 +1026,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 3660
       y: -1420
-      width: 499.2002
-      height: 362.3999
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: fa14a44e-961a-449f-97ec-b2c55972b4ae
@@ -1046,8 +1046,8 @@ MonoBehaviour:
       serializedVersion: 2
       x: 3660
       y: -964
-      width: 499.2002
-      height: 362.40002
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: f4c9238f-25ab-4d64-b4f8-949fcf33dc9d
@@ -1067,10 +1067,10 @@ MonoBehaviour:
     - I don't want to think all the time
     nodePosition:
       serializedVersion: 2
-      x: 4393.6
-      y: -1748.8
-      width: 499.1997
-      height: 362.40002
+      x: 4394
+      y: -1749
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: af894312-eb8c-462c-90c1-98471945ba02
@@ -1086,10 +1086,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 5062.4
+      x: 5062
       y: -1480
-      width: 499.2002
-      height: 303.19995
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 8e6e0324-bda9-4789-b894-613b2fc7b8c2
@@ -1105,10 +1105,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 5672.8
-      y: -2308.8
-      width: 499.2002
-      height: 303.19995
+      x: 5673
+      y: -2309
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 5f683ff2-1392-4116-b99a-cee36acc3907
@@ -1124,10 +1124,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 5672.8
-      y: -1892.8
-      width: 499.2002
-      height: 303.19995
+      x: 5673
+      y: -1893
+      width: 499
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 235e8502-8020-4b40-b52f-a3541792800b
@@ -1145,9 +1145,9 @@ MonoBehaviour:
     - Or none at all
     nodePosition:
       serializedVersion: 2
-      x: 5062.4
-      y: -2005.6001
-      width: 499.2002
-      height: 362.40002
+      x: 5062
+      y: -2006
+      width: 499
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}

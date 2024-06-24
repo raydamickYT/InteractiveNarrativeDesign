@@ -1,8 +1,7 @@
 {
-    "name": "VNCreator",
-    "rootNamespace": "VNCreator",
+    "name": "BlackBoard",
+    "rootNamespace": "BlackBoard",
     "references": [
-    "BlackBoard"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

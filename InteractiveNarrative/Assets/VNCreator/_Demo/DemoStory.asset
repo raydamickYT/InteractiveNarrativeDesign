@@ -16,21 +16,9 @@ MonoBehaviour:
   - guid: 43443b6a-8fc6-4ee0-b9e4-3b5ab85f09fa
     targetGuid: cfe25e6b-3c07-4716-b1e2-e77f81ab3b2f
     portId: 0
-  - guid: cfe25e6b-3c07-4716-b1e2-e77f81ab3b2f
-    targetGuid: 431c40f2-9d68-495c-a2d2-30a993e9f18c
-    portId: 1
-  - guid: 431c40f2-9d68-495c-a2d2-30a993e9f18c
-    targetGuid: 71c7307d-a03c-48d1-8f37-156bc5b1edbe
-    portId: 2
   - guid: 431c40f2-9d68-495c-a2d2-30a993e9f18c
     targetGuid: bdfa56de-447b-42b4-ac61-1bc01f9ad49c
     portId: 3
-  - guid: 71c7307d-a03c-48d1-8f37-156bc5b1edbe
-    targetGuid: 1cc55e00-ccd1-47a1-9774-c54127a043ef
-    portId: 4
-  - guid: bdfa56de-447b-42b4-ac61-1bc01f9ad49c
-    targetGuid: 1e23bf54-9afd-47c6-ba76-942101512a55
-    portId: 5
   nodes:
   - guid: 43443b6a-8fc6-4ee0-b9e4-3b5ab85f09fa
     characterSpr: {fileID: 21300000, guid: e89e94c938bf20549b956865c8ecab8d, type: 3}
@@ -40,6 +28,7 @@ MonoBehaviour:
     startNode: 1
     endNode: 0
     choices: 1
+    GoodOrBad: 0
     choiceOptions:
     - 
     nodePosition:
@@ -47,7 +36,7 @@ MonoBehaviour:
       x: 317
       y: 373
       width: 499
-      height: 307
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 8300000, guid: 60cbbe24b7112a94992bed39df6325ed, type: 3}
   - guid: cfe25e6b-3c07-4716-b1e2-e77f81ab3b2f
@@ -58,6 +47,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 0
     choices: 1
+    GoodOrBad: 0
     choiceOptions:
     - 
     nodePosition:
@@ -65,7 +55,7 @@ MonoBehaviour:
       x: 992
       y: 373
       width: 499
-      height: 307
+      height: 305
     soundEffect: {fileID: 8300000, guid: 899d7fef1c29cd24d9ef66ba70f865d7, type: 3}
     backgroundMusic: {fileID: 0}
   - guid: 431c40f2-9d68-495c-a2d2-30a993e9f18c
@@ -76,6 +66,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 0
     choices: 2
+    GoodOrBad: 0
     choiceOptions:
     - Okay coon
     - No, not now
@@ -84,7 +75,7 @@ MonoBehaviour:
       x: 1707
       y: 385
       width: 499
-      height: 373
+      height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 71c7307d-a03c-48d1-8f37-156bc5b1edbe
@@ -95,6 +86,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 0
     choices: 1
+    GoodOrBad: 0
     choiceOptions:
     - 
     nodePosition:
@@ -102,7 +94,7 @@ MonoBehaviour:
       x: 2478
       y: 267
       width: 499
-      height: 307
+      height: 305
     soundEffect: {fileID: 8300000, guid: 8275a4bd932cf644b8913c201305a8f4, type: 3}
     backgroundMusic: {fileID: 0}
   - guid: 1cc55e00-ccd1-47a1-9774-c54127a043ef
@@ -113,6 +105,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 1
     choices: 1
+    GoodOrBad: 0
     choiceOptions:
     - 
     nodePosition:
@@ -120,7 +113,7 @@ MonoBehaviour:
       x: 3151
       y: 267
       width: 499
-      height: 307
+      height: 305
     soundEffect: {fileID: 8300000, guid: 899d7fef1c29cd24d9ef66ba70f865d7, type: 3}
     backgroundMusic: {fileID: 0}
   - guid: bdfa56de-447b-42b4-ac61-1bc01f9ad49c
@@ -131,6 +124,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 0
     choices: 1
+    GoodOrBad: 0
     choiceOptions:
     - 
     nodePosition:
@@ -138,7 +132,7 @@ MonoBehaviour:
       x: 2549
       y: 713
       width: 499
-      height: 307
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
   - guid: 1e23bf54-9afd-47c6-ba76-942101512a55
@@ -149,6 +143,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 1
     choices: 1
+    GoodOrBad: 0
     choiceOptions:
     - 
     nodePosition:
@@ -156,6 +151,6 @@ MonoBehaviour:
       x: 3341
       y: 758
       width: 499
-      height: 307
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}

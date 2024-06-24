@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using BlackBoard;
 
 namespace VNCreator
 {
@@ -28,7 +28,6 @@ namespace VNCreator
         public Button choiceBtn2;
         public Button choiceBtn3;
         public Button choiceBtn4;
-        public Button choiceBtn5;
         [Header("End")]
         public GameObject endScreen;
         [Header("Main menu")]
@@ -38,6 +37,7 @@ namespace VNCreator
 
         void Start()
         {
+            GlobalBlackBoard.Instance.SetVariable("DisplayUI", this);
             if (nextBtn != null)
             {
                 nextBtn.onClick.AddListener(delegate { NextNode(0); }); //dit doet eigenlijk het zelfde als choice button 1
@@ -61,8 +61,6 @@ namespace VNCreator
                 choiceBtn3.onClick.AddListener(delegate { NextNode(2); });
             if (choiceBtn4 != null)
                 choiceBtn4.onClick.AddListener(delegate { NextNode(3); });
-            if (choiceBtn5 != null)
-                choiceBtn5.onClick.AddListener(delegate { NextNode(3); });
 
 
             if (endScreen = null)
@@ -70,7 +68,7 @@ namespace VNCreator
                 endScreen.SetActive(false);
             }
 
-            StartCoroutine(DisplayCurrentNode());
+            // StartCoroutine(DisplayCurrentNode());
         }
         private void Update()
         {
@@ -101,7 +99,7 @@ namespace VNCreator
             StartCoroutine(DisplayCurrentNode());
         }
 
-        IEnumerator DisplayCurrentNode()
+        public IEnumerator DisplayCurrentNode()
         {
             if (characterNameTxt != null)
             {
@@ -131,7 +129,6 @@ namespace VNCreator
                 choiceBtn2.gameObject.SetActive(false);
                 choiceBtn3.gameObject.SetActive(false);
                 choiceBtn4.gameObject.SetActive(false);
-                choiceBtn5.gameObject.SetActive(false);
                 if (previousBtn != null)
                 {
                     previousBtn.gameObject.SetActive(loadList.Count != 1);
@@ -165,17 +162,14 @@ namespace VNCreator
                 {
                     choiceBtn3.gameObject.SetActive(true);
                     choiceBtn4.gameObject.SetActive(true);
-                    choiceBtn5.gameObject.SetActive(true);
 
                     //add text
                     choiceBtn3.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[2];
                     choiceBtn4.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[3];
-                    choiceBtn5.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[4];
                 }
                 else
                 {
                     choiceBtn4.gameObject.SetActive(false);
-                    choiceBtn5.gameObject.SetActive(false);
                 }
             }
 

@@ -16,6 +16,11 @@ namespace VNCreator
 
         void Awake()
         {
+            Initialization();
+        }
+
+        public void Initialization()
+        {
             if (PlayerPrefs.GetString(GameSaveManager.currentLoadName) == string.Empty)
             {
                 currentNode = story.GetFirstNode();
@@ -27,8 +32,10 @@ namespace VNCreator
                 if (loadList == null || loadList.Count == 0)
                 {
                     currentNode = story.GetFirstNode();
-                    loadList = new List<string>();
-                    loadList.Add(currentNode.guid);
+                    loadList = new List<string>
+                    {
+                        currentNode.guid
+                    };
                 }
                 else
                 {
