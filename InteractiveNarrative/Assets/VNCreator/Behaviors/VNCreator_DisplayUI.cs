@@ -12,6 +12,7 @@ namespace VNCreator
         [Header("Text")]
         public Text characterNameTxt;
         public Text dialogueTxt;
+
         [Header("Visuals")]
         public Image characterImg;
         public Image backgroundImg;
@@ -30,13 +31,28 @@ namespace VNCreator
         public Button choiceBtn4;
         [Header("End")]
         public GameObject endScreen;
-        [Header("Main menu")]
+
+        [Header("Main menu Scene")]
         [Scene]
-        public string mainMenu, NextScene;
+        public string mainMenu;
+        [Header("NextScene")]
+        [Scene]
+        public string NextScene;
+
         private bool CanPressSpace = false;
 
         void Start()
         {
+            Initialization();
+
+            // StartCoroutine(DisplayCurrentNode());
+        }
+        public override void Initialization()
+        {
+            //run de code in de base
+            base.Initialization();
+
+            //local init
             GlobalBlackBoard.Instance.SetVariable("DisplayUI", this);
             if (nextBtn != null)
             {
@@ -54,22 +70,41 @@ namespace VNCreator
                 menuButton.onClick.AddListener(ExitGame);
 
             if (choiceBtn1 != null)
+            {
                 choiceBtn1.onClick.AddListener(delegate { NextNode(0); });
+                choiceBtn1.gameObject.SetActive(false);
+            }
             if (choiceBtn2 != null)
+            {
                 choiceBtn2.onClick.AddListener(delegate { NextNode(1); });
+                choiceBtn2.gameObject.SetActive(false);
+            }
             if (choiceBtn3 != null)
+            {
                 choiceBtn3.onClick.AddListener(delegate { NextNode(2); });
+                choiceBtn3.gameObject.SetActive(false);
+            }
             if (choiceBtn4 != null)
+            {
                 choiceBtn4.onClick.AddListener(delegate { NextNode(3); });
+                choiceBtn4.gameObject.SetActive(false);
+            }
 
+            if (dialogueTxt != null)
+            {
+                dialogueTxt.gameObject.SetActive(false);
+            }
+
+            if (characterNameTxt != null)
+                characterNameTxt.gameObject.SetActive(false);
 
             if (endScreen = null)
             {
                 endScreen.SetActive(false);
             }
 
-            // StartCoroutine(DisplayCurrentNode());
         }
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space) && CanPressSpace)
@@ -83,14 +118,12 @@ namespace VNCreator
             {
                 if (endScreen != null)
                 {
-                    endScreen.SetActive(true); //dus laat de endscreen leeg als het niet de laatste scene is
+                    // endScreen.SetActive(true); //dus laat de endscreen leeg als het niet de laatste scene is
                 }
-                else if (NextScene != null)
+                else if (NextScene.Length > 0)
                 {
-                    if (NextScene != null)
-                    {
-                        SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
-                    }
+                    Debug.Log(NextScene);
+                    SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
                 }
                 return;
             }
@@ -179,8 +212,12 @@ namespace VNCreator
                 VNCreator_SfxSource.instance.Play(currentNode.soundEffect);
 
             dialogueTxt.text = string.Empty;
-            if (GameOptions.isInstantText)
+            dialogueTxt.gameObject.SetActive(false);
+            characterNameTxt.gameObject.SetActive(true);
+            if (GameOptions.isInstantText) //als de tekst instant moet verschijnen
             {
+                characterNameTxt.gameObject.SetActive(true);
+                dialogueTxt.gameObject.SetActive(true);
                 dialogueTxt.text = currentNode.dialogueText;
             }
             else
@@ -190,6 +227,8 @@ namespace VNCreator
                 for (int i = 0; i < _chars.Length; i++)
                 {
                     fullString += _chars[i];
+                    characterNameTxt.gameObject.SetActive(true);
+                    dialogueTxt.gameObject.SetActive(true);
                     dialogueTxt.text = fullString;
                     yield return new WaitForSeconds(0.01f / GameOptions.readSpeed);
                 }

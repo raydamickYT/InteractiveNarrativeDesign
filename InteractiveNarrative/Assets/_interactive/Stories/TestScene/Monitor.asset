@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Monitor
+  m_EditorClassIdentifier: 
+  links:
+  - guid: 19776ac3-09b5-4361-8a0d-46d8da384028
+    targetGuid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
+    portId: 0
+  - guid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
+    targetGuid: dad03b58-3643-4e2f-a49c-c122ba69d673
+    portId: 1
+  - guid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
+    targetGuid: ae3d39e1-96f2-4a3c-a3e4-e371b45ee0a5
+    portId: 3
+  nodes:
+  - guid: 19776ac3-09b5-4361-8a0d-46d8da384028
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Oh, look! A monitor. I wonder what they're making.
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 618
+      y: 586
+      width: 501.33337
+      height: 306.6667
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Look like code, what could it be?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Looks like unity
+    - The desk looks dirty
+    nodePosition:
+      serializedVersion: 2
+      x: 1240
+      y: 522.6667
+      width: 501.33337
+      height: 370.6667
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: dad03b58-3643-4e2f-a49c-c122ba69d673
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Right... Looks like they're making this game.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1820.6666
+      y: 284
+      width: 501.33337
+      height: 306.66666
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: ae3d39e1-96f2-4a3c-a3e4-e371b45ee0a5
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Might be a hoarder
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1960.6666
+      y: 672
+      width: 501.33337
+      height: 306.6667
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}

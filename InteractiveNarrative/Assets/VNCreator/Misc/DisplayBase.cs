@@ -11,6 +11,8 @@ namespace VNCreator
 
         protected NodeData currentNode;
         protected bool lastNode;
+        [Range(-100, 100)]
+        public int GoodOrBadMetre = 0;
 
         protected List<string> loadList = new List<string>();
 
@@ -19,7 +21,7 @@ namespace VNCreator
             Initialization();
         }
 
-        public void Initialization()
+        public virtual void Initialization()
         {
             if (PlayerPrefs.GetString(GameSaveManager.currentLoadName) == string.Empty)
             {
@@ -50,9 +52,7 @@ namespace VNCreator
             {
                 //als er geen last node is, dan is de volgende node een end node
                 currentNode = story.GetNextNode(currentNode.guid, _choiceId);
-                Debug.Log(BehaviourMeter.GoodOrBadMetre);
-                BehaviourMeter.GoodOrBadMetre += currentNode.GoodOrBad;
-                Debug.Log(BehaviourMeter.GoodOrBadMetre);
+                GoodOrBadMetre += currentNode.GoodOrBad;
                 lastNode = currentNode.endNode;
                 loadList.Add(currentNode.guid);
             }
