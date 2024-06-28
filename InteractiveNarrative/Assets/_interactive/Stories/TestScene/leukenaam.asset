@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: leukenaam
+  m_EditorClassIdentifier: 
+  links:
+  - guid: 94cb28bc-fa8e-4916-a03e-640e4e7d68b2
+    targetGuid: c1eaf23c-5e1a-4a5d-8925-940c11536895
+    portId: 0
+  - guid: c1eaf23c-5e1a-4a5d-8925-940c11536895
+    targetGuid: 19690ce0-7efa-4583-b06c-68b7c589621b
+    portId: 0
+  - guid: 19690ce0-7efa-4583-b06c-68b7c589621b
+    targetGuid: 7f723be8-2605-44d1-8a7e-75b2a5943f4b
+    portId: 1
+  - guid: 19690ce0-7efa-4583-b06c-68b7c589621b
+    targetGuid: 6c57fc07-3601-45dc-b655-e10597e8d796
+    portId: 3
+  nodes:
+  - guid: 94cb28bc-fa8e-4916-a03e-640e4e7d68b2
+    characterSpr: {fileID: 0}
+    characterName: test
+    dialogueText: hoi
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 307
+      y: 409
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 19690ce0-7efa-4583-b06c-68b7c589621b
+    characterSpr: {fileID: 0}
+    characterName: 
+    dialogueText: 
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1732
+      y: 347
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c1eaf23c-5e1a-4a5d-8925-940c11536895
+    characterSpr: {fileID: 0}
+    characterName: 
+    dialogueText: 
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 980
+      y: 382
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7f723be8-2605-44d1-8a7e-75b2a5943f4b
+    characterSpr: {fileID: 0}
+    characterName: 
+    dialogueText: 
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2516
+      y: 122
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6c57fc07-3601-45dc-b655-e10597e8d796
+    characterSpr: {fileID: 0}
+    characterName: 
+    dialogueText: 
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2482
+      y: 611
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
