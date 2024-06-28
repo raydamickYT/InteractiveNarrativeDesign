@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using BlackBoard;
 using UnityEngine;
 
 public class ThoughtManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public ThoughtDatabase thoughtDatabase;
     void Start()
     {
-        
+        GlobalBlackBoard.Instance.StartIntrusiveThought += StartThought;
     }
 
-    // Update is called once per frame
-    void Update()
+    void StartThought()
     {
-        
+        string ctx = GlobalBlackBoard.Instance.GetVariable<string>("IntrusiveThought");
+        thoughtDatabase.GetThoughtByContext(ctx);
     }
 }

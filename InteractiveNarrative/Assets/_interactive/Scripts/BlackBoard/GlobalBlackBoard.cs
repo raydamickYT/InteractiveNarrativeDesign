@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace BlackBoard
         private static GlobalBlackBoard _instance;
 
         private Dictionary<string, object> dictionary = new Dictionary<string, object>();
+        public Action StartIntrusiveThought;
 
         public static GlobalBlackBoard Instance
         {
@@ -39,7 +41,8 @@ namespace BlackBoard
         {
             // Stel de kans in op een intrusieve gedachte (bijvoorbeeld 10%)
             float chance = 0.1f;
-            bool hasIntrusiveThought = Random.value < chance;
+            bool hasIntrusiveThought = UnityEngine.Random.value < chance;
+            StartIntrusiveThought?.Invoke();
 
             if (hasIntrusiveThought)
                 SetVariable("IntrusiveThought", Context);

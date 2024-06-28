@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using Shared;
 
 namespace VNCreator
 {
 
     [CreateAssetMenu(fileName = "New Story", menuName = "New Story")]
-    public class StoryObject : ScriptableObject, IStoryObject
+    public class StoryObject : ScriptableObject
     {
         [HideInInspector] public List<Link> links;
         [HideInInspector] public List<NodeData> nodes;
