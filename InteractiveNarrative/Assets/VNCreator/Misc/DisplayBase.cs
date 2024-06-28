@@ -45,6 +45,30 @@ namespace VNCreator
                 }
             }
         }
+        public void StartStory()
+        {
+            if (PlayerPrefs.GetString(GameSaveManager.currentLoadName) == string.Empty)
+            {
+                currentNode = story.GetFirstNode();
+                loadList.Add(currentNode.guid);
+            }
+            else
+            {
+                loadList = GameSaveManager.Load();
+                if (loadList == null || loadList.Count == 0)
+                {
+                    currentNode = story.GetFirstNode();
+                    loadList = new List<string>
+                    {
+                        currentNode.guid
+                    };
+                }
+                else
+                {
+                    currentNode = story.GetCurrentNode(loadList[loadList.Count - 1]);
+                }
+            }
+        }
 
         protected virtual void NextNode(int _choiceId)
         {

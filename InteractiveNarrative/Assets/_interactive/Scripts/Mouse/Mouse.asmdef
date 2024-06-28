@@ -1,13 +1,12 @@
 {
-    "name": "VNCreator",
-    "rootNamespace": "VNCreator",
+    "name": "Mouse",
+    "rootNamespace": "Mouse",
     "references": [
-    "BlackBoard",
-    "Mouse"
+        "BlackBoard"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": true,
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,

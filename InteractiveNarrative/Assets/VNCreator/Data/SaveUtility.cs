@@ -122,7 +122,7 @@ namespace VNCreator
                 output = _output,
                 input = _input
             };
-            Debug.Log(_temp);
+            // Debug.Log(_temp);
             _temp.input.Connect(_temp);
             _temp.output.Connect(_temp);
             _graph.Add(_temp);

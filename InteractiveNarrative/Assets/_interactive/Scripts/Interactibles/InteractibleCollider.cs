@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using BlackBoard;
+using Mouse;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using VNCreator;
@@ -26,10 +27,11 @@ public class InteractibleCollider : MonoBehaviour, IPointerDownHandler, IPointer
         {
             VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
             dispUI.story = StoryObject;
-            dispUI.Initialization();
+            dispUI.StartStory();
 
             StartCoroutine(dispUI.DisplayCurrentNode());
             PointerController.Instance.EnableInput(false);
+            PointerController.Instance.ChangeMouseToCursor();
         }
     }
 

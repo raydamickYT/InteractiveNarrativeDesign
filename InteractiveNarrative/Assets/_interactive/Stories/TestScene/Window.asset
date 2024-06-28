@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
-  m_Name: Monitor
+  m_Name: Window
   m_EditorClassIdentifier: 
   links:
-  - guid: 19776ac3-09b5-4361-8a0d-46d8da384028
-    targetGuid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
+  - guid: f7ae8607-c4d3-4964-8e2d-ef38d5c854ec
+    targetGuid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
     portId: 0
-  - guid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
-    targetGuid: dad03b58-3643-4e2f-a49c-c122ba69d673
+  - guid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
+    targetGuid: 126430a0-885d-4a34-b76f-a8fd73064ee0
     portId: 1
-  - guid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
-    targetGuid: ae3d39e1-96f2-4a3c-a3e4-e371b45ee0a5
+  - guid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
+    targetGuid: 27fb12ee-fdd1-4e45-91e8-ae55d7482906
     portId: 3
   nodes:
-  - guid: 19776ac3-09b5-4361-8a0d-46d8da384028
+  - guid: f7ae8607-c4d3-4964-8e2d-ef38d5c854ec
     characterSpr: {fileID: 0}
-    characterName: 'Greg:'
-    dialogueText: Oh, look! A monitor. I wonder what they're making.
+    characterName: Greg
+    dialogueText: ...
     backgroundSpr: {fileID: 0}
     startNode: 1
     endNode: 0
@@ -36,36 +36,36 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 618
-      y: 586
+      x: 325
+      y: 152
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 60adc06d-2803-4e0c-89ae-f089cdfb253c
+  - guid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
     characterSpr: {fileID: 0}
     characterName: Greg
-    dialogueText: Look like code, what could it be?
+    dialogueText: Wow It's bright outside.
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 0
     choices: 2
     GoodOrBad: 0
     choiceOptions:
-    - Looks like unity
-    - The desk looks dirty
+    - Want to go Outside?
+    - Looks hot, let's stay here
     nodePosition:
       serializedVersion: 2
-      x: 1240
-      y: 523
+      x: 937
+      y: 116
       width: 499
       height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: dad03b58-3643-4e2f-a49c-c122ba69d673
+  - guid: 126430a0-885d-4a34-b76f-a8fd73064ee0
     characterSpr: {fileID: 0}
     characterName: Greg
-    dialogueText: Right... Looks like they're making this game.
+    dialogueText: Nah I'm good. I'd rather look around some more
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 1
@@ -75,16 +75,16 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 1821
-      y: 284
+      x: 1575
+      y: -175
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: ae3d39e1-96f2-4a3c-a3e4-e371b45ee0a5
+  - guid: 27fb12ee-fdd1-4e45-91e8-ae55d7482906
     characterSpr: {fileID: 0}
     characterName: Greg
-    dialogueText: Might be a hoarder
+    dialogueText: Agreed
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 1
@@ -94,8 +94,8 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 1961
-      y: 672
+      x: 1586
+      y: 248
       width: 499
       height: 305
     soundEffect: {fileID: 0}

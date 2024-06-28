@@ -1,9 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using BlackBoard;
+using Mouse;
 
 namespace VNCreator
 {
@@ -39,11 +39,12 @@ namespace VNCreator
         [Scene]
         public string NextScene;
 
-        private bool CanPressSpace = false;
+        private bool CanPressSpace = false; //voor het geval er choices zijn, dan mag je die niet
+        private bool isDisplayingText = false; // Vlag om bij te houden of tekst wordt weergegeven
+
 
         void Start()
         {
-            Initialization();
 
             // StartCoroutine(DisplayCurrentNode());
         }
@@ -54,6 +55,8 @@ namespace VNCreator
 
             //local init
             GlobalBlackBoard.Instance.SetVariable("DisplayUI", this);
+
+
             if (nextBtn != null)
             {
                 nextBtn.onClick.AddListener(delegate { NextNode(0); }); //dit doet eigenlijk het zelfde als choice button 1
@@ -106,6 +109,8 @@ namespace VNCreator
         }
         private void Reset()
         {
+            PointerController.Instance.EnableInput(true);
+            lastNode = false;
             if (dialogueTxt != null)
             {
                 dialogueTxt.gameObject.SetActive(false);
@@ -122,38 +127,48 @@ namespace VNCreator
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space) && CanPressSpace)
+            if (currentNode != null)
             {
-                if (!lastNode)
+            if (Input.GetKeyDown(KeyCode.Space) && CanPressSpace)
                 {
-                    NextNode(0); //doe inprincipe hetzelfde als de ui button, maar dit is wat netter.
-                }
-                else
-                {
-                    Reset();
-                    lastNode = false;
+                    HandleSpaceKeyPress();
                 }
             }
         }
+
+        private void HandleSpaceKeyPress()
+        {
+            if (isDisplayingText)
+            {
+                StopDisplayingText();
+                return; // Stop hier om niet door te gaan naar de volgende node
+            }
+
+            if (!lastNode)
+            {
+                NextNode(0);
+            }
+            else
+            {
+                Reset();
+            }
+        }
+
+        private void StopDisplayingText()
+        {
+            StopCoroutine(displayTextCoroutine);
+            dialogueTxt.text = currentNode.dialogueText;
+            isDisplayingText = false;
+        }
+
         protected override void NextNode(int _choiceId)
         {
+            Debug.Log(_choiceId);
             base.NextNode(_choiceId);
             StartCoroutine(DisplayCurrentNode());
-            // if (lastNode)
-            // {
-            //     // if (endScreen != null)
-            //     // {
-            //     //     // endScreen.SetActive(true); //dus laat de endscreen leeg als het niet de laatste scene is
-            //     // }
-            //     // else if (NextScene.Length > 0)
-            //     // {
-            //     //     Debug.Log(NextScene);
-            //     //     SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
-            //     // }
-            //     // return;
-
-            // }
         }
+
+        private Coroutine displayTextCoroutine; // Coroutine referentie
 
         public IEnumerator DisplayCurrentNode()
         {
@@ -197,8 +212,10 @@ namespace VNCreator
             }
             else
             {
-                yield return DisplayDialogueText(currentNode.dialogueText);
+                displayTextCoroutine = StartCoroutine(DisplayDialogueText(currentNode.dialogueText));
+                yield return displayTextCoroutine;
             }
+
         }
 
         private void HandleChoices()
@@ -207,10 +224,11 @@ namespace VNCreator
 
             nextBtn?.gameObject.SetActive(hasSingleChoice);
             CanPressSpace = hasSingleChoice;
-            choiceBtn1.gameObject.SetActive(!hasSingleChoice);
-            choiceBtn2.gameObject.SetActive(!hasSingleChoice);
-            choiceBtn3.gameObject.SetActive(!hasSingleChoice);
-            choiceBtn4.gameObject.SetActive(!hasSingleChoice);
+
+            choiceBtn1.gameObject.SetActive(false);
+            choiceBtn2.gameObject.SetActive(false);
+            choiceBtn3.gameObject.SetActive(false);
+            choiceBtn4.gameObject.SetActive(false);
 
             if (hasSingleChoice)
             {
@@ -218,28 +236,32 @@ namespace VNCreator
             }
             else
             {
-                SetChoiceButton(choiceBtn1, currentNode.choiceOptions[0]);
-                SetChoiceButton(choiceBtn2, currentNode.choiceOptions[1]);
+                SetChoiceButton(choiceBtn1, currentNode.choiceOptions[0], true);
+                SetChoiceButton(choiceBtn2, currentNode.choiceOptions[1], true);
 
                 if (currentNode.choices >= 3)
                 {
-                    SetChoiceButton(choiceBtn3, currentNode.choiceOptions[2]);
+                    SetChoiceButton(choiceBtn3, currentNode.choiceOptions[2], true);
                 }
                 if (currentNode.choices == 4)
                 {
-                    SetChoiceButton(choiceBtn4, currentNode.choiceOptions[3]);
+                    SetChoiceButton(choiceBtn4, currentNode.choiceOptions[3], true);
                 }
             }
         }
 
-        private void SetChoiceButton(Button button, string text)
+        private void SetChoiceButton(Button button, string text, bool active)
         {
-            button.gameObject.SetActive(true);
-            button.transform.GetChild(0).GetComponent<Text>().text = text;
+            button.gameObject.SetActive(active);
+            if (active)
+            {
+                button.transform.GetChild(0).GetComponent<Text>().text = text;
+            }
         }
 
         private IEnumerator DisplayDialogueText(string dialogueText)
         {
+            isDisplayingText = true;
             char[] chars = dialogueText.ToCharArray();
             string fullString = string.Empty;
 
@@ -251,6 +273,7 @@ namespace VNCreator
                 dialogueTxt.text = fullString;
                 yield return new WaitForSeconds(0.01f / GameOptions.readSpeed);
             }
+            isDisplayingText = false;
         }
 
 
@@ -262,7 +285,8 @@ namespace VNCreator
 
         void ExitGame()
         {
-            SceneManager.LoadScene(mainMenu, LoadSceneMode.Single);
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene(mainMenu, LoadSceneMode.Single);
         }
 
     }
