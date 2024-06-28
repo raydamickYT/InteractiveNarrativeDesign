@@ -7,6 +7,7 @@ using UnityEditor.Experimental.GraphView;
 #endif
 using UnityEngine;
 using UnityEngine.UIElements;
+using Shared;
 
 namespace VNCreator.Editors.Graph
 {
