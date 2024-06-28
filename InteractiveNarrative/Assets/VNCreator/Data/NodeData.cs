@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Shared
+namespace VNCreator
 {
     [Serializable]
     public class NodeData

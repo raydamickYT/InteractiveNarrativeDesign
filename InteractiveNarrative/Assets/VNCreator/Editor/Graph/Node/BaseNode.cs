@@ -7,7 +7,6 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using System;
-using Shared;
 #if UNITY_EDITOR
 using UnityEditor.UIElements;
 #endif

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using BlackBoard;
 using UnityEngine;
-using Shared;
 
 namespace VNCreator
 {
