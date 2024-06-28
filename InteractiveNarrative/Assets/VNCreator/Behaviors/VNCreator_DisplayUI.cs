@@ -104,32 +104,55 @@ namespace VNCreator
             }
 
         }
+        private void Reset()
+        {
+            if (dialogueTxt != null)
+            {
+                dialogueTxt.gameObject.SetActive(false);
+            }
+
+            if (characterNameTxt != null)
+                characterNameTxt.gameObject.SetActive(false);
+
+            if (endScreen = null)
+            {
+                endScreen.SetActive(false);
+            }
+        }
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space) && CanPressSpace)
             {
-                NextNode(0); //doe inprincipe hetzelfde als de ui button, maar dit is wat netter.
+                if (!lastNode)
+                {
+                    NextNode(0); //doe inprincipe hetzelfde als de ui button, maar dit is wat netter.
+                }
+                else
+                {
+                    Reset();
+                    lastNode = false;
+                }
             }
         }
         protected override void NextNode(int _choiceId)
         {
-            if (lastNode)
-            {
-                if (endScreen != null)
-                {
-                    // endScreen.SetActive(true); //dus laat de endscreen leeg als het niet de laatste scene is
-                }
-                else if (NextScene.Length > 0)
-                {
-                    Debug.Log(NextScene);
-                    SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
-                }
-                return;
-            }
-
             base.NextNode(_choiceId);
             StartCoroutine(DisplayCurrentNode());
+            // if (lastNode)
+            // {
+            //     // if (endScreen != null)
+            //     // {
+            //     //     // endScreen.SetActive(true); //dus laat de endscreen leeg als het niet de laatste scene is
+            //     // }
+            //     // else if (NextScene.Length > 0)
+            //     // {
+            //     //     Debug.Log(NextScene);
+            //     //     SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
+            //     // }
+            //     // return;
+
+            // }
         }
 
         public IEnumerator DisplayCurrentNode()
@@ -148,92 +171,88 @@ namespace VNCreator
                 characterImg.color = new Color(1, 1, 1, 0);
             }
             if (currentNode.backgroundSpr != null)
+            {
                 backgroundImg.sprite = currentNode.backgroundSpr;
-
-            if (currentNode.choices <= 1)
-            {
-                if (nextBtn != null)
-                {
-                    nextBtn.gameObject.SetActive(true);
-                    CanPressSpace = true;
-                }
-
-                choiceBtn1.gameObject.SetActive(false);
-                choiceBtn2.gameObject.SetActive(false);
-                choiceBtn3.gameObject.SetActive(false);
-                choiceBtn4.gameObject.SetActive(false);
-                if (previousBtn != null)
-                {
-                    previousBtn.gameObject.SetActive(loadList.Count != 1);
-                }
             }
-            else
-            {
-                if (nextBtn != null)
-                {
-                    nextBtn.gameObject.SetActive(false);
-                    CanPressSpace = false;
-                }
 
-                choiceBtn1.gameObject.SetActive(true);
-                choiceBtn1.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[0];
-
-                choiceBtn2.gameObject.SetActive(true);
-                choiceBtn2.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[1];
-
-                if (currentNode.choices == 3)
-                {
-                    choiceBtn3.gameObject.SetActive(true);
-                    choiceBtn3.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[2];
-                }
-                else
-                {
-                    choiceBtn3.gameObject.SetActive(false);
-                }
-
-                if (currentNode.choices > 3)
-                {
-                    choiceBtn3.gameObject.SetActive(true);
-                    choiceBtn4.gameObject.SetActive(true);
-
-                    //add text
-                    choiceBtn3.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[2];
-                    choiceBtn4.transform.GetChild(0).GetComponent<Text>().text = currentNode.choiceOptions[3];
-                }
-                else
-                {
-                    choiceBtn4.gameObject.SetActive(false);
-                }
-            }
+            HandleChoices();
 
             if (currentNode.backgroundMusic != null)
+            {
                 VNCreator_MusicSource.instance.Play(currentNode.backgroundMusic);
+            }
             if (currentNode.soundEffect != null)
+            {
                 VNCreator_SfxSource.instance.Play(currentNode.soundEffect);
+            }
 
             dialogueTxt.text = string.Empty;
             dialogueTxt.gameObject.SetActive(false);
             characterNameTxt.gameObject.SetActive(true);
-            if (GameOptions.isInstantText) //als de tekst instant moet verschijnen
+
+            if (GameOptions.isInstantText)
             {
-                characterNameTxt.gameObject.SetActive(true);
                 dialogueTxt.gameObject.SetActive(true);
                 dialogueTxt.text = currentNode.dialogueText;
             }
             else
             {
-                char[] _chars = currentNode.dialogueText.ToCharArray();
-                string fullString = string.Empty;
-                for (int i = 0; i < _chars.Length; i++)
+                yield return DisplayDialogueText(currentNode.dialogueText);
+            }
+        }
+
+        private void HandleChoices()
+        {
+            bool hasSingleChoice = currentNode.choices <= 1;
+
+            nextBtn?.gameObject.SetActive(hasSingleChoice);
+            CanPressSpace = hasSingleChoice;
+            choiceBtn1.gameObject.SetActive(!hasSingleChoice);
+            choiceBtn2.gameObject.SetActive(!hasSingleChoice);
+            choiceBtn3.gameObject.SetActive(!hasSingleChoice);
+            choiceBtn4.gameObject.SetActive(!hasSingleChoice);
+
+            if (hasSingleChoice)
+            {
+                previousBtn?.gameObject.SetActive(loadList.Count != 1);
+            }
+            else
+            {
+                SetChoiceButton(choiceBtn1, currentNode.choiceOptions[0]);
+                SetChoiceButton(choiceBtn2, currentNode.choiceOptions[1]);
+
+                if (currentNode.choices >= 3)
                 {
-                    fullString += _chars[i];
-                    characterNameTxt.gameObject.SetActive(true);
-                    dialogueTxt.gameObject.SetActive(true);
-                    dialogueTxt.text = fullString;
-                    yield return new WaitForSeconds(0.01f / GameOptions.readSpeed);
+                    SetChoiceButton(choiceBtn3, currentNode.choiceOptions[2]);
+                }
+                if (currentNode.choices == 4)
+                {
+                    SetChoiceButton(choiceBtn4, currentNode.choiceOptions[3]);
                 }
             }
         }
+
+        private void SetChoiceButton(Button button, string text)
+        {
+            button.gameObject.SetActive(true);
+            button.transform.GetChild(0).GetComponent<Text>().text = text;
+        }
+
+        private IEnumerator DisplayDialogueText(string dialogueText)
+        {
+            char[] chars = dialogueText.ToCharArray();
+            string fullString = string.Empty;
+
+            for (int i = 0; i < chars.Length; i++)
+            {
+                fullString += chars[i];
+                characterNameTxt.gameObject.SetActive(true);
+                dialogueTxt.gameObject.SetActive(true);
+                dialogueTxt.text = fullString;
+                yield return new WaitForSeconds(0.01f / GameOptions.readSpeed);
+            }
+        }
+
 
         protected override void Previous()
         {
@@ -245,5 +264,6 @@ namespace VNCreator
         {
             SceneManager.LoadScene(mainMenu, LoadSceneMode.Single);
         }
+
     }
 }
