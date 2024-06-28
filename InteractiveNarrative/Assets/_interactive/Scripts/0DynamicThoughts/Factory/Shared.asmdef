@@ -1,14 +1,12 @@
 {
-    "name": "VNCreator",
-    "rootNamespace": "VNCreator",
+    "name": "Shared",
+    "rootNamespace": "Shared",
     "references": [
-    "BlackBoard",
-    "Mouse",
-    "Shared"
+
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": true,
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,

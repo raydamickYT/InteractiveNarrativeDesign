@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace VNCreator
+namespace Shared
 {
     [System.Serializable]
     public class Link

@@ -8,6 +8,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using VNCreator.Editors.Graph;
+using Shared;
 
 namespace VNCreator
 {
@@ -76,7 +77,7 @@ namespace VNCreator
         {
             List<BaseNode> _nodes = _graph.nodes.ToList().Cast<BaseNode>().ToList();
 
-            foreach (Link _link in _story.links)
+            foreach (Link _link in _story.Links)
             {
                 BaseNode _outputNode = _nodes.FirstOrDefault(x => x.nodeData.guid == _link.guid);
                 BaseNode _inputNode = _nodes.FirstOrDefault(x => x.nodeData.guid == _link.targetGuid);
