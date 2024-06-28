@@ -8,7 +8,7 @@ namespace BlackBoard
     public class GlobalBlackBoard
     {
         private static GlobalBlackBoard _instance;
-    
+
         private Dictionary<string, object> dictionary = new Dictionary<string, object>();
 
         public static GlobalBlackBoard Instance
@@ -37,13 +37,14 @@ namespace BlackBoard
             dictionary[name] = variable;
         }
 
-        public void CheckForIntrusiveThoughts(NodeData storyObject)
+        public void CheckForIntrusiveThoughts(string Context)
         {
             // Stel de kans in op een intrusieve gedachte (bijvoorbeeld 10%)
             float chance = 0.1f;
             bool hasIntrusiveThought = Random.value < chance;
 
-            SetVariable("IntrusiveThought", hasIntrusiveThought);
+            if (hasIntrusiveThought)
+                SetVariable("IntrusiveThought", Context);
         }
     }
 }
