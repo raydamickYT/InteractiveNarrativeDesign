@@ -6,6 +6,7 @@ namespace BlackBoard
     public class GlobalBlackBoard
     {
         private static GlobalBlackBoard _instance;
+
         private Dictionary<string, object> dictionary = new Dictionary<string, object>();
 
         public static GlobalBlackBoard Instance
@@ -26,12 +27,22 @@ namespace BlackBoard
             {
                 return (T)dictionary[name];
             }
-            return default(T);
+            return default;
         }
         public void SetVariable<T>(string name, T variable)
         {
             // UnityEngine.Debug.Log(name + variable.ToString());
             dictionary[name] = variable;
+        }
+
+        public void CheckForIntrusiveThoughts(string Context)
+        {
+            // Stel de kans in op een intrusieve gedachte (bijvoorbeeld 10%)
+            float chance = 0.1f;
+            bool hasIntrusiveThought = Random.value < chance;
+
+            if (hasIntrusiveThought)
+                SetVariable("IntrusiveThought", Context);
         }
     }
 }

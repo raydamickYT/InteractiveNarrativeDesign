@@ -2,6 +2,7 @@
     "name": "BlackBoard",
     "rootNamespace": "BlackBoard",
     "references": [
+    "Shared"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

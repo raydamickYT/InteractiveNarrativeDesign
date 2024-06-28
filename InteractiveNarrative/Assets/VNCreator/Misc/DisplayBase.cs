@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using BlackBoard;
 using UnityEngine;
 
 namespace VNCreator
@@ -77,6 +78,7 @@ namespace VNCreator
                 //als er geen last node is, dan is de volgende node een end node
                 currentNode = story.GetNextNode(currentNode.guid, _choiceId);
                 GoodOrBadMetre += currentNode.GoodOrBad;
+                GlobalBlackBoard.Instance.CheckForIntrusiveThoughts(story.Context);
                 lastNode = currentNode.endNode;
                 loadList.Add(currentNode.guid);
             }

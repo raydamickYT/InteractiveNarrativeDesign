@@ -3,7 +3,8 @@
     "rootNamespace": "VNCreator",
     "references": [
     "BlackBoard",
-    "Mouse"
+    "Mouse",
+    "Shared"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
