@@ -30,46 +30,47 @@ public class ThoughtManager : MonoBehaviour
     }
 
     // Methode om een gedachte op te halen op basis van een specifieke context
-        public void GetThoughtByContext(string context)
+    public void GetThoughtByContext(string context)
+    {
+        List<StoryObject> matchingStoryObjects = new List<StoryObject>();
+
+        // Verzamel alle StoryObjects die overeenkomen met de context
+        foreach (var storyObject in thoughtDatabase.storyObjects)
         {
-            List<StoryObject> matchingStoryObjects = new List<StoryObject>();
-
-            // Verzamel alle StoryObjects die overeenkomen met de context
-            foreach (var storyObject in thoughtDatabase.storyObjects)
+            if (storyObject.context == context)
             {
-                if (storyObject.context == context)
-                {
-                    matchingStoryObjects.Add(storyObject);
-                }
+                matchingStoryObjects.Add(storyObject);
             }
+        }
 
-            // Als er geen overeenkomende StoryObjects zijn, voer een fallback actie uit
-            if (matchingStoryObjects.Count == 0)
-            {
-                Debug.LogWarning($"Geen gedachten gevonden voor context: {context}");
-                var str = GlobalBlackBoard.Instance.ThoughtContextStr;
-                GlobalBlackBoard.Instance.SetVariable<string>(str, null);
-                return;
-            }
-
-            // Kies een willekeurige StoryObject uit de lijst
-            int randomIndex = UnityEngine.Random.Range(0, matchingStoryObjects.Count);
-            StoryObject selectedStoryObject = matchingStoryObjects[randomIndex];
-
-            // Voer de acties uit voor het geselecteerde StoryObject
-            VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
-            if (dispUI != null)
-            {
-                GlobalBlackBoard.Instance.SetVariable("IsThinking", true); //laat weten dat er een actief is.
-
-                dispUI.story = selectedStoryObject;
-                dispUI.StartStory();
-                StartCoroutine(dispUI.DisplayCurrentNode());
-            }
-
-            GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
-            GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
-
+        // Als er geen overeenkomende StoryObjects zijn, voer een fallback actie uit
+        if (matchingStoryObjects.Count == 0)
+        {
+            Debug.LogWarning($"Geen gedachten gevonden voor context: {context}");
+            var str = GlobalBlackBoard.Instance.ThoughtContextStr;
+            GlobalBlackBoard.Instance.SetVariable<string>(str, null);
             return;
         }
+
+        // Kies een willekeurige StoryObject uit de lijst
+        int randomIndex = Random.Range(0, matchingStoryObjects.Count);
+        StoryObject selectedStoryObject = matchingStoryObjects[randomIndex];
+        thoughtDatabase.storyObjects.Remove(selectedStoryObject); //verwijder hem daarna uit de lijst zodat hij maar een keer gecalled kan worden.
+
+        // Voer de acties uit voor het geselecteerde StoryObject
+        VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
+        if (dispUI != null)
+        {
+            GlobalBlackBoard.Instance.SetVariable("IsThinking", true); //laat weten dat er een actief is.
+
+            dispUI.story = selectedStoryObject;
+            dispUI.StartStory();
+            StartCoroutine(dispUI.DisplayCurrentNode());
+        }
+
+        GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
+        GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
+
+        return;
+    }
 }
