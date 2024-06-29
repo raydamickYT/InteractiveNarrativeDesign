@@ -174,6 +174,8 @@ namespace VNCreator
 
         public IEnumerator DisplayCurrentNode()
         {
+            lastNode = currentNode.endNode;
+
             if (characterNameTxt != null)
             {
                 characterNameTxt.text = currentNode.characterName;

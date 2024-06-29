@@ -73,14 +73,16 @@ namespace VNCreator
 
         protected virtual void NextNode(int _choiceId)
         {
+
             if (!lastNode)
             {
                 //als er geen last node is, dan is de volgende node een end node
                 currentNode = story.GetNextNode(currentNode.guid, _choiceId);
                 GoodOrBadMetre += currentNode.GoodOrBad;
                 GlobalBlackBoard.Instance.CheckForIntrusiveThoughts(story.context);
-                // Debug.Log("Context2" + story.context);
+
                 lastNode = currentNode.endNode;
+                // Debug.Log("Context2" + story.context);
                 loadList.Add(currentNode.guid);
             }
         }

@@ -8,15 +8,21 @@ using VNCreator;
 
 public class InteractibleCollider : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    public StoryObject StoryObject;
+    private bool hasBeenClicked;
+    public StoryObject MainStoryObject, SideStoryObject;
 
     void Awake()
     {
         PointerController.Instance.LoadSprites("MouseSprites");
         // PointerController.Instance.LoadSprites("MouseSprites/MouseHand");
-        if (StoryObject == null)
+        if (MainStoryObject == null)
         {
-            Debug.LogError($"StoryObject not assigned in gameobject: \"{transform.gameObject.name}.\". ");
+            Debug.LogError($"MainStoryObject not assigned in gameobject: \"{transform.gameObject.name}.\". ");
+        }
+
+        if (SideStoryObject == null)
+        {
+            Debug.LogError($"SideStoryObject not assigned in gameobject: \"{transform.gameObject.name}.\". ");
         }
     }
 
@@ -25,21 +31,37 @@ public class InteractibleCollider : MonoBehaviour, IPointerDownHandler, IPointer
         bool canClick = PointerController.Instance.MouseInputEnabled;
         if (canClick)
         {
-            VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
-            dispUI.story = StoryObject;
-            dispUI.StartStory();
+            if (!hasBeenClicked)
+            {
+                hasBeenClicked = true;
+                VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
+                dispUI.story = MainStoryObject;
+                dispUI.StartStory();
 
-            StartCoroutine(dispUI.DisplayCurrentNode());
+                StartCoroutine(dispUI.DisplayCurrentNode());
 
-            GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
+                GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
 
-            GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke(); 
+                GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
+            }
+            else
+            {
+                hasBeenClicked = true;
+                VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
+                dispUI.story = SideStoryObject;
+                dispUI.StartStory();
+
+                StartCoroutine(dispUI.DisplayCurrentNode());
+
+                GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
+
+                GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
+            }
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // throw new System.NotImplementedException();
         if (PointerController.Instance.MouseInputEnabled)
         {
             PointerController.Instance.ChangeMouseToHand();
