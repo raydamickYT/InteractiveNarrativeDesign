@@ -7,8 +7,8 @@ using VNCreator;
 public class ThoughtManager : MonoBehaviour
 {
     public static ThoughtManager instance;
-
     public ThoughtDatabase thoughtDatabase;
+    public ThoughtUIManager thoughtUIManager;
     void Start()
     {
         GlobalBlackBoard.Instance.StartIntrusiveThoughtAction += StartThought;
@@ -21,6 +21,10 @@ public class ThoughtManager : MonoBehaviour
         {
             Debug.LogWarning($"{thoughtDatabase} is empty in {gameObject.name}.");
         }
+
+        if (thoughtUIManager == null)
+            Debug.LogError($"{thoughtUIManager} is empty in {gameObject.name}.");
+
     }
 
     void StartThought()
@@ -66,6 +70,8 @@ public class ThoughtManager : MonoBehaviour
             dispUI.story = selectedStoryObject;
             dispUI.StartStory();
             StartCoroutine(dispUI.DisplayCurrentNode());
+            thoughtUIManager.EnableUI();
+
         }
 
         GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
