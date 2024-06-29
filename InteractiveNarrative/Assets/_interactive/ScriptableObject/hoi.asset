@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
-  m_Name: THought1
+  m_Script: {fileID: 11500000, guid: 05da218a992294e4f92669d72fc254b6, type: 3}
+  m_Name: hoi
   m_EditorClassIdentifier: 
-  links: []
-  nodes: []
-  context: 
+  storyObjects:
+  - {fileID: 11400000, guid: 7fdeba8e6448f974b9797d71f4d668b8, type: 2}

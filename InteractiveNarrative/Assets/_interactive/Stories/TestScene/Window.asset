@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
   m_Name: Window
   m_EditorClassIdentifier: 
-  links:
-  - guid: f7ae8607-c4d3-4964-8e2d-ef38d5c854ec
-    targetGuid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
-    portId: 0
-  - guid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
-    targetGuid: 126430a0-885d-4a34-b76f-a8fd73064ee0
-    portId: 1
-  - guid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
-    targetGuid: 27fb12ee-fdd1-4e45-91e8-ae55d7482906
+  Links:
+  - guid: 7aed54b9-4e31-48e3-a889-598868fa94d7
+    targetGuid: 3a2be543-c4e8-41b8-8217-771fc6461c84
     portId: 3
+  - guid: 7aed54b9-4e31-48e3-a889-598868fa94d7
+    targetGuid: 9c36d058-b40c-426f-83a4-7475337b20fc
+    portId: 1
+  - guid: 3a195e77-78e5-43c5-97c3-64709793b633
+    targetGuid: 7aed54b9-4e31-48e3-a889-598868fa94d7
+    portId: 0
   nodes:
-  - guid: f7ae8607-c4d3-4964-8e2d-ef38d5c854ec
+  - guid: 3a195e77-78e5-43c5-97c3-64709793b633
     characterSpr: {fileID: 0}
     characterName: Greg
-    dialogueText: ...
+    dialogueText: Man It's bright outside
     backgroundSpr: {fileID: 0}
     startNode: 1
     endNode: 0
@@ -36,68 +36,68 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 325
-      y: 152
+      x: 448
+      y: 419
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 32a3bbba-6d4e-4505-99af-4ee0d5b7be5e
+  - guid: 9c36d058-b40c-426f-83a4-7475337b20fc
     characterSpr: {fileID: 0}
-    characterName: Greg
-    dialogueText: Wow It's bright outside.
+    characterName: 'Greg:'
+    dialogueText: Yeah looks way too hot out there.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1638
+      y: 165
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3a2be543-c4e8-41b8-8217-771fc6461c84
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I'd Rather not.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1771
+      y: 657
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7aed54b9-4e31-48e3-a889-598868fa94d7
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Should we go out?
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 0
     choices: 2
     GoodOrBad: 0
     choiceOptions:
-    - Want to go Outside?
-    - Looks hot, let's stay here
+    - Nah
+    - Yes, I'm bored
     nodePosition:
       serializedVersion: 2
-      x: 937
-      y: 116
+      x: 1077
+      y: 442
       width: 499
       height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 126430a0-885d-4a34-b76f-a8fd73064ee0
-    characterSpr: {fileID: 0}
-    characterName: Greg
-    dialogueText: Nah I'm good. I'd rather look around some more
-    backgroundSpr: {fileID: 0}
-    startNode: 0
-    endNode: 1
-    choices: 1
-    GoodOrBad: 0
-    choiceOptions:
-    - 
-    nodePosition:
-      serializedVersion: 2
-      x: 1575
-      y: -175
-      width: 499
-      height: 305
-    soundEffect: {fileID: 0}
-    backgroundMusic: {fileID: 0}
-  - guid: 27fb12ee-fdd1-4e45-91e8-ae55d7482906
-    characterSpr: {fileID: 0}
-    characterName: Greg
-    dialogueText: Agreed
-    backgroundSpr: {fileID: 0}
-    startNode: 0
-    endNode: 1
-    choices: 1
-    GoodOrBad: 0
-    choiceOptions:
-    - 
-    nodePosition:
-      serializedVersion: 2
-      x: 1586
-      y: 248
-      width: 499
-      height: 305
-    soundEffect: {fileID: 0}
-    backgroundMusic: {fileID: 0}
-  Context: 
+  context: 

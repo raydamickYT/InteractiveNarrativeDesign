@@ -8,8 +8,11 @@ namespace BlackBoard
     {
         private static GlobalBlackBoard _instance;
 
+        public string ThoughtContextStr = "IntrusiveThoughtContext";
+
         private Dictionary<string, object> dictionary = new Dictionary<string, object>();
-        public Action StartIntrusiveThought;
+        public Action StartIntrusiveThoughtAction, ChangeMouseToHandAction;
+        public Action<bool> EnableInputAction;
 
         public static GlobalBlackBoard Instance
         {
@@ -21,6 +24,9 @@ namespace BlackBoard
                 }
                 return _instance;
             }
+        }
+        public GlobalBlackBoard(){
+            SetVariable("IsThinking", false);
         }
 
         public T GetVariable<T>(string name)
@@ -42,10 +48,20 @@ namespace BlackBoard
             // Stel de kans in op een intrusieve gedachte (bijvoorbeeld 10%)
             float chance = 0.1f;
             bool hasIntrusiveThought = UnityEngine.Random.value < chance;
-            StartIntrusiveThought?.Invoke();
 
-            if (hasIntrusiveThought)
-                SetVariable("IntrusiveThought", Context);
+            bool isThinking = GetVariable<bool>("IsThinking");
+            if (hasIntrusiveThought && !isThinking)
+            {
+                SetVariable(ThoughtContextStr, Context);
+                StartIntrusiveThoughtAction?.Invoke();
+            }
+        }
+
+        ~GlobalBlackBoard()
+        {
+            EnableInputAction = null;
+            StartIntrusiveThoughtAction = null;
+            ChangeMouseToHandAction = null;
         }
     }
 }

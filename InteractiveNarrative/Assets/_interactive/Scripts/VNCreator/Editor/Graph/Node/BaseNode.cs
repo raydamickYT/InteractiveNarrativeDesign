@@ -34,10 +34,10 @@ namespace VNCreator
         {
             node = _node;
 
-            VisualTreeAsset tree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/VNCreator/Editor/Graph/Node/BaseNodeTemplate.uxml");
+            VisualTreeAsset tree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/_interactive/Scripts/VNCreator/Editor/Graph/Node/BaseNodeTemplate.uxml");
             tree.CloneTree(this);
 
-            styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/VNCreator/Editor/Graph/Node/BaseNodeStyle.uss"));
+            styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/_interactive/Scripts/VNCreator/Editor/Graph/Node/BaseNodeStyle.uss"));
 
             VisualElement charSprDisplay = this.Query<VisualElement>("Char_Img");
             charSprDisplay.style.backgroundImage = node.nodeData.characterSpr ? node.nodeData.characterSpr.texture : null;

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using BlackBoard;
 using UnityEngine;
 
 namespace Mouse
@@ -30,6 +31,9 @@ namespace Mouse
 
         private void Initialization()
         {
+            GlobalBlackBoard.Instance.EnableInputAction += EnableInput;
+            GlobalBlackBoard.Instance.ChangeMouseToHandAction += ChangeMouseToCursor;
+            
             handSprite = GetSpriteByName("MouseHand");
             cursorSprite = GetSpriteByName("MouseCursor");
 

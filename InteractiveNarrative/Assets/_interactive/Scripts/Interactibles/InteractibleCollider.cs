@@ -30,8 +30,10 @@ public class InteractibleCollider : MonoBehaviour, IPointerDownHandler, IPointer
             dispUI.StartStory();
 
             StartCoroutine(dispUI.DisplayCurrentNode());
-            PointerController.Instance.EnableInput(false);
-            PointerController.Instance.ChangeMouseToCursor();
+
+            GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
+
+            GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke(); 
         }
     }
 

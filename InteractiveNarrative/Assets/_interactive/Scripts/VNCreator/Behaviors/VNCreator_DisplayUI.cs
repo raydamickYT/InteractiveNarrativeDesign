@@ -109,6 +109,7 @@ namespace VNCreator
         }
         private void Reset()
         {
+            GlobalBlackBoard.Instance.SetVariable("IsThinking", false); //laat weten dat er weer een nieuwe sequence begonnen is.
             PointerController.Instance.EnableInput(true);
             lastNode = false;
             if (dialogueTxt != null)
@@ -163,7 +164,8 @@ namespace VNCreator
 
         protected override void NextNode(int _choiceId)
         {
-            Debug.Log(_choiceId);
+            // Debug.Log(_choiceId);
+            // ThoughtManager
             base.NextNode(_choiceId);
             StartCoroutine(DisplayCurrentNode());
         }

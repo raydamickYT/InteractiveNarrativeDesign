@@ -7,13 +7,10 @@ namespace VNCreator
     [CreateAssetMenu(fileName = "New Story", menuName = "New Story")]
     public class StoryObject : ScriptableObject
     {
-        [HideInInspector] public List<Link> links;
+        [HideInInspector] public List<Link> Links;
         [HideInInspector] public List<NodeData> nodes;
         public string context;
 
-        public List<Link> Links { get => links; set => links = value; }
-        public List<NodeData> Nodes { get => nodes; set => nodes = value; }
-        public string Context { get => Context; set => Context = value; }
 
         public void SetLists(List<NodeData> _nodes, List<Link> _links)
         {

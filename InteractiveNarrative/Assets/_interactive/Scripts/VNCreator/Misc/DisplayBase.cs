@@ -78,7 +78,8 @@ namespace VNCreator
                 //als er geen last node is, dan is de volgende node een end node
                 currentNode = story.GetNextNode(currentNode.guid, _choiceId);
                 GoodOrBadMetre += currentNode.GoodOrBad;
-                GlobalBlackBoard.Instance.CheckForIntrusiveThoughts(story.Context);
+                GlobalBlackBoard.Instance.CheckForIntrusiveThoughts(story.context);
+                // Debug.Log("Context2" + story.context);
                 lastNode = currentNode.endNode;
                 loadList.Add(currentNode.guid);
             }
