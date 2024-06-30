@@ -28,37 +28,28 @@ public class InteractibleCollider : MonoBehaviour, IPointerDownHandler, IPointer
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        bool canClick = PointerController.Instance.MouseInputEnabled;
-        if (canClick)
+        if (PointerController.Instance.MouseInputEnabled)
         {
+            VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
+
             if (!hasBeenClicked)
             {
-                hasBeenClicked = true;
-                VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
                 dispUI.story = MainStoryObject;
-                dispUI.StartStory();
-
-                StartCoroutine(dispUI.DisplayCurrentNode());
-
-                GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
-
-                GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
+                hasBeenClicked = true;
             }
             else
             {
-                hasBeenClicked = true;
-                VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
                 dispUI.story = SideStoryObject;
-                dispUI.StartStory();
-
-                StartCoroutine(dispUI.DisplayCurrentNode());
-
-                GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
-
-                GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
             }
+
+            dispUI.StartStory();
+            StartCoroutine(dispUI.DisplayCurrentNode());
+
+            GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
+            GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
         }
     }
+
 
     public void OnPointerEnter(PointerEventData eventData)
     {

@@ -21,5 +21,5 @@ public class Choice
 [System.Serializable]
 public class Scenes
 {
-    public SceneNode[] ScenesList;
+    // public SceneNode[] ScenesList;
 }
