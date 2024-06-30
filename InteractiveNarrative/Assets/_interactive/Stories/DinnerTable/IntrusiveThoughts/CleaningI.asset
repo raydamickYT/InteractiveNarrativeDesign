@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: CleaningI
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 178f4b9b-b30b-466b-a1b7-7f3942cbe4fb
+    targetGuid: 00933fc9-adc8-4c91-b3c4-a3862fe57e92
+    portId: 0
+  - guid: 00933fc9-adc8-4c91-b3c4-a3862fe57e92
+    targetGuid: a85f0f56-caf2-4c62-adf4-a9d6e583c7cf
+    portId: 3
+  - guid: 00933fc9-adc8-4c91-b3c4-a3862fe57e92
+    targetGuid: b6789957-09c4-4eb7-a625-09f2478a9c3a
+    portId: 1
+  - guid: b6789957-09c4-4eb7-a625-09f2478a9c3a
+    targetGuid: 86b0375a-f968-4f5f-b427-f9918e264614
+    portId: 3
+  - guid: 86b0375a-f968-4f5f-b427-f9918e264614
+    targetGuid: 78941a6a-945d-4bbb-85da-dbaa2f0fa629
+    portId: 0
+  - guid: 78941a6a-945d-4bbb-85da-dbaa2f0fa629
+    targetGuid: 2368d7b6-2ecc-43e4-abb4-50b56ba2b317
+    portId: 1
+  - guid: 78941a6a-945d-4bbb-85da-dbaa2f0fa629
+    targetGuid: a64d4c50-69d1-4924-9601-a538dae765e3
+    portId: 3
+  - guid: b6789957-09c4-4eb7-a625-09f2478a9c3a
+    targetGuid: 14315564-6cb4-4d8c-a90a-d0cec49c8cc9
+    portId: 1
+  - guid: a85f0f56-caf2-4c62-adf4-a9d6e583c7cf
+    targetGuid: 2368d7b6-2ecc-43e4-abb4-50b56ba2b317
+    portId: 3
+  - guid: a85f0f56-caf2-4c62-adf4-a9d6e583c7cf
+    targetGuid: b774a036-a9c5-463a-b6a6-e1a7ad21797c
+    portId: 1
+  - guid: b774a036-a9c5-463a-b6a6-e1a7ad21797c
+    targetGuid: 1540a9bc-3e41-4f33-ab2c-527e9a1a1c4c
+    portId: 0
+  nodes:
+  - guid: 178f4b9b-b30b-466b-a1b7-7f3942cbe4fb
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Lazy bums
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 256
+      y: 419
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 00933fc9-adc8-4c91-b3c4-a3862fe57e92
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I ought to call them right now.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - And issue a complaint
+    - And Ask my money back
+    nodePosition:
+      serializedVersion: 2
+      x: 922
+      y: 419
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b6789957-09c4-4eb7-a625-09f2478a9c3a
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Surely, they'll take the complaint at heart and punish the cleaners
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 1
+    choiceOptions:
+    - Of course they won't
+    - Or they'll defend them
+    nodePosition:
+      serializedVersion: 2
+      x: 1637
+      y: 136
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 86b0375a-f968-4f5f-b427-f9918e264614
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Oh If that happens all hell will break lose. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2449
+      y: 444
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 78941a6a-945d-4bbb-85da-dbaa2f0fa629
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Just thinking about it gets me upset, where's my phone?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - This'll just get me mad
+    - It's right there.
+    nodePosition:
+      serializedVersion: 2
+      x: 3049
+      y: 444
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 14315564-6cb4-4d8c-a90a-d0cec49c8cc9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: If they don't I won't know. I'm not renting them again.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2449
+      y: -87
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a85f0f56-caf2-4c62-adf4-a9d6e583c7cf
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: They'll make a reall fuss.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - I'll make a bigger fuss
+    - This'll just get me mad
+    nodePosition:
+      serializedVersion: 2
+      x: 1637
+      y: 830
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a64d4c50-69d1-4924-9601-a538dae765e3
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Right what's their number again?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4035
+      y: 964
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2368d7b6-2ecc-43e4-abb4-50b56ba2b317
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: "Maybe better to leave it... Can't forgive them, but I'll just
+      annoy myself more \nif I call right now."
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4035
+      y: 444
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b774a036-a9c5-463a-b6a6-e1a7ad21797c
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'I''ll just keep complaining until they give me what they owe me.
+
+      either
+      a refund, or those bums kicked out'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2211
+      y: 1150
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1540a9bc-3e41-4f33-ab2c-527e9a1a1c4c
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Noway they're getting rid of me, where's my phone?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2948
+      y: 1218
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: Cleaning

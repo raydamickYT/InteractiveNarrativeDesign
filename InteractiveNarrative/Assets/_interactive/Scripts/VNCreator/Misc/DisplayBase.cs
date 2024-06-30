@@ -64,6 +64,8 @@ namespace VNCreator
         }
         public void StartStory()
         {
+            GlobalBlackBoard.Instance.CheckForIntrusiveThoughts(story.context);
+
             if (PlayerPrefs.GetString(GameSaveManager.currentLoadName) == string.Empty)
             {
                 currentNode = story.GetFirstNode();
@@ -89,13 +91,12 @@ namespace VNCreator
 
         protected virtual void NextNode(int _choiceId)
         {
-
             if (!lastNode)
             {
+                GlobalBlackBoard.Instance.CheckForIntrusiveThoughts(story.context);
                 //als er geen last node is, dan is de volgende node een end node
                 currentNode = story.GetNextNode(currentNode.guid, _choiceId);
                 GoodOrBadMetre += currentNode.GoodOrBad;
-                GlobalBlackBoard.Instance.CheckForIntrusiveThoughts(story.context);
 
                 lastNode = currentNode.endNode;
                 // Debug.Log("Context2" + story.context);

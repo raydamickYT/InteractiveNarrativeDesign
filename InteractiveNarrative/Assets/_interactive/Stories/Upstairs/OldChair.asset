@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: OldChair
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 229067bd-b8b6-4924-9813-2b37edd69ea6
+    targetGuid: 48b531e8-ea16-4d69-8440-e3b05c3a5db8
+    portId: 0
+  - guid: 48b531e8-ea16-4d69-8440-e3b05c3a5db8
+    targetGuid: 332952e2-55b8-4077-91c8-bf01f5fa0613
+    portId: 3
+  - guid: 48b531e8-ea16-4d69-8440-e3b05c3a5db8
+    targetGuid: 2d072d21-f56d-4e13-90cb-12354f363a93
+    portId: 1
+  nodes:
+  - guid: 229067bd-b8b6-4924-9813-2b37edd69ea6
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: No one uses this chair anymore.
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 457
+      y: 582
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 48b531e8-ea16-4d69-8440-e3b05c3a5db8
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It's from a well known brand though. And very comfortable
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - I prefer the couch
+    - Maybe sell it
+    nodePosition:
+      serializedVersion: 2
+      x: 1138
+      y: 549
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 332952e2-55b8-4077-91c8-bf01f5fa0613
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It'd fetch a fair price I think.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1748
+      y: 768
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2d072d21-f56d-4e13-90cb-12354f363a93
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Lying down over sitting down anytime. Apparently, lying down is
+      the only pose where your body truly relaxes
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1724
+      y: 358
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: 

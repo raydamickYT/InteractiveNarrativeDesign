@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Cleaning
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: e52b96fe-13df-4329-9324-ae5eb3920651
+    targetGuid: a30876dc-ef80-4df6-b33d-763251c2a583
+    portId: 0
+  - guid: a30876dc-ef80-4df6-b33d-763251c2a583
+    targetGuid: b2e3b999-6d31-49bc-baa6-198607c1caed
+    portId: 3
+  - guid: a30876dc-ef80-4df6-b33d-763251c2a583
+    targetGuid: 4f4aaae9-c81e-46a2-b7f2-29662e7ff0fc
+    portId: 1
+  - guid: 4f4aaae9-c81e-46a2-b7f2-29662e7ff0fc
+    targetGuid: b1fd259b-6793-4fee-9959-f3e3e4e2fcc8
+    portId: 0
+  - guid: b2e3b999-6d31-49bc-baa6-198607c1caed
+    targetGuid: a962aa0c-34e8-43e7-be50-82cec3799d03
+    portId: 0
+  - guid: a962aa0c-34e8-43e7-be50-82cec3799d03
+    targetGuid: cc1f0c50-72e6-4371-b3cd-e7ac7fc977db
+    portId: 3
+  - guid: a962aa0c-34e8-43e7-be50-82cec3799d03
+    targetGuid: 6003a429-c7d8-4c48-96f9-74cd61ab67a6
+    portId: 1
+  nodes:
+  - guid: e52b96fe-13df-4329-9324-ae5eb3920651
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: The house was a mess before.
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 442
+      y: 448
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a30876dc-ef80-4df6-b33d-763251c2a583
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Glad I hired someone to clean the house
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Not very nice of them to not clean up
+    - The floor looks mint
+    nodePosition:
+      serializedVersion: 2
+      x: 1223
+      y: 368
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 4f4aaae9-c81e-46a2-b7f2-29662e7ff0fc
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Wait, hold on. They didn't clean up at all. They just made a mess!
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1863
+      y: 170
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b1fd259b-6793-4fee-9959-f3e3e4e2fcc8
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Should've just done it myself.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2570
+      y: 185
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b2e3b999-6d31-49bc-baa6-198607c1caed
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: But it doesn't.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1888
+      y: 627
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a962aa0c-34e8-43e7-be50-82cec3799d03
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: They just left all the cleaning stuff for me to clean up
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Won't be hiring them again...
+    - more work...
+    nodePosition:
+      serializedVersion: 2
+      x: 2573
+      y: 768
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: cc1f0c50-72e6-4371-b3cd-e7ac7fc977db
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: '*Sigh* Moving is too much work'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3231
+      y: 942
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6003a429-c7d8-4c48-96f9-74cd61ab67a6
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Save me money by doing it myself. Now I'm just paying them to then
+      do it myself.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3231
+      y: 524
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: Cleaning

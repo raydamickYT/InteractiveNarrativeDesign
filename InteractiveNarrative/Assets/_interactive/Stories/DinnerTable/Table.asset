@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Table
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: e947f4ba-f213-4f70-b212-0942a69b6913
+    targetGuid: 3af4cbfc-8f85-45e9-8745-0141727c7f73
+    portId: 0
+  - guid: 3af4cbfc-8f85-45e9-8745-0141727c7f73
+    targetGuid: d173afb8-0807-4fe9-bcab-ec24110e2986
+    portId: 3
+  - guid: d173afb8-0807-4fe9-bcab-ec24110e2986
+    targetGuid: 287f6813-3b27-4b70-b031-ff8cc01387b9
+    portId: 1
+  - guid: 287f6813-3b27-4b70-b031-ff8cc01387b9
+    targetGuid: 59029f2a-7551-45b4-9451-4b29b1b70d49
+    portId: 0
+  - guid: 59029f2a-7551-45b4-9451-4b29b1b70d49
+    targetGuid: 98005e4c-b158-4bc5-b8a5-9a396a37d455
+    portId: 0
+  - guid: d173afb8-0807-4fe9-bcab-ec24110e2986
+    targetGuid: edeb2a12-46e5-43f4-967d-ef6b40e101f6
+    portId: 3
+  nodes:
+  - guid: e947f4ba-f213-4f70-b212-0942a69b6913
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Just like the Kabinet on the left. This one is pretty old.
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 541
+      y: 426
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3af4cbfc-8f85-45e9-8745-0141727c7f73
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Not 100's years old, but it's been in the family since I was born.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Luckily I got a hand-me-down
+    - Lots of memories in there
+    nodePosition:
+      serializedVersion: 2
+      x: 1222
+      y: 413
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d173afb8-0807-4fe9-bcab-ec24110e2986
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Makes me feel a bit nostalgic, thinking about those memories.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - It feels like yesterday
+    - gone days
+    nodePosition:
+      serializedVersion: 2
+      x: 1870
+      y: 588
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 287f6813-3b27-4b70-b031-ff8cc01387b9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Oh man I remember when I was doing another one of my "experiments"
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2497
+      y: 475
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 59029f2a-7551-45b4-9451-4b29b1b70d49
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I was trying to cut some cardboard with a knife and ended up cutting
+      straight in to the table too
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3230
+      y: 490
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 98005e4c-b158-4bc5-b8a5-9a396a37d455
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Dad was furious. Obviously.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3937
+      y: 519
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: edeb2a12-46e5-43f4-967d-ef6b40e101f6
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Right, no point in hanging on the past. Look ahead, at this beautiful
+      house for example
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2508
+      y: 975
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: 

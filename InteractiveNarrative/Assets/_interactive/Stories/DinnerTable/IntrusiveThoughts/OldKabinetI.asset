@@ -1,0 +1,687 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: OldKabinetI
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: ffb4280e-3a84-4539-973b-e3f7fb61822a
+    targetGuid: e1f9d448-baf5-422a-9b60-c8fa0ca44f9e
+    portId: 0
+  - guid: e1f9d448-baf5-422a-9b60-c8fa0ca44f9e
+    targetGuid: 4e676da0-1906-407d-bab3-34a318326c29
+    portId: 1
+  - guid: 4e676da0-1906-407d-bab3-34a318326c29
+    targetGuid: 3e920576-e8e8-4a36-997a-cc6d9beedccf
+    portId: 0
+  - guid: 3e920576-e8e8-4a36-997a-cc6d9beedccf
+    targetGuid: fa65a267-a608-40d6-aa7e-09edbf66ebea
+    portId: 1
+  - guid: fa65a267-a608-40d6-aa7e-09edbf66ebea
+    targetGuid: 33808bcb-5402-4d96-8c29-bf67ae6a7ca2
+    portId: 0
+  - guid: 33808bcb-5402-4d96-8c29-bf67ae6a7ca2
+    targetGuid: 936b5929-4c14-4349-a711-fad68f8cbd81
+    portId: 3
+  - guid: 936b5929-4c14-4349-a711-fad68f8cbd81
+    targetGuid: f3e15c4a-4178-4988-80ce-8859715a478a
+    portId: 1
+  - guid: f3e15c4a-4178-4988-80ce-8859715a478a
+    targetGuid: 973307a0-41fd-4b81-8b08-c3cede544b96
+    portId: 1
+  - guid: 973307a0-41fd-4b81-8b08-c3cede544b96
+    targetGuid: 22b0dffc-4c10-4115-888f-11a6fdd635c6
+    portId: 0
+  - guid: 22b0dffc-4c10-4115-888f-11a6fdd635c6
+    targetGuid: 698e4f61-45ab-4443-9822-1eda5f9e5406
+    portId: 3
+  - guid: 698e4f61-45ab-4443-9822-1eda5f9e5406
+    targetGuid: e3beb809-df28-45ca-8927-375e40eb711c
+    portId: 0
+  - guid: e3beb809-df28-45ca-8927-375e40eb711c
+    targetGuid: 692ef153-efb1-4a19-ab4e-d5fbc924fec0
+    portId: 3
+  - guid: e3beb809-df28-45ca-8927-375e40eb711c
+    targetGuid: 1ade2678-46dd-4757-a650-5cc7b78d4f10
+    portId: 1
+  - guid: 1ade2678-46dd-4757-a650-5cc7b78d4f10
+    targetGuid: ace89fe1-e4a8-49c5-8c3e-e2292fe4808b
+    portId: 0
+  - guid: 22b0dffc-4c10-4115-888f-11a6fdd635c6
+    targetGuid: b04570a3-7613-4938-8fc7-83e75852fc2a
+    portId: 1
+  - guid: b04570a3-7613-4938-8fc7-83e75852fc2a
+    targetGuid: db7e6b83-aab3-4f6b-9136-6d8480886055
+    portId: 0
+  - guid: f3e15c4a-4178-4988-80ce-8859715a478a
+    targetGuid: 09263088-e4ca-4ec4-bc49-a9767d207755
+    portId: 3
+  - guid: 09263088-e4ca-4ec4-bc49-a9767d207755
+    targetGuid: e4d5292e-e0b4-4bc4-ae38-53b1f10085f8
+    portId: 0
+  - guid: e4d5292e-e0b4-4bc4-ae38-53b1f10085f8
+    targetGuid: b5aedfb5-8d52-405f-a16e-5d28c9bb33cc
+    portId: 1
+  - guid: e4d5292e-e0b4-4bc4-ae38-53b1f10085f8
+    targetGuid: c512eb83-d35a-4d6f-ad2a-a88df23da5f0
+    portId: 3
+  - guid: 33808bcb-5402-4d96-8c29-bf67ae6a7ca2
+    targetGuid: 9b74ed3d-dbe1-4847-aa01-6544b77f863d
+    portId: 1
+  - guid: 9b74ed3d-dbe1-4847-aa01-6544b77f863d
+    targetGuid: ec95604d-66c0-4ec4-86ce-b0cdd0353295
+    portId: 0
+  - guid: 936b5929-4c14-4349-a711-fad68f8cbd81
+    targetGuid: a8630d84-1a73-4062-a220-3915651f85cc
+    portId: 3
+  - guid: 3e920576-e8e8-4a36-997a-cc6d9beedccf
+    targetGuid: efeeadcd-5caa-43c7-9b91-6e5530a43eb9
+    portId: 3
+  - guid: efeeadcd-5caa-43c7-9b91-6e5530a43eb9
+    targetGuid: a0c77df6-a7fb-49eb-be1f-258e5fe80581
+    portId: 3
+  - guid: efeeadcd-5caa-43c7-9b91-6e5530a43eb9
+    targetGuid: 6f05b249-cb6a-447c-97de-7d653209f723
+    portId: 1
+  - guid: 6f05b249-cb6a-447c-97de-7d653209f723
+    targetGuid: 3c0b6909-f00e-46a7-a396-d20247f9ca1f
+    portId: 0
+  - guid: e1f9d448-baf5-422a-9b60-c8fa0ca44f9e
+    targetGuid: 0afc8173-1f80-4a25-a7e4-c3f53c71e3ae
+    portId: 3
+  - guid: 0afc8173-1f80-4a25-a7e4-c3f53c71e3ae
+    targetGuid: 1ef26b4a-c6a9-4eb0-94e1-dfe459b74cb8
+    portId: 0
+  nodes:
+  - guid: ffb4280e-3a84-4539-973b-e3f7fb61822a
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Imagine if they dropped it when moving.
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 372
+      y: 564
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 4e676da0-1906-407d-bab3-34a318326c29
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: The world just keeps moving.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1646
+      y: 216
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: fa65a267-a608-40d6-aa7e-09edbf66ebea
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: If I'm so small, what does it matter what I do now?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2820
+      y: -184
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 33808bcb-5402-4d96-8c29-bf67ae6a7ca2
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: No one cares. Maybe a small group of people, but...
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - You have the freedom to be yourself
+    - Just keeping them happy is enough
+    nodePosition:
+      serializedVersion: 2
+      x: 3537
+      y: -215
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: f3e15c4a-4178-4988-80ce-8859715a478a
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I just feel so lonely thinking about it
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 1
+    choiceOptions:
+    - would it make you happy?
+    - Why do you need other people?
+    nodePosition:
+      serializedVersion: 2
+      x: 4746
+      y: -482
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 973307a0-41fd-4b81-8b08-c3cede544b96
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: I like to pride myself in thinking that I don't care about what
+      other people think.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 5552
+      y: -619
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 22b0dffc-4c10-4115-888f-11a6fdd635c6
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: But I'm probably the one who cares the most.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Overthinking won't help
+    - That makes you weak
+    nodePosition:
+      serializedVersion: 2
+      x: 6233
+      y: -669
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 698e4f61-45ab-4443-9822-1eda5f9e5406
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Why, can't I just be normal?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6942
+      y: -481
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e3beb809-df28-45ca-8927-375e40eb711c
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Why can't I just be like anyone else?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - How is anyone else?
+    - Who cares?
+    nodePosition:
+      serializedVersion: 2
+      x: 7764
+      y: -461
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 692ef153-efb1-4a19-ab4e-d5fbc924fec0
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Right, no one.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 8634
+      y: -180
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1ade2678-46dd-4757-a650-5cc7b78d4f10
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'I don''t know. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 8584
+      y: -712
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: ace89fe1-e4a8-49c5-8c3e-e2292fe4808b
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: But they seem to all be doing better than me.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 9308
+      y: -712
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b04570a3-7613-4938-8fc7-83e75852fc2a
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Always just imagining what other people think about you will only
+      drive you nuts.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6896
+      y: -946
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: db7e6b83-aab3-4f6b-9136-6d8480886055
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I wish I could stop that.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 7590
+      y: -981
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 09263088-e4ca-4ec4-bc49-a9767d207755
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'I need them to tell me I''m doing good. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 5502
+      y: -177
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b5aedfb5-8d52-405f-a16e-5d28c9bb33cc
+    characterSpr: {fileID: 0}
+    characterName: 'Greg: '
+    dialogueText: ofcourse I am
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6825
+      y: -139
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c512eb83-d35a-4d6f-ad2a-a88df23da5f0
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Worthy to be confident about who I am.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6825
+      y: 259
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e4d5292e-e0b4-4bc4-ae38-53b1f10085f8
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I need the dopamine they give me to feel some selfworth
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: -1
+    choiceOptions:
+    - Am I not worth anything?
+    - Worthy of what?
+    nodePosition:
+      serializedVersion: 2
+      x: 6220
+      y: 44
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 9b74ed3d-dbe1-4847-aa01-6544b77f863d
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: If only I could just get into that mindset.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4005
+      y: -891
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: ec95604d-66c0-4ec4-86ce-b0cdd0353295
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I'm always kept back by the shackles of self doubt
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4705
+      y: -941
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a8630d84-1a73-4062-a220-3915651f85cc
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: "Tha- that's... \t\tRight..."
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4886
+      y: 176
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 936b5929-4c14-4349-a711-fad68f8cbd81
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: So I'll always just be a no one who'll not have any impact on the
+      world?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: -1
+    choiceOptions:
+    - What's wrong with that?
+    - That's right
+    nodePosition:
+      serializedVersion: 2
+      x: 4156
+      y: -67
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: efeeadcd-5caa-43c7-9b91-6e5530a43eb9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I can just do my own thing.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 1
+    choiceOptions:
+    - Don't kid yourself
+    - Let's go out for diner tonight
+    nodePosition:
+      serializedVersion: 2
+      x: 3008
+      y: 350
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a0c77df6-a7fb-49eb-be1f-258e5fe80581
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: wait no. just because no one cares doesn't mean my bankaccount
+      doesn't care.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3564
+      y: 804
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6f05b249-cb6a-447c-97de-7d653209f723
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: But I DO care.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3564
+      y: 388
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3c0b6909-f00e-46a7-a396-d20247f9ca1f
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: "I guess that makes me, \t\tme..."
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4156
+      y: 481
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3e920576-e8e8-4a36-997a-cc6d9beedccf
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: We're so small compared to the world
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Makes you feel small
+    - Less reason to worry about other people
+    nodePosition:
+      serializedVersion: 2
+      x: 2264
+      y: 216
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e1f9d448-baf5-422a-9b60-c8fa0ca44f9e
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 100 years of history, down the drain just like that.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - And no one will bat an eye
+    - That'd be a shame
+    nodePosition:
+      serializedVersion: 2
+      x: 1083
+      y: 574
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0afc8173-1f80-4a25-a7e4-c3f53c71e3ae
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I'd feel really sad
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1737
+      y: 805
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1ef26b4a-c6a9-4eb0-94e1-dfe459b74cb8
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It's just a nice kabinet aswel
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2521
+      y: 1030
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: OldKabinet

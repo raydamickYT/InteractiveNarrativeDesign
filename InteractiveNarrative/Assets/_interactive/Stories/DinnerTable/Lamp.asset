@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Lamp
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 36f44b63-9fad-4751-8f44-54a18d562f94
+    targetGuid: 69f3e7f4-30f6-4cf3-a1ed-83243d4bf6c7
+    portId: 0
+  nodes:
+  - guid: 36f44b63-9fad-4751-8f44-54a18d562f94
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: An old colleague gave me that for christmas
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 582
+      y: 403
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 69f3e7f4-30f6-4cf3-a1ed-83243d4bf6c7
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I thought I threw it away. Luckily I didn't, though I wouldn't
+      say it's much better than a bare bulb
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1378
+      y: 403
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: 

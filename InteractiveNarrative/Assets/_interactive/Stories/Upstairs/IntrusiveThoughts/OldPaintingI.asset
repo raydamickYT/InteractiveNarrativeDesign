@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: OldPaintingI
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 00dad16c-1687-4184-b84e-e8da4c6bcff3
+    targetGuid: 30c84685-e61f-4398-a366-5eb03ce4078d
+    portId: 0
+  - guid: 30c84685-e61f-4398-a366-5eb03ce4078d
+    targetGuid: 22a9cb98-0018-47ca-83e8-5fef5baeff36
+    portId: 3
+  - guid: 22a9cb98-0018-47ca-83e8-5fef5baeff36
+    targetGuid: 5f86fc78-05ae-4399-bd5a-73e1d5f00343
+    portId: 0
+  - guid: 5f86fc78-05ae-4399-bd5a-73e1d5f00343
+    targetGuid: 3eabe242-7020-4c26-a051-08bd054e2a16
+    portId: 1
+  - guid: 5f86fc78-05ae-4399-bd5a-73e1d5f00343
+    targetGuid: 63a85bf1-1d0d-4a7b-9273-afa9b143c50e
+    portId: 3
+  - guid: 30c84685-e61f-4398-a366-5eb03ce4078d
+    targetGuid: 3c1fec28-c5c1-4da7-9b8c-cb191ee96319
+    portId: 1
+  nodes:
+  - guid: 00dad16c-1687-4184-b84e-e8da4c6bcff3
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Drop it
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 507
+      y: 439
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 30c84685-e61f-4398-a366-5eb03ce4078d
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Why would I do that?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Too much emotional value
+    - Who cares
+    nodePosition:
+      serializedVersion: 2
+      x: 1222
+      y: 377
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 22a9cb98-0018-47ca-83e8-5fef5baeff36
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Well I really care.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1919
+      y: 616
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 5f86fc78-05ae-4399-bd5a-73e1d5f00343
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: My granddad and my dad took good care of that. They'd feel really
+      sad if I just broke it now.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - I can't do it
+    - Who cares about hem?
+    nodePosition:
+      serializedVersion: 2
+      x: 2563
+      y: 607
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3eabe242-7020-4c26-a051-08bd054e2a16
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I wouldn't want to make my dad sad. He has enough to worry about.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3207
+      y: 213
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 63a85bf1-1d0d-4a7b-9273-afa9b143c50e
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: No, no, no. If I break this I won't be able to talk to them again.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3407
+      y: 862
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3c1fec28-c5c1-4da7-9b8c-cb191ee96319
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I can't let it go
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1957
+      y: 95
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: OldPainting

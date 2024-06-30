@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: OldKabinet
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 4fe120b1-e71c-4a39-a0c0-a6be175f4230
+    targetGuid: 47b4c2c5-6d33-475d-86ed-998f2655cfd2
+    portId: 0
+  - guid: 47b4c2c5-6d33-475d-86ed-998f2655cfd2
+    targetGuid: 86749fca-ab67-422a-9367-7968489f577c
+    portId: 3
+  - guid: 47b4c2c5-6d33-475d-86ed-998f2655cfd2
+    targetGuid: 83052af8-91c7-44a9-9c7f-32fbd6584884
+    portId: 1
+  - guid: 83052af8-91c7-44a9-9c7f-32fbd6584884
+    targetGuid: 96705e46-c501-4156-9076-8f4c44c01d52
+    portId: 0
+  - guid: 96705e46-c501-4156-9076-8f4c44c01d52
+    targetGuid: bb9173d7-dd07-4fc1-928f-3e99d5f86f36
+    portId: 1
+  - guid: bb9173d7-dd07-4fc1-928f-3e99d5f86f36
+    targetGuid: 33f3fba0-7153-41ba-a712-3364aec5343c
+    portId: 0
+  - guid: 33f3fba0-7153-41ba-a712-3364aec5343c
+    targetGuid: 46ac36fa-1bfa-4b92-94ce-e0246ad77e83
+    portId: 1
+  - guid: 33f3fba0-7153-41ba-a712-3364aec5343c
+    targetGuid: cf3172a6-5964-442a-bff6-93c7bd1c960d
+    portId: 3
+  - guid: 96705e46-c501-4156-9076-8f4c44c01d52
+    targetGuid: d36ef964-0b7e-4977-9136-0a1167c50d9e
+    portId: 3
+  nodes:
+  - guid: 4fe120b1-e71c-4a39-a0c0-a6be175f4230
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Ah, my grandma's old kabinet
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 607
+      y: 415
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 47b4c2c5-6d33-475d-86ed-998f2655cfd2
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: This thing is atleast a 100 years old
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - It's from Indonesia
+    - Really old but really useful
+    nodePosition:
+      serializedVersion: 2
+      x: 1419
+      y: 381
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 86749fca-ab67-422a-9367-7968489f577c
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: And a lot of years to show for it
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2103
+      y: 669
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 83052af8-91c7-44a9-9c7f-32fbd6584884
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: She got it from her mother who took it with her when they fled
+      from the war.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2095
+      y: 299
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 96705e46-c501-4156-9076-8f4c44c01d52
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Really, incredible they were able to take this thing with them
+      on the boat to the here.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Doesn't sound right.
+    - Must've been really important
+    nodePosition:
+      serializedVersion: 2
+      x: 2804
+      y: 302
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: bb9173d7-dd07-4fc1-928f-3e99d5f86f36
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: No, it doesn't...
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3416
+      y: 120
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 33f3fba0-7153-41ba-a712-3364aec5343c
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'I should look into this more. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Maybe dad will know
+    - Is it even Grandma's?
+    nodePosition:
+      serializedVersion: 2
+      x: 4130
+      y: 100
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 46ac36fa-1bfa-4b92-94ce-e0246ad77e83
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: If anyone know's it'd be him
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4801
+      y: -45
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: cf3172a6-5964-442a-bff6-93c7bd1c960d
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I'm not even sure anymore
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4795
+      y: 340
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d36ef964-0b7e-4977-9136-0a1167c50d9e
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Yeah... '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3416
+      y: 527
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: OldKabinet
