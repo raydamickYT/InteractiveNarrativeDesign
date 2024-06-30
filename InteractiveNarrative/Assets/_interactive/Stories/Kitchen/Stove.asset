@@ -10,62 +10,88 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
-  m_Name: Knives
+  m_Name: Stove
   m_EditorClassIdentifier: 
   Links:
-  - guid: a9546e0a-d656-4824-a4c8-c8c5327d8846
-    targetGuid: 2ff9c07b-c19b-4436-ad78-9665c71f6c5d
-    portId: 0
-  - guid: 2ff9c07b-c19b-4436-ad78-9665c71f6c5d
-    targetGuid: 64c3f93c-f794-4b14-934d-b6f6e24c8ea1
+  - guid: 34ce20ba-c678-4195-87c4-fe9535771859
+    targetGuid: 347dc96a-00cb-454b-8224-2723e54edcf4
     portId: 3
-  - guid: 2ff9c07b-c19b-4436-ad78-9665c71f6c5d
-    targetGuid: 60316f05-0bdd-4f7a-a75d-51cea7244c4a
+  - guid: 34ce20ba-c678-4195-87c4-fe9535771859
+    targetGuid: ccb75714-fdfa-47f5-9de9-886e25f02115
+    portId: 1
+  - guid: ccb75714-fdfa-47f5-9de9-886e25f02115
+    targetGuid: dbcd8ffe-dfa6-472e-bfbf-09079f75d921
+    portId: 3
+  - guid: ccb75714-fdfa-47f5-9de9-886e25f02115
+    targetGuid: c6397fdc-ae68-4980-82d8-7f09f018a34f
     portId: 1
   nodes:
-  - guid: a9546e0a-d656-4824-a4c8-c8c5327d8846
+  - guid: 34ce20ba-c678-4195-87c4-fe9535771859
     characterSpr: {fileID: 0}
     characterName: 'Greg:'
-    dialogueText: I decided to spend some extra money on good knives
+    dialogueText: 4 burners + space for a wok. This thing is just great
     backgroundSpr: {fileID: 0}
     startNode: 1
     endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - The glass is a pain to clean though
+    - I'm never using this many burners at once
+    nodePosition:
+      serializedVersion: 2
+      x: 711
+      y: 490
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 347dc96a-00cb-454b-8224-2723e54edcf4
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'But it''s nice to have
+
+'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
     choices: 1
     GoodOrBad: 0
     choiceOptions:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 219
-      y: 346
+      x: 1542
+      y: 730
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 2ff9c07b-c19b-4436-ad78-9665c71f6c5d
+  - guid: ccb75714-fdfa-47f5-9de9-886e25f02115
     characterSpr: {fileID: 0}
-    characterName: 'Greg:'
-    dialogueText: I can't wait to use them.
+    characterName: Greg
+    dialogueText: Still haven't figured out the trick...
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 0
     choices: 2
     GoodOrBad: 0
     choiceOptions:
-    - They look sharp
-    - This'll chop through any meat easily
+    - Glassex
+    - Paper towel
     nodePosition:
       serializedVersion: 2
-      x: 867
-      y: 295
+      x: 1585
+      y: 245
       width: 499
       height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 64c3f93c-f794-4b14-934d-b6f6e24c8ea1
+  - guid: dbcd8ffe-dfa6-472e-bfbf-09079f75d921
     characterSpr: {fileID: 0}
     characterName: 'Greg:'
-    dialogueText: Maybe even bone?
+    dialogueText: Paper towels seemed to give the best result. They didn't leave
+      many stripes
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 1
@@ -75,16 +101,16 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 1553
-      y: 499
+      x: 2486
+      y: 406
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 60316f05-0bdd-4f7a-a75d-51cea7244c4a
+  - guid: c6397fdc-ae68-4980-82d8-7f09f018a34f
     characterSpr: {fileID: 0}
     characterName: 'Greg:'
-    dialogueText: I sure hope they are, else I'll have to return them to the store.
+    dialogueText: Glassex would've definetiley worked. However it still leaves stripes!
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 1
@@ -94,10 +120,10 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 1508
-      y: 94
+      x: 2486
+      y: 45
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  context: Knives
+  context: Stove

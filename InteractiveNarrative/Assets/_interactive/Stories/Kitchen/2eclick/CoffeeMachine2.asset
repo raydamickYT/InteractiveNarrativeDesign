@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: CoffeeMachine2
+  m_EditorClassIdentifier: 
+  Links: []
+  nodes:
+  - guid: ab2d6d35-69ce-44eb-bbd4-fc9f7289d1f2
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: I like my coffee fresh.
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 640
+      y: 335
+      width: 499
+      height: 272
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: CoffeeMachine

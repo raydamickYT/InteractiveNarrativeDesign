@@ -887,8 +887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df6a37dd76f824ca5681c7e69230b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainStoryObject: {fileID: 11400000, guid: 35810ed64b7c3f64ead209cfcb2343bf, type: 2}
-  SideStoryObject: {fileID: 11400000, guid: 24ab2e0c538d8c147b460a31e6072b06, type: 2}
+  MainStoryObject: {fileID: 11400000, guid: 4438f6e36a8a5ef4497392b5bd0a644b, type: 2}
+  SideStoryObject: {fileID: 11400000, guid: 5cdb2d4d6e40a3243814d59cbac924d6, type: 2}
 --- !u!114 &395615479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,8 +1724,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df6a37dd76f824ca5681c7e69230b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainStoryObject: {fileID: 11400000, guid: 35810ed64b7c3f64ead209cfcb2343bf, type: 2}
-  SideStoryObject: {fileID: 11400000, guid: 24ab2e0c538d8c147b460a31e6072b06, type: 2}
+  MainStoryObject: {fileID: 11400000, guid: c0c1990ffd3ec5e488125f62ff92d29b, type: 2}
+  SideStoryObject: {fileID: 11400000, guid: 6b70ee1ace21a4540a1b3f83cbbe8a9f, type: 2}
 --- !u!114 &676887876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,8 +1814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df6a37dd76f824ca5681c7e69230b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainStoryObject: {fileID: 11400000, guid: 35810ed64b7c3f64ead209cfcb2343bf, type: 2}
-  SideStoryObject: {fileID: 11400000, guid: 24ab2e0c538d8c147b460a31e6072b06, type: 2}
+  MainStoryObject: {fileID: 11400000, guid: 363088fe86349f34fa8ca2644a7d3b60, type: 2}
+  SideStoryObject: {fileID: 11400000, guid: 10f1311d64e46c344a07dd9baf41c133, type: 2}
 --- !u!114 &731195383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2238,8 +2238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df6a37dd76f824ca5681c7e69230b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainStoryObject: {fileID: 11400000, guid: 35810ed64b7c3f64ead209cfcb2343bf, type: 2}
-  SideStoryObject: {fileID: 11400000, guid: 24ab2e0c538d8c147b460a31e6072b06, type: 2}
+  MainStoryObject: {fileID: 11400000, guid: 42bf05f96e9da4548990d02ac6cbab3d, type: 2}
+  SideStoryObject: {fileID: 11400000, guid: 8ed0de14faddd394b839051b844c4a08, type: 2}
 --- !u!114 &878725889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3001,8 +3001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df6a37dd76f824ca5681c7e69230b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainStoryObject: {fileID: 11400000, guid: 35810ed64b7c3f64ead209cfcb2343bf, type: 2}
-  SideStoryObject: {fileID: 11400000, guid: 24ab2e0c538d8c147b460a31e6072b06, type: 2}
+  MainStoryObject: {fileID: 11400000, guid: 198d7e38e91c79f429d98ecf2cd00ae0, type: 2}
+  SideStoryObject: {fileID: 11400000, guid: 13e7e6aeb8335d54ea7d85e8cb43aa8a, type: 2}
 --- !u!114 &1283047384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3343,7 +3343,8 @@ MonoBehaviour:
   bar: {fileID: 0}
   canvas: {fileID: 256926430}
   downStep: 1
-  stepInterval: 0.5
+  stepInterval: 1
+  duration: 8
 --- !u!1 &1432550013
 GameObject:
   m_ObjectHideFlags: 0
@@ -4117,8 +4118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8df6a37dd76f824ca5681c7e69230b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainStoryObject: {fileID: 11400000, guid: 35810ed64b7c3f64ead209cfcb2343bf, type: 2}
-  SideStoryObject: {fileID: 11400000, guid: 24ab2e0c538d8c147b460a31e6072b06, type: 2}
+  MainStoryObject: {fileID: 11400000, guid: 5d50699b99bf1294eb15e657226f9b11, type: 2}
+  SideStoryObject: {fileID: 11400000, guid: 53c9765894a0b694491ceaa42332451e, type: 2}
 --- !u!1 &2125690789
 GameObject:
   m_ObjectHideFlags: 0

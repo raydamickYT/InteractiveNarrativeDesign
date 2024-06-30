@@ -10,72 +10,94 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
-  m_Name: Window
+  m_Name: MonitorI
   m_EditorClassIdentifier: 
   Links:
-  - guid: 1bc122b7-b495-4f82-a9ae-148e84595b51
-    targetGuid: 1489fd39-35b7-4736-ac10-2b2ef0b08f93
+  - guid: b8a5db8f-9633-45e5-a8e8-ed67329a6715
+    targetGuid: be50de64-2928-4a66-96d5-042dc4f4efd7
+    portId: 0
+  - guid: be50de64-2928-4a66-96d5-042dc4f4efd7
+    targetGuid: bda5126a-f2dc-4425-b1e1-678e679bc920
     portId: 1
-  - guid: 1bc122b7-b495-4f82-a9ae-148e84595b51
-    targetGuid: 5505a0bc-702d-4e46-a862-347f695022a1
+  - guid: be50de64-2928-4a66-96d5-042dc4f4efd7
+    targetGuid: 3107f0a8-4e8a-4764-bcc0-98f8721b7c00
     portId: 3
   nodes:
-  - guid: 1bc122b7-b495-4f82-a9ae-148e84595b51
+  - guid: b8a5db8f-9633-45e5-a8e8-ed67329a6715
     characterSpr: {fileID: 0}
     characterName: Greg
-    dialogueText: This looks high...
+    dialogueText: What if it's not a monitor?
     backgroundSpr: {fileID: 0}
     startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 508
+      y: 434
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: be50de64-2928-4a66-96d5-042dc4f4efd7
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Maybe it's a bomb?!
+    backgroundSpr: {fileID: 0}
+    startNode: 0
     endNode: 0
     choices: 2
     GoodOrBad: 0
     choiceOptions:
-    - jump
-    - Step back a bit, this is scaring me
+    - Don't be weird
+    - Where'd they hide it?
     nodePosition:
       serializedVersion: 2
-      x: 448
-      y: 473
+      x: 1071
+      y: 360
       width: 499
       height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 1489fd39-35b7-4736-ac10-2b2ef0b08f93
+  - guid: bda5126a-f2dc-4425-b1e1-678e679bc920
     characterSpr: {fileID: 0}
     characterName: Greg
-    dialogueText: What'd happen?
+    dialogueText: you're right, noway thats a bomb.
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 1
     choices: 1
-    GoodOrBad: 0
+    GoodOrBad: 1
     choiceOptions:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 1198
-      y: 127
+      x: 1730
+      y: 80
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 5505a0bc-702d-4e46-a862-347f695022a1
+  - guid: 3107f0a8-4e8a-4764-bcc0-98f8721b7c00
     characterSpr: {fileID: 0}
     characterName: Greg
-    dialogueText: you're right... I don't trust myself next to that window
+    dialogueText: ANYWHERE!!
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 1
     choices: 1
-    GoodOrBad: 0
+    GoodOrBad: -1
     choiceOptions:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 1132
-      y: 667
+      x: 1730
+      y: 499
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  context: Window
+  context: Monitor

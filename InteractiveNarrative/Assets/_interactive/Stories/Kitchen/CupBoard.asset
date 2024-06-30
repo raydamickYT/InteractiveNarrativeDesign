@@ -1,0 +1,354 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: CupBoard
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: b257df61-66ee-4399-a5cc-8fac03af69f8
+    targetGuid: 2ff8cb5e-2aa4-4cf3-9711-fd7110b88186
+    portId: 0
+  - guid: 2ff8cb5e-2aa4-4cf3-9711-fd7110b88186
+    targetGuid: 2056ea00-5d42-461c-8087-7b6be3158c04
+    portId: 1
+  - guid: 2ff8cb5e-2aa4-4cf3-9711-fd7110b88186
+    targetGuid: 7405ef6e-3e7f-490b-9de7-07ddb5ffe69c
+    portId: 3
+  - guid: 7405ef6e-3e7f-490b-9de7-07ddb5ffe69c
+    targetGuid: 0ea6a343-e385-4099-925e-d8aff973976d
+    portId: 0
+  - guid: 0ea6a343-e385-4099-925e-d8aff973976d
+    targetGuid: b7e186d5-1457-4fa9-a7be-f25674f04414
+    portId: 1
+  - guid: 0ea6a343-e385-4099-925e-d8aff973976d
+    targetGuid: 0c51ca9c-454c-4f4e-820f-e792301c1252
+    portId: 3
+  - guid: 0c51ca9c-454c-4f4e-820f-e792301c1252
+    targetGuid: bf421c1b-72d4-4654-a94a-ab43fcee551d
+    portId: 3
+  - guid: bf421c1b-72d4-4654-a94a-ab43fcee551d
+    targetGuid: aed5e1d6-0f87-41ee-9d38-6577370700df
+    portId: 0
+  - guid: 0c51ca9c-454c-4f4e-820f-e792301c1252
+    targetGuid: 1aeab301-18af-4f06-bc1f-f89231a25c51
+    portId: 1
+  - guid: 2ff8cb5e-2aa4-4cf3-9711-fd7110b88186
+    targetGuid: 673f736a-ac53-4fdf-a2db-7d62371e53f9
+    portId: 5
+  - guid: 673f736a-ac53-4fdf-a2db-7d62371e53f9
+    targetGuid: fd133901-bdc6-4c5e-8643-2ef36613d7a1
+    portId: 1
+  - guid: 673f736a-ac53-4fdf-a2db-7d62371e53f9
+    targetGuid: b50a20d4-4874-4da1-9acb-38f8649ca659
+    portId: 3
+  - guid: 673f736a-ac53-4fdf-a2db-7d62371e53f9
+    targetGuid: 3cde3bd8-20e3-4fcf-b032-beda0e93e67c
+    portId: 5
+  - guid: 673f736a-ac53-4fdf-a2db-7d62371e53f9
+    targetGuid: d057ba9f-7b6e-4488-9032-d62ab4f20a0d
+    portId: 7
+  nodes:
+  - guid: b257df61-66ee-4399-a5cc-8fac03af69f8
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: These were from the previous owner
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 628
+      y: 430
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2ff8cb5e-2aa4-4cf3-9711-fd7110b88186
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: He was quite a nice guy.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 3
+    GoodOrBad: 0
+    choiceOptions:
+    - Even gave me some crackers
+    - We had a nice chat
+    - He told me all about the best stores nearby
+    nodePosition:
+      serializedVersion: 2
+      x: 1338
+      y: 345
+      width: 499
+      height: 410
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2056ea00-5d42-461c-8087-7b6be3158c04
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: oh right, my fridge is empty...
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1891
+      y: -75
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7405ef6e-3e7f-490b-9de7-07ddb5ffe69c
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: He told me about his past.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2039
+      y: 290
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0ea6a343-e385-4099-925e-d8aff973976d
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: About how he used to be a police agent
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - We had a long discussion
+    - I got interested
+    nodePosition:
+      serializedVersion: 2
+      x: 2884
+      y: 277
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b7e186d5-1457-4fa9-a7be-f25674f04414
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: There's a lot more to the job than it seems. I'm glad he was so
+      understanding
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3555
+      y: -62
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0c51ca9c-454c-4f4e-820f-e792301c1252
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: After a short back and forth I
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Asked him about his favourite part of the job
+    - Asked him how many criminals he's arrested
+    nodePosition:
+      serializedVersion: 2
+      x: 3707
+      y: 523
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: bf421c1b-72d4-4654-a94a-ab43fcee551d
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: 'He said: "0. No one''s a criminal, they''ve just made a misjudgement"'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4340
+      y: 750
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: aed5e1d6-0f87-41ee-9d38-6577370700df
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Bit of a weird answer, but it made me laugh.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 5025
+      y: 720
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1aeab301-18af-4f06-bc1f-f89231a25c51
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'He said: "making people smile."'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4251
+      y: 271
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 673f736a-ac53-4fdf-a2db-7d62371e53f9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: His was the Hubo,  he likes odd jobs.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 4
+    GoodOrBad: 0
+    choiceOptions:
+    - Mine was the Jumbo
+    - Mine was the Action
+    - Mine was the Kruidvat
+    - Mine was the HEMA
+    nodePosition:
+      serializedVersion: 2
+      x: 1891
+      y: 1419
+      width: 499
+      height: 453
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: fd133901-bdc6-4c5e-8643-2ef36613d7a1
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I visit it weekly for groceries. That automatically makes it my
+      favourite store to visit.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2495
+      y: 1157
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b50a20d4-4874-4da1-9acb-38f8649ca659
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Similar to the Hubo, it's got anything you might need for an odd
+      job. But it also sells a whole lot more, for cheap
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2495
+      y: 1462
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3cde3bd8-20e3-4fcf-b032-beda0e93e67c
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It's just got all the product I need to keep myself clean.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2495
+      y: 1767
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d057ba9f-7b6e-4488-9032-d62ab4f20a0d
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'I''m all for a store with strong theming. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2495
+      y: 2072
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: CupBoard

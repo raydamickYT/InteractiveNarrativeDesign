@@ -18,7 +18,7 @@ public class ThoughtUIManager : MonoBehaviour
     [Tooltip("Time interval between each step in seconds")]
     public float stepInterval = 0.5f;
     private bool isGameOver = false, isMoving = true;
-    private int duration = 30;
+    public int duration = 10;
     private Coroutine coroutine;
 
     void Start()

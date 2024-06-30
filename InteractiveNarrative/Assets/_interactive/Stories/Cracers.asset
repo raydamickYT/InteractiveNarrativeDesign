@@ -1,0 +1,239 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Cracers
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 8f876a3f-0a1e-421e-ac71-9b3cd29f1753
+    targetGuid: 5b5e5633-faf5-4549-88e0-13265e664d1a
+    portId: 0
+  - guid: 5b5e5633-faf5-4549-88e0-13265e664d1a
+    targetGuid: b301220c-5fb2-4d49-a17b-3d0c3a744be5
+    portId: 1
+  - guid: b301220c-5fb2-4d49-a17b-3d0c3a744be5
+    targetGuid: b165e31f-4098-4a80-8254-019d287565f9
+    portId: 1
+  - guid: b301220c-5fb2-4d49-a17b-3d0c3a744be5
+    targetGuid: daeba60d-047b-4bdc-abcf-0da39f6212c1
+    portId: 3
+  - guid: 5b5e5633-faf5-4549-88e0-13265e664d1a
+    targetGuid: 097d39f4-f544-4fde-ab68-14cd0a5c3c16
+    portId: 3
+  - guid: 097d39f4-f544-4fde-ab68-14cd0a5c3c16
+    targetGuid: 4ea80ded-8910-477b-b9ec-259634cf82cd
+    portId: 1
+  - guid: 4ea80ded-8910-477b-b9ec-259634cf82cd
+    targetGuid: a342a074-1ff7-4290-8c75-f42b2a3039d9
+    portId: 3
+  - guid: 4ea80ded-8910-477b-b9ec-259634cf82cd
+    targetGuid: b5b4d276-9e56-42c3-b01b-1d729fe9495e
+    portId: 1
+  - guid: 097d39f4-f544-4fde-ab68-14cd0a5c3c16
+    targetGuid: e3f0e0f4-6208-493a-bcbe-17be9073ce34
+    portId: 3
+  nodes:
+  - guid: 8f876a3f-0a1e-421e-ac71-9b3cd29f1753
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Right, I haven't done the groceries yet...
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 550
+      y: 418
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 5b5e5633-faf5-4549-88e0-13265e664d1a
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Just spam on crackers won't be enough.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Let's eat something healthy tonight
+    - Let's eat something unhealthy tonight
+    nodePosition:
+      serializedVersion: 2
+      x: 1246
+      y: 378
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b301220c-5fb2-4d49-a17b-3d0c3a744be5
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Yeah, I could go for some
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Fast food
+    - Lasagne
+    nodePosition:
+      serializedVersion: 2
+      x: 1906
+      y: 32
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b165e31f-4098-4a80-8254-019d287565f9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I'm too tired too cook, I'll go get some Mc Donalds.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2614
+      y: -310
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: daeba60d-047b-4bdc-abcf-0da39f6212c1
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Making some lasagne would be a good chance to tests out my new
+      kitchen ware
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2632
+      y: 139
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 4ea80ded-8910-477b-b9ec-259634cf82cd
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: That won't be enough to fill me
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - add some soop and bread
+    - Make some pizza too
+    nodePosition:
+      serializedVersion: 2
+      x: 2596
+      y: 609
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a342a074-1ff7-4290-8c75-f42b2a3039d9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: That's more like it
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3349
+      y: 768
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b5b4d276-9e56-42c3-b01b-1d729fe9495e
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I'll have to compromise today...
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3388
+      y: 416
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 097d39f4-f544-4fde-ab68-14cd0a5c3c16
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Hmm, I don''t want to. But eating health once in a while is important. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Let's eat a salad
+    - Nevermind, let's just order
+    nodePosition:
+      serializedVersion: 2
+      x: 1890
+      y: 907
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e3f0e0f4-6208-493a-bcbe-17be9073ce34
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Let's order some KFC
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2598
+      y: 1113
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: 

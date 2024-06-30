@@ -115,6 +115,7 @@ namespace VNCreator
         {
             GlobalBlackBoard.Instance.SetVariable("IsThinking", false); //laat weten dat er weer een nieuwe sequence begonnen is.
             PointerController.Instance.EnableInput(true);
+            currentNode = null;
             lastNode = false;
             if (dialogueTxt != null)
             {
@@ -149,7 +150,7 @@ namespace VNCreator
                 return; // Stop hier om niet door te gaan naar de volgende node
             }
 
-            if (!lastNode)
+            if (!lastNode && currentNode != null)
             {
                 NextNode(0);
             }

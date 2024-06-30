@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Eggs
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: e5329b03-bb3f-44b4-bbc6-67d01ec2cee9
+    targetGuid: 78bd0af1-d53a-4a92-aa61-f7fe0de99908
+    portId: 1
+  - guid: 78bd0af1-d53a-4a92-aa61-f7fe0de99908
+    targetGuid: 28dd1eea-4cc9-4f99-835f-44a75adf01ba
+    portId: 0
+  - guid: e5329b03-bb3f-44b4-bbc6-67d01ec2cee9
+    targetGuid: 2fadc2be-fb1b-4e46-b220-dac552181fa6
+    portId: 3
+  - guid: 2fadc2be-fb1b-4e46-b220-dac552181fa6
+    targetGuid: 6b3064bd-8b3d-450f-be84-32f5fbd3ce20
+    portId: 1
+  - guid: 2fadc2be-fb1b-4e46-b220-dac552181fa6
+    targetGuid: d0fa8671-64d0-4921-be46-0122ec1618a6
+    portId: 3
+  nodes:
+  - guid: e5329b03-bb3f-44b4-bbc6-67d01ec2cee9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Eggs just go with anything don't they?
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Can't get enough of them
+    - Not boiled
+    nodePosition:
+      serializedVersion: 2
+      x: 274
+      y: 356
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 78bd0af1-d53a-4a92-aa61-f7fe0de99908
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Boiled, oiled, fried or deviled. I'll eat it all
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 918
+      y: 165
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 28dd1eea-4cc9-4f99-835f-44a75adf01ba
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Can even add them to other dishes to make them even better
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1635
+      y: 165
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2fadc2be-fb1b-4e46-b220-dac552181fa6
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It's not everyone's taste, but it's defenitely a bit bland
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Deviled eggs are great though
+    - On bread?
+    nodePosition:
+      serializedVersion: 2
+      x: 946
+      y: 625
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6b3064bd-8b3d-450f-be84-32f5fbd3ce20
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: But it needs other ingredients to make it good.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1635
+      y: 504
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d0fa8671-64d0-4921-be46-0122ec1618a6
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: With some mayonaise?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1635
+      y: 840
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: Eggs

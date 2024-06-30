@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: CoffeeMachine
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: faa0518a-4245-486f-a095-8c9aa291cb62
+    targetGuid: 7911af7e-f2ca-49ec-aa53-9ba35fc34622
+    portId: 0
+  - guid: 7911af7e-f2ca-49ec-aa53-9ba35fc34622
+    targetGuid: fdc2931f-4ef9-432f-8f0c-40ec3e558e80
+    portId: 0
+  - guid: fdc2931f-4ef9-432f-8f0c-40ec3e558e80
+    targetGuid: 35461e2f-c198-4bf9-8007-32bdcd951a01
+    portId: 0
+  - guid: 35461e2f-c198-4bf9-8007-32bdcd951a01
+    targetGuid: 97386810-6bcc-41eb-8420-c35ec14a1cac
+    portId: 1
+  - guid: 35461e2f-c198-4bf9-8007-32bdcd951a01
+    targetGuid: 97386810-6bcc-41eb-8420-c35ec14a1cac
+    portId: 3
+  nodes:
+  - guid: faa0518a-4245-486f-a095-8c9aa291cb62
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: This coffeemachine is top of the line.
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 632
+      y: 457
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7911af7e-f2ca-49ec-aa53-9ba35fc34622
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It can grind it's own coffee beans
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1292
+      y: 402
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: fdc2931f-4ef9-432f-8f0c-40ec3e558e80
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: It can beat it's own milk
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1911
+      y: 380
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 35461e2f-c198-4bf9-8007-32bdcd951a01
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: AND it takes powdered coffee!
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - So even the decaf people can enjoy
+    - For all the oldtimers
+    nodePosition:
+      serializedVersion: 2
+      x: 2661
+      y: 318
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 97386810-6bcc-41eb-8420-c35ec14a1cac
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Yep, this'll fit anyone's needs.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3506
+      y: 318
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: CoffeeMachine

@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: KnivesI
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 8d8dcda1-205d-439a-8b87-5b557194a980
+    targetGuid: c02477ec-67f2-4bf3-afbf-1d827581a5f1
+    portId: 0
+  - guid: c02477ec-67f2-4bf3-afbf-1d827581a5f1
+    targetGuid: a5d17a34-f774-46c2-ae2e-44683d205f60
+    portId: 1
+  - guid: c02477ec-67f2-4bf3-afbf-1d827581a5f1
+    targetGuid: 88ba0939-e182-4127-93af-283123569658
+    portId: 3
+  - guid: 88ba0939-e182-4127-93af-283123569658
+    targetGuid: cf27f6e5-0a87-4b3e-bbfb-a3e1490833ca
+    portId: 1
+  - guid: 88ba0939-e182-4127-93af-283123569658
+    targetGuid: 9238ff50-4298-48b5-a1d5-4277f48e2b2b
+    portId: 3
+  nodes:
+  - guid: 8d8dcda1-205d-439a-8b87-5b557194a980
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Wouldn't want to cut yourself with those...
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 401
+      y: 515
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 9238ff50-4298-48b5-a1d5-4277f48e2b2b
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: They're really sharp too. I'd like to keep my fingers
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2617
+      y: 908
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a5d17a34-f774-46c2-ae2e-44683d205f60
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: Right, that's dumb. Why'd I hurt myself?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1801
+      y: 185
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: cf27f6e5-0a87-4b3e-bbfb-a3e1490833ca
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Just a little... CUT!
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2589
+      y: 507
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c02477ec-67f2-4bf3-afbf-1d827581a5f1
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: What'd it feel like?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - That'd hurt a lot
+    - hmmm
+    nodePosition:
+      serializedVersion: 2
+      x: 1076
+      y: 471
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 88ba0939-e182-4127-93af-283123569658
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Maybe a small cut won''t bother me. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: -1
+    choiceOptions:
+    - There's some bandaids in the old cupboard
+    - This could go wrong in so many ways
+    nodePosition:
+      serializedVersion: 2
+      x: 1785
+      y: 629
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: Knives
