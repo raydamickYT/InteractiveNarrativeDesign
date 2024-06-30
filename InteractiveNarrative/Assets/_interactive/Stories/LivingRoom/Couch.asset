@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Couch
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 7cb20da4-50dc-4ef9-bf79-0443f01ad6f5
+    targetGuid: 5ac75951-1a02-4bb7-8d08-5ab15e5b8926
+    portId: 0
+  - guid: 5ac75951-1a02-4bb7-8d08-5ab15e5b8926
+    targetGuid: da9c722d-4fd9-4864-b5b6-91d068a0edc7
+    portId: 1
+  - guid: da9c722d-4fd9-4864-b5b6-91d068a0edc7
+    targetGuid: bd257a7b-f3fa-4458-890e-510154e44c9b
+    portId: 0
+  - guid: bd257a7b-f3fa-4458-890e-510154e44c9b
+    targetGuid: 63a872f9-876d-438d-8387-3444817940ed
+    portId: 0
+  - guid: 63a872f9-876d-438d-8387-3444817940ed
+    targetGuid: 17181535-9367-48dc-a304-0453caa1224e
+    portId: 0
+  - guid: 17181535-9367-48dc-a304-0453caa1224e
+    targetGuid: c9103da5-3076-48eb-bbef-5436c1b8fbee
+    portId: 0
+  - guid: 5ac75951-1a02-4bb7-8d08-5ab15e5b8926
+    targetGuid: 257576c3-e667-4f9a-8e6b-f98f2da98e8b
+    portId: 3
+  - guid: 257576c3-e667-4f9a-8e6b-f98f2da98e8b
+    targetGuid: 1da42ae2-0382-4f8c-a331-16fc857bb0a9
+    portId: 0
+  - guid: 1da42ae2-0382-4f8c-a331-16fc857bb0a9
+    targetGuid: 2d5daf21-ff3c-412e-afc7-52a136d2ec89
+    portId: 3
+  - guid: 1da42ae2-0382-4f8c-a331-16fc857bb0a9
+    targetGuid: b6f5aeaf-9cb1-4893-a5bc-e39ea11a5329
+    portId: 1
+  nodes:
+  - guid: 7cb20da4-50dc-4ef9-bf79-0443f01ad6f5
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Ah, yes. '
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 303
+      y: 444
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 5ac75951-1a02-4bb7-8d08-5ab15e5b8926
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'The couch. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Any mans dream
+    - Why so red?
+    nodePosition:
+      serializedVersion: 2
+      x: 972
+      y: 444
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: da9c722d-4fd9-4864-b5b6-91d068a0edc7
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'well, anyone''s dream couch really. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1643
+      y: 128
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: bd257a7b-f3fa-4458-890e-510154e44c9b
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It's big enoug to house 3/4 people
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2431
+      y: 168
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 63a872f9-876d-438d-8387-3444817940ed
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: You can sleep on it.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3127
+      y: 168
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 17181535-9367-48dc-a304-0453caa1224e
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Sorry, 2! 2 people can sleep on it!
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3841
+      y: 178
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c9103da5-3076-48eb-bbef-5436c1b8fbee
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: And it's just so damn cozy.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4504
+      y: 178
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 257576c3-e667-4f9a-8e6b-f98f2da98e8b
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Nothing wrong with a little red
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1643
+      y: 686
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1da42ae2-0382-4f8c-a331-16fc857bb0a9
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I like Flashy colors against monotone colors
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Really pops
+    - Works well
+    nodePosition:
+      serializedVersion: 2
+      x: 2311
+      y: 737
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2d5daf21-ff3c-412e-afc7-52a136d2ec89
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Yeah, I think it's a good match with the carpet and walls.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3035
+      y: 965
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b6f5aeaf-9cb1-4893-a5bc-e39ea11a5329
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: it makes this couch unique
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3006
+      y: 624
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: 

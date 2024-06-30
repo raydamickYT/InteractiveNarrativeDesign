@@ -23,7 +23,7 @@ namespace Mouse
         private Texture2D cursorTexture, handTexture;
         public bool MouseInputEnabled = true;
 
-        public PointerController()
+        private PointerController()
         {
             sprites = new List<Sprite>();
             // Initialization();

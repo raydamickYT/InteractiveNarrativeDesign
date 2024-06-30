@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
-  m_Name: Window
+  m_Name: TV
   m_EditorClassIdentifier: 
   Links:
-  - guid: 7aed54b9-4e31-48e3-a889-598868fa94d7
-    targetGuid: 3a2be543-c4e8-41b8-8217-771fc6461c84
-    portId: 3
-  - guid: 7aed54b9-4e31-48e3-a889-598868fa94d7
-    targetGuid: 9c36d058-b40c-426f-83a4-7475337b20fc
-    portId: 1
-  - guid: 3a195e77-78e5-43c5-97c3-64709793b633
-    targetGuid: 7aed54b9-4e31-48e3-a889-598868fa94d7
+  - guid: 6b9e719b-3909-4fc6-ad55-3f125d4f4b3e
+    targetGuid: 29843c1b-42bf-40a8-b783-517c0db6a0d4
+    portId: 0
+  - guid: 29843c1b-42bf-40a8-b783-517c0db6a0d4
+    targetGuid: 9987c8d9-772d-4ce9-ba26-2d0bf2782f92
+    portId: 0
+  - guid: 9987c8d9-772d-4ce9-ba26-2d0bf2782f92
+    targetGuid: 3f943961-596b-437d-b89c-7a36cfddeb27
     portId: 0
   nodes:
-  - guid: 3a195e77-78e5-43c5-97c3-64709793b633
+  - guid: 6b9e719b-3909-4fc6-ad55-3f125d4f4b3e
     characterSpr: {fileID: 0}
-    characterName: Greg
-    dialogueText: Man It's bright outside
+    characterName: 'Greg:'
+    dialogueText: 'I decided to treat myself and get an extra large flatscreen. '
     backgroundSpr: {fileID: 0}
     startNode: 1
     endNode: 0
@@ -36,68 +36,68 @@ MonoBehaviour:
     - 
     nodePosition:
       serializedVersion: 2
-      x: 448
-      y: 419
+      x: 507
+      y: 608
       width: 499
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 9c36d058-b40c-426f-83a4-7475337b20fc
+  - guid: 29843c1b-42bf-40a8-b783-517c0db6a0d4
     characterSpr: {fileID: 0}
     characterName: 'Greg:'
-    dialogueText: Yeah looks way too hot out there.
-    backgroundSpr: {fileID: 0}
-    startNode: 0
-    endNode: 1
-    choices: 1
-    GoodOrBad: 0
-    choiceOptions:
-    - 
-    nodePosition:
-      serializedVersion: 2
-      x: 1638
-      y: 165
-      width: 499
-      height: 305
-    soundEffect: {fileID: 0}
-    backgroundMusic: {fileID: 0}
-  - guid: 3a2be543-c4e8-41b8-8217-771fc6461c84
-    characterSpr: {fileID: 0}
-    characterName: 'Greg:'
-    dialogueText: I'd Rather not.
-    backgroundSpr: {fileID: 0}
-    startNode: 0
-    endNode: 1
-    choices: 1
-    GoodOrBad: 0
-    choiceOptions:
-    - 
-    nodePosition:
-      serializedVersion: 2
-      x: 1771
-      y: 657
-      width: 499
-      height: 305
-    soundEffect: {fileID: 0}
-    backgroundMusic: {fileID: 0}
-  - guid: 7aed54b9-4e31-48e3-a889-598868fa94d7
-    characterSpr: {fileID: 0}
-    characterName: 'Greg:'
-    dialogueText: Should we go out?
+    dialogueText: It's got extra deep colors and a super high resolution.
     backgroundSpr: {fileID: 0}
     startNode: 0
     endNode: 0
-    choices: 2
+    choices: 1
     GoodOrBad: 0
     choiceOptions:
-    - Nah
-    - Yes, I'm bored
+    - 
     nodePosition:
       serializedVersion: 2
-      x: 1077
-      y: 442
+      x: 1248
+      y: 624
       width: 499
-      height: 367
+      height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  context: 
+  - guid: 9987c8d9-772d-4ce9-ba26-2d0bf2782f92
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: The speakers are great too, really makes you feel like you're in
+      the video
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1944
+      y: 624
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3f943961-596b-437d-b89c-7a36cfddeb27
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: In fact, the video looks so good, it feels like you can touch it.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2622
+      y: 600
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: TV

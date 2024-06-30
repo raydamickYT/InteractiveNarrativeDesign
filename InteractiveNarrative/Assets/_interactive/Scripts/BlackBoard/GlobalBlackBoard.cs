@@ -16,6 +16,8 @@ namespace BlackBoard
         private List<string> enteredScenes = new List<string>();
         public Action StartIntrusiveThoughtAction, ChangeMouseToHandAction;
         public Action<bool> EnableInputAction;
+        public float chance = 1f;
+
 
         public static GlobalBlackBoard Instance
         {
@@ -68,7 +70,6 @@ namespace BlackBoard
         public void CheckForIntrusiveThoughts(string Context)
         {
             // Stel de kans in op een intrusieve gedachte (bijvoorbeeld 10%)
-            float chance = 1f;
             bool hasIntrusiveThought = UnityEngine.Random.value < chance;
 
             bool isThinking = GetVariable<bool>("IsThinking");
@@ -85,6 +86,7 @@ namespace BlackBoard
             StartIntrusiveThoughtAction = null;
             ChangeMouseToHandAction = null;
         }
+        
         public void Cleanup()
         {
             dictionary.Clear();
