@@ -13,11 +13,13 @@ public class InteractibleColliderNextScene : MonoBehaviour, IPointerDownHandler,
     public string NextScene;
     private GameObject instantiatedObject;
     private bool hasSpawned;
+    private bool hasLeft;
 
     public void OnPointerDown(PointerEventData eventData)
     {
         GlobalBlackBoard.Instance.SetScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(NextScene);
+        hasLeft = true;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -40,12 +42,16 @@ public class InteractibleColliderNextScene : MonoBehaviour, IPointerDownHandler,
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        PointerController.Instance.ChangeMouseToCursor();
-        instantiatedObject.SetActive(false);
+        if (!hasLeft)
+        {
+            PointerController.Instance.ChangeMouseToCursor();
+            instantiatedObject.SetActive(false);
+        }
     }
 
     void OnDestroy()
     {
         instantiatedObject = null;
+        hasLeft = false;
     }
 }

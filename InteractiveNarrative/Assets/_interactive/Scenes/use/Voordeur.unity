@@ -3651,7 +3651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUp: {fileID: 4705855789732557683, guid: c0749ed62b2f3834586eb25120641fbb, type: 3}
-  NextScene: DiningTable
+  NextScene: diningtable
 --- !u!1 &2125690789
 GameObject:
   m_ObjectHideFlags: 0
