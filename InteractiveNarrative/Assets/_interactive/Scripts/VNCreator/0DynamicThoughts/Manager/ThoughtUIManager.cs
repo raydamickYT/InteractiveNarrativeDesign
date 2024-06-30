@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,27 +7,52 @@ using UnityEngine.UI;
 public class ThoughtUIManager : MonoBehaviour
 {
     public Slider slider;
+    public RectTransform bar;
     public Canvas canvas;
 
-    public int downStep = 1; // Step size at which the slider value decreases
-    public float stepInterval = 0.5f; // Time interval between each step in seconds
-    private bool isGameOver = false;
-    private Coroutine countdownCoroutine;
+    [Tooltip("Step size at which the slider value decreases")]
+    public int downStep = 1;
+    [Tooltip("Time interval between each step in seconds")]
+    public float stepInterval = 0.5f;
+    private bool isGameOver = false, isMoving = true;
+    private int duration = 30;
+    private Coroutine coroutine;
 
-    private void Start()
+    void Start()
     {
-        slider.value = slider.maxValue; // Start the slider at the maximum value
-        EnableUI();
+
+    }
+    void Update()
+    {
+
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     Debug.Log("werkt");
+        //     isMoving = false;
+        //     AddToSliderValue(5);
+        // }
+
+        if (isGameOver)
+        {
+            StopCoroutine(coroutine);
+            Debug.Log("Game Over");
+            canvas.gameObject.SetActive(false);
+            isGameOver = false;
+        }
     }
 
-    private void Update()
+    public void EnableUI()
     {
-        AddToSliderValue(1);
-    }
+        canvas.gameObject.SetActive(true);
+        slider.maxValue = duration;
+        slider.value = slider.maxValue;
 
+        coroutine = StartCoroutine(DecreaseSliderValue());
+    }
+    
     private IEnumerator DecreaseSliderValue()
     {
-        while (!isGameOver)
+        while (isMoving)
         {
             yield return new WaitForSeconds(stepInterval);
 
@@ -38,46 +64,29 @@ public class ThoughtUIManager : MonoBehaviour
                 if (slider.value <= slider.minValue)
                 {
                     slider.value = slider.minValue;
-                    isGameOver = true;
+                    isMoving = false;
                     Debug.Log("Game Over");
                 }
-            }
 
-            // Hide the handle if the value is at the minimum value
-            slider.handleRect.gameObject.SetActive(slider.value != slider.minValue);
+                // Hide the handle if the value is at the minimum value
+                slider.handleRect.gameObject.SetActive(slider.value != slider.minValue);
+            }
         }
     }
-    public void EnableUI()
-    {
-        slider.value = slider.maxValue; // Start the slider at the maximum value
-        countdownCoroutine = StartCoroutine(DecreaseSliderValue());
-        canvas.gameObject.SetActive(true);
-    }
-
     public void AddToSliderValue(int valueToAdd)
     {
-        // Stop the current countdown coroutine if active
-        if (countdownCoroutine != null)
-        {
-            StopCoroutine(countdownCoroutine);
-        }
-
+        StopCoroutine(coroutine);
         // Add the value to the current slider value
         slider.value = Mathf.Clamp(slider.value + valueToAdd, slider.minValue, slider.maxValue);
 
-        // Restart the countdown if the game is not over
-        if (!isGameOver)
+        // Restart the countdown if the slider is not at the minimum value
+        if (slider.value > slider.minValue)
         {
-            countdownCoroutine = StartCoroutine(DecreaseSliderValue());
+            isMoving = true;
+            coroutine = StartCoroutine(DecreaseSliderValue());
         }
-    }
 
-    private void OnDisable()
-    {
-        if (countdownCoroutine != null)
-        {
-            StopCoroutine(countdownCoroutine);
-        }
-        isGameOver = false;
+        // Hide the handle if the value is at the minimum value
+        slider.handleRect.gameObject.SetActive(slider.value != slider.minValue);
     }
 }

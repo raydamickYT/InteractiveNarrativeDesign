@@ -46,7 +46,7 @@ namespace BlackBoard
         public void CheckForIntrusiveThoughts(string Context)
         {
             // Stel de kans in op een intrusieve gedachte (bijvoorbeeld 10%)
-            float chance = 0.1f;
+            float chance = 1f;
             bool hasIntrusiveThought = UnityEngine.Random.value < chance;
 
             bool isThinking = GetVariable<bool>("IsThinking");

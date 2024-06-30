@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using BlackBoard;
@@ -13,7 +14,22 @@ namespace VNCreator
         protected NodeData currentNode;
         protected bool lastNode;
         [Range(-100, 100)]
-        public int GoodOrBadMetre = 0;
+        private int _goodOrBadMetre = 0;
+        public int GoodOrBadMetre
+        {
+            get { return _goodOrBadMetre; }
+            set
+            {
+                if (_goodOrBadMetre != value)
+                {
+                    _goodOrBadMetre = value;
+                    OnGoodOrBadMetreChanged?.Invoke(_goodOrBadMetre);
+                    _goodOrBadMetre = 0;
+                }
+            }
+        }
+
+        public Action<int> OnGoodOrBadMetreChanged;
 
         protected List<string> loadList = new List<string>();
 

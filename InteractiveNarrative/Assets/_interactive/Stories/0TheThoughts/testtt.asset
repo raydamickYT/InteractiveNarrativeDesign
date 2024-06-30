@@ -89,7 +89,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 1
     choices: 1
-    GoodOrBad: 0
+    GoodOrBad: -1
     choiceOptions:
     - 
     nodePosition:

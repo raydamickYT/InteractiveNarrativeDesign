@@ -9,6 +9,8 @@ public class ThoughtManager : MonoBehaviour
     public static ThoughtManager instance;
     public ThoughtDatabase thoughtDatabase;
     public ThoughtUIManager thoughtUIManager;
+    private bool hasSubscribed;
+
     void Start()
     {
         GlobalBlackBoard.Instance.StartIntrusiveThoughtAction += StartThought;
@@ -63,6 +65,9 @@ public class ThoughtManager : MonoBehaviour
 
         // Voer de acties uit voor het geselecteerde StoryObject
         VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
+        if(!hasSubscribed)
+            dispUI.OnGoodOrBadMetreChanged += UpdateSlider;
+
         if (dispUI != null)
         {
             GlobalBlackBoard.Instance.SetVariable("IsThinking", true); //laat weten dat er een actief is.
@@ -71,12 +76,18 @@ public class ThoughtManager : MonoBehaviour
             dispUI.StartStory();
             StartCoroutine(dispUI.DisplayCurrentNode());
             thoughtUIManager.EnableUI();
-
         }
 
         GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
         GlobalBlackBoard.Instance.ChangeMouseToHandAction?.Invoke();
 
         return;
+    }
+
+    private void UpdateSlider(int GoodOrBad)
+    {
+        Debug.Log(GoodOrBad);
+        if(GoodOrBad > 0)
+            thoughtUIManager.AddToSliderValue(5);
     }
 }
