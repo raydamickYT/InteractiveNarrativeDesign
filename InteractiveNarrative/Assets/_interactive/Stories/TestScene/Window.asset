@@ -100,4 +100,4 @@ MonoBehaviour:
       height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  context: 
+  context: Window

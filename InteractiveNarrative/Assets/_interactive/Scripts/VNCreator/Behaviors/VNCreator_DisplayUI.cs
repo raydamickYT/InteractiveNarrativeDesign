@@ -9,6 +9,8 @@ namespace VNCreator
 {
     public class VNCreator_DisplayUI : DisplayBase
     {
+        public bool ShowTextAtTheStart;
+        
         [Header("Text")]
         public Text characterNameTxt;
         public Text dialogueTxt;
@@ -45,8 +47,8 @@ namespace VNCreator
 
         void Start()
         {
-
-            // StartCoroutine(DisplayCurrentNode());
+            if (ShowTextAtTheStart)
+                StartCoroutine(DisplayCurrentNode());
         }
         public override void Initialization()
         {
@@ -130,7 +132,7 @@ namespace VNCreator
         {
             if (currentNode != null)
             {
-            if (Input.GetKeyDown(KeyCode.Space) && CanPressSpace)
+                if (Input.GetKeyDown(KeyCode.Space) && CanPressSpace)
                 {
                     HandleSpaceKeyPress();
                 }

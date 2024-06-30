@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: cf8d3b00-df79-40c3-98cf-e30492b8998a
+    targetGuid: b0e179c3-8832-49d0-8a19-7b9808b3184f
+    portId: 0
+  - guid: 1e8481c8-d725-47c2-ac29-5dd235de7a22
+    targetGuid: 165ecfcb-daa7-4d1e-9358-62c31e799576
+    portId: 0
+  - guid: b0e179c3-8832-49d0-8a19-7b9808b3184f
+    targetGuid: 1e8481c8-d725-47c2-ac29-5dd235de7a22
+    portId: 1
+  - guid: b0e179c3-8832-49d0-8a19-7b9808b3184f
+    targetGuid: 165ecfcb-daa7-4d1e-9358-62c31e799576
+    portId: 3
+  nodes:
+  - guid: cf8d3b00-df79-40c3-98cf-e30492b8998a
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Ahhh, Home sweet home. '
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 289
+      y: 390
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b0e179c3-8832-49d0-8a19-7b9808b3184f
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: New house new me is what they say right?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - No one says that
+    - Damn right
+    nodePosition:
+      serializedVersion: 2
+      x: 909
+      y: 313
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 165ecfcb-daa7-4d1e-9358-62c31e799576
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Let's get to exploring this place!
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2300
+      y: 375
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1e8481c8-d725-47c2-ac29-5dd235de7a22
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Right... well I say it.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1539
+      y: 93
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: 

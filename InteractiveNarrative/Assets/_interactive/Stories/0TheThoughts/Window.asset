@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
   m_Name: Window
   m_EditorClassIdentifier: 
-  Links: []
+  Links:
+  - guid: 1bc122b7-b495-4f82-a9ae-148e84595b51
+    targetGuid: 1489fd39-35b7-4736-ac10-2b2ef0b08f93
+    portId: 1
+  - guid: 1bc122b7-b495-4f82-a9ae-148e84595b51
+    targetGuid: 5505a0bc-702d-4e46-a862-347f695022a1
+    portId: 3
   nodes:
   - guid: 1bc122b7-b495-4f82-a9ae-148e84595b51
     characterSpr: {fileID: 0}
@@ -29,9 +35,47 @@ MonoBehaviour:
     nodePosition:
       serializedVersion: 2
       x: 448
-      y: 474
+      y: 473
       width: 499
       height: 367
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  context: 
+  - guid: 1489fd39-35b7-4736-ac10-2b2ef0b08f93
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: What'd happen?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1198
+      y: 127
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 5505a0bc-702d-4e46-a862-347f695022a1
+    characterSpr: {fileID: 0}
+    characterName: Greg
+    dialogueText: you're right... I don't trust myself next to that window
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1132
+      y: 667
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: Window
