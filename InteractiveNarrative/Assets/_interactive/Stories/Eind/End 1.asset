@@ -1,0 +1,914 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
+  m_Name: End 1
+  m_EditorClassIdentifier: 
+  Links:
+  - guid: 800c9e4d-abbb-48d9-85e8-42f8e7084ef5
+    targetGuid: 49f1469e-7da4-4814-9841-2cdf729e6dcb
+    portId: 0
+  - guid: 49f1469e-7da4-4814-9841-2cdf729e6dcb
+    targetGuid: c37bf2f5-2674-4bb6-9f84-537c81be9665
+    portId: 0
+  - guid: c37bf2f5-2674-4bb6-9f84-537c81be9665
+    targetGuid: df6d286a-6390-4c23-9f5f-aa2b44c38cd5
+    portId: 3
+  - guid: df6d286a-6390-4c23-9f5f-aa2b44c38cd5
+    targetGuid: 95c4c42c-ebfb-4e39-b103-b98caece7b2e
+    portId: 0
+  - guid: 95c4c42c-ebfb-4e39-b103-b98caece7b2e
+    targetGuid: 88238f3e-2e5c-4727-92fc-60baf74f7acd
+    portId: 3
+  - guid: 95c4c42c-ebfb-4e39-b103-b98caece7b2e
+    targetGuid: ff3a3e7a-eaff-4a98-b910-a23e16992779
+    portId: 1
+  - guid: 88238f3e-2e5c-4727-92fc-60baf74f7acd
+    targetGuid: 253f3081-c0a5-4671-8445-7af9d5c54dd0
+    portId: 0
+  - guid: 253f3081-c0a5-4671-8445-7af9d5c54dd0
+    targetGuid: 71d29849-dbaa-4e9c-a052-4ce57c85e893
+    portId: 0
+  - guid: 71d29849-dbaa-4e9c-a052-4ce57c85e893
+    targetGuid: 2d60dcc1-3402-4186-9996-51b89cde5d47
+    portId: 0
+  - guid: 2d60dcc1-3402-4186-9996-51b89cde5d47
+    targetGuid: 2db4bce7-2585-4237-bac2-3b100d5cd936
+    portId: 0
+  - guid: 2db4bce7-2585-4237-bac2-3b100d5cd936
+    targetGuid: 4dcc08c2-d1f6-4083-a400-144036de97fd
+    portId: 0
+  - guid: 4dcc08c2-d1f6-4083-a400-144036de97fd
+    targetGuid: e787e43a-34ff-410e-9dc9-659533299b2d
+    portId: 0
+  - guid: e787e43a-34ff-410e-9dc9-659533299b2d
+    targetGuid: 3d48cc05-c899-407c-a634-1b10d3873634
+    portId: 0
+  - guid: 3d48cc05-c899-407c-a634-1b10d3873634
+    targetGuid: 842b912e-4b93-4313-97e5-841d22d19637
+    portId: 0
+  - guid: 842b912e-4b93-4313-97e5-841d22d19637
+    targetGuid: 92cc77ab-5a53-4561-9897-b584b1d6586e
+    portId: 1
+  - guid: 92cc77ab-5a53-4561-9897-b584b1d6586e
+    targetGuid: 1787ac90-5ee9-41a5-af79-abab653068fe
+    portId: 0
+  - guid: 842b912e-4b93-4313-97e5-841d22d19637
+    targetGuid: b684fd14-76ed-45e4-8cc2-729b057d31ce
+    portId: 3
+  - guid: b684fd14-76ed-45e4-8cc2-729b057d31ce
+    targetGuid: d048f4f5-29a7-402d-9965-fbdeaf29016f
+    portId: 0
+  - guid: d048f4f5-29a7-402d-9965-fbdeaf29016f
+    targetGuid: a591b0e3-3874-4998-9ec4-fbd972f29dbd
+    portId: 0
+  - guid: a591b0e3-3874-4998-9ec4-fbd972f29dbd
+    targetGuid: 989b7ffd-4733-4ecb-81d4-cdfb76966091
+    portId: 0
+  - guid: 989b7ffd-4733-4ecb-81d4-cdfb76966091
+    targetGuid: 31ccfc64-d768-417c-a6d2-d4744a035c4e
+    portId: 0
+  - guid: ff3a3e7a-eaff-4a98-b910-a23e16992779
+    targetGuid: 797e0643-b55c-40a1-855c-168a0c14b080
+    portId: 0
+  - guid: 797e0643-b55c-40a1-855c-168a0c14b080
+    targetGuid: 155f816f-f4dc-42cd-925d-ff854ae7b10d
+    portId: 0
+  - guid: 155f816f-f4dc-42cd-925d-ff854ae7b10d
+    targetGuid: 0207e574-500b-4dfd-91a7-c56896ad301f
+    portId: 1
+  - guid: 0207e574-500b-4dfd-91a7-c56896ad301f
+    targetGuid: b58d3baa-b8be-40d4-b6f7-3d0c7b93fecd
+    portId: 0
+  - guid: b58d3baa-b8be-40d4-b6f7-3d0c7b93fecd
+    targetGuid: 8b9ceed0-d758-4f6d-840f-5b84d60a4fac
+    portId: 0
+  - guid: 8b9ceed0-d758-4f6d-840f-5b84d60a4fac
+    targetGuid: 6419da1d-7eeb-4672-8a51-68c0b39eedd0
+    portId: 0
+  - guid: 6419da1d-7eeb-4672-8a51-68c0b39eedd0
+    targetGuid: 0047b842-8044-42db-9f48-417249766418
+    portId: 0
+  - guid: 0047b842-8044-42db-9f48-417249766418
+    targetGuid: e787e43a-34ff-410e-9dc9-659533299b2d
+    portId: 0
+  - guid: 155f816f-f4dc-42cd-925d-ff854ae7b10d
+    targetGuid: 32d97fd5-7879-4509-bb93-b881812425bb
+    portId: 3
+  - guid: 32d97fd5-7879-4509-bb93-b881812425bb
+    targetGuid: c8343f3b-e128-4193-8175-375685222bc7
+    portId: 0
+  - guid: c8343f3b-e128-4193-8175-375685222bc7
+    targetGuid: 4479ba8c-b7f3-4208-b1c6-200b12a98d36
+    portId: 0
+  - guid: 4479ba8c-b7f3-4208-b1c6-200b12a98d36
+    targetGuid: e787e43a-34ff-410e-9dc9-659533299b2d
+    portId: 0
+  - guid: c37bf2f5-2674-4bb6-9f84-537c81be9665
+    targetGuid: 565a8015-07d7-43d3-b5bb-e8c00c142602
+    portId: 1
+  - guid: 565a8015-07d7-43d3-b5bb-e8c00c142602
+    targetGuid: 72e32e74-c373-4807-aebc-5a007b53e9b3
+    portId: 0
+  - guid: 72e32e74-c373-4807-aebc-5a007b53e9b3
+    targetGuid: d26c2724-db83-4648-8819-827475312c09
+    portId: 0
+  - guid: d26c2724-db83-4648-8819-827475312c09
+    targetGuid: f207063e-bbff-4669-a46a-b7857d826b89
+    portId: 0
+  - guid: f207063e-bbff-4669-a46a-b7857d826b89
+    targetGuid: 5ecf0def-cfd7-4145-b472-7ba7e14c8a4b
+    portId: 0
+  - guid: 5ecf0def-cfd7-4145-b472-7ba7e14c8a4b
+    targetGuid: e787e43a-34ff-410e-9dc9-659533299b2d
+    portId: 0
+  - guid: 7d9a6680-6c9e-4332-8bbe-c8ba6f9b70f0
+    targetGuid: b192cb31-6880-46b7-96f3-41944d4658a3
+    portId: 0
+  - guid: b192cb31-6880-46b7-96f3-41944d4658a3
+    targetGuid: 0b1751a5-2d25-4de8-a5fb-67cacf37b7a7
+    portId: 0
+  - guid: 0b1751a5-2d25-4de8-a5fb-67cacf37b7a7
+    targetGuid: 800c9e4d-abbb-48d9-85e8-42f8e7084ef5
+    portId: 0
+  nodes:
+  - guid: 49f1469e-7da4-4814-9841-2cdf729e6dcb
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: But you do know
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 1535
+      y: 647
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c37bf2f5-2674-4bb6-9f84-537c81be9665
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'I just think people think the worst of me. '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Why is that?
+    - You lack confidence
+    nodePosition:
+      serializedVersion: 2
+      x: 2217
+      y: 647
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: df6d286a-6390-4c23-9f5f-aa2b44c38cd5
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Confidence? '
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2938
+      y: 832
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 88238f3e-2e5c-4727-92fc-60baf74f7acd
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Why don't you tell others more about yourself?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4386
+      y: 1033
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 95c4c42c-ebfb-4e39-b103-b98caece7b2e
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: But I do have confidence?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Say no
+    - Tell people about yourself
+    nodePosition:
+      serializedVersion: 2
+      x: 3600
+      y: 829
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 253f3081-c0a5-4671-8445-7af9d5c54dd0
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: They don't need to worry about me. My worries aren't as bad as
+      theirs
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 5066
+      y: 1033
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 71d29849-dbaa-4e9c-a052-4ce57c85e893
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: But they burden you with their worries?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 5710
+      y: 1033
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2d60dcc1-3402-4186-9996-51b89cde5d47
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: That's fine, that's what friends are for
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6324
+      y: 1033
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 2db4bce7-2585-4237-bac2-3b100d5cd936
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Are they not your friends?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6984
+      y: 1033
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 4dcc08c2-d1f6-4083-a400-144036de97fd
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: ...
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 7677
+      y: 1033
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: ff3a3e7a-eaff-4a98-b910-a23e16992779
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Then why do you have such a hard time saying no to people?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: -1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4308
+      y: 370
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 797e0643-b55c-40a1-855c-168a0c14b080
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Pardon?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4988
+      y: 370
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 155f816f-f4dc-42cd-925d-ff854ae7b10d
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Why
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - Didn't you say no to cleaners?
+    - Did you accept furniture?
+    nodePosition:
+      serializedVersion: 2
+      x: 5620
+      y: 370
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0207e574-500b-4dfd-91a7-c56896ad301f
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Why didn't your friend you didn't need cleaners?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6070
+      y: -606
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 8b9ceed0-d758-4f6d-840f-5b84d60a4fac
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: But you weren't very comfortable on money after just buying a house
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 7376
+      y: -606
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6419da1d-7eeb-4672-8a51-68c0b39eedd0
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Why couldn't you just tell him that?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 8044
+      y: -606
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0047b842-8044-42db-9f48-417249766418
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: He wouldn't care much for it?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 8680
+      y: -606
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 32d97fd5-7879-4509-bb93-b881812425bb
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: It was a gift from my parents. I also have more than enough space
+      for it.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6209
+      y: 523
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: c8343f3b-e128-4193-8175-375685222bc7
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: But you didn't like them, why didn't you tell them that?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6857
+      y: 523
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 4479ba8c-b7f3-4208-b1c6-200b12a98d36
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: They'd just get offended. It's easier to just accept the gift
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 7640
+      y: 523
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 565a8015-07d7-43d3-b5bb-e8c00c142602
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I don't think I'm a good person
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2793
+      y: -1885
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 72e32e74-c373-4807-aebc-5a007b53e9b3
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Why are you a bad person?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3411
+      y: -1885
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d26c2724-db83-4648-8819-827475312c09
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I only make friends with people whom I think will be beneficial
+      to me in the future
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4044
+      y: -1885
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: f207063e-bbff-4669-a46a-b7857d826b89
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: What's so bad about that?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 4700
+      y: -1885
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 5ecf0def-cfd7-4145-b472-7ba7e14c8a4b
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Hey, this isn't about me. It's about the others
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 5371
+      y: -1885
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e787e43a-34ff-410e-9dc9-659533299b2d
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: How do you know if they care? Did you ask?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 9990
+      y: -606
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 3d48cc05-c899-407c-a634-1b10d3873634
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: No
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 10671
+      y: -606
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 842b912e-4b93-4313-97e5-841d22d19637
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: There's the problem
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 1
+    choiceOptions:
+    - You can never know
+    - You're arrogant
+    nodePosition:
+      serializedVersion: 2
+      x: 11472
+      y: -606
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 92cc77ab-5a53-4561-9897-b584b1d6586e
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: You always just assume that you're a burden if you show more of
+      yourself
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 12084
+      y: -877
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b684fd14-76ed-45e4-8cc2-729b057d31ce
+    characterSpr: {fileID: 0}
+    characterName: ----
+    dialogueText: You just assume that your problems are too good for them
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 12084
+      y: -431
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: d048f4f5-29a7-402d-9965-fbdeaf29016f
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: That's absolutely not it. I just told I that I do it in their own
+      interest
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 12755
+      y: -431
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: a591b0e3-3874-4998-9ec4-fbd972f29dbd
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: How do you know what their best interest is?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 13309
+      y: -431
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 1787ac90-5ee9-41a5-af79-abab653068fe
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Worry less about what other people think. "Je mag er zijn"
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 42
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 12814
+      y: -877
+      width: 499
+      height: 305
+    soundEffect: {fileID: 8300000, guid: e2e5ef46cf6b913439b72d24a5138f76, type: 3}
+    backgroundMusic: {fileID: 0}
+  - guid: 989b7ffd-4733-4ecb-81d4-cdfb76966091
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: You can never know
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 14134
+      y: -453
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 31ccfc64-d768-417c-a6d2-d4744a035c4e
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: So talk a bit more. Worry less about what other people think. "Je
+      mag er zijn"
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 42
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 14757
+      y: -453
+      width: 499
+      height: 305
+    soundEffect: {fileID: 8300000, guid: e2e5ef46cf6b913439b72d24a5138f76, type: 3}
+    backgroundMusic: {fileID: 0}
+  - guid: 800c9e4d-abbb-48d9-85e8-42f8e7084ef5
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I don't know
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 735
+      y: 647
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 0b1751a5-2d25-4de8-a5fb-67cacf37b7a7
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Just your personal "habits". you know what I mean
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: -392
+      y: 855
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 7d9a6680-6c9e-4332-8bbe-c8ba6f9b70f0
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Back for more?
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: -1845
+      y: 814
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b192cb31-6880-46b7-96f3-41944d4658a3
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: Why am I here?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: -1175
+      y: 800
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: b58d3baa-b8be-40d4-b6f7-3d0c7b93fecd
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: I mean he'd be helping his friend out with it. So it'd make him
+      happier.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 1
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6706
+      y: -606
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: End

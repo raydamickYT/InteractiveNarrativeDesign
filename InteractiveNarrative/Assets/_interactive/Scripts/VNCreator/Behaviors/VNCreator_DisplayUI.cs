@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using BlackBoard;
 using Mouse;
+using PlasticGui.WorkspaceWindow.Diff;
 
 namespace VNCreator
 {
     public class VNCreator_DisplayUI : DisplayBase
     {
-        public bool ShowTextAtTheStart;
-        
+        public bool ShowTextAtTheStart, IsFinalScene;
+
         [Header("Text")]
         public Text characterNameTxt;
         public Text dialogueTxt;
@@ -180,8 +181,9 @@ namespace VNCreator
 
         public IEnumerator DisplayCurrentNode()
         {
-            GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
             lastNode = currentNode.endNode;
+
+            GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
 
             if (characterNameTxt != null)
             {
@@ -225,6 +227,21 @@ namespace VNCreator
             {
                 displayTextCoroutine = StartCoroutine(DisplayDialogueText(currentNode.dialogueText));
                 yield return displayTextCoroutine;
+            }
+
+            if (lastNode && IsFinalScene)
+            {
+                Debug.Log(currentNode.GoodOrBad);
+                if (currentNode.GoodOrBad == 89)
+                {
+                    GlobalBlackBoard.Instance.chance = 1; //zorg ervoor dat ze sowieso de end krijgen
+                }
+
+                if (currentNode.GoodOrBad == 42)
+                    GlobalBlackBoard.Instance.SetVariable("CanEnd", true);
+                if (currentNode.GoodOrBad == 20)
+                    GlobalBlackBoard.Instance.SetVariable("WillDie", true);
+
             }
 
         }

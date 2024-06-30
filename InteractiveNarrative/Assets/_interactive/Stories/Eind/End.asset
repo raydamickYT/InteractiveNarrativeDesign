@@ -37,9 +37,6 @@ MonoBehaviour:
   - guid: b8975e72-b26a-430b-be7a-d1558adedce2
     targetGuid: 54211c53-0ede-49f7-b2e5-9a940724124d
     portId: 0
-  - guid: 54211c53-0ede-49f7-b2e5-9a940724124d
-    targetGuid: e95e0948-7917-4801-982f-2059815d8d8d
-    portId: 0
   - guid: da12a20b-d53b-4155-aef7-791213c656fa
     targetGuid: 77bf3b27-2bca-4457-8ea8-c208b022aced
     portId: 3
@@ -192,6 +189,15 @@ MonoBehaviour:
     portId: 0
   - guid: 5ecf0def-cfd7-4145-b472-7ba7e14c8a4b
     targetGuid: e787e43a-34ff-410e-9dc9-659533299b2d
+    portId: 0
+  - guid: a80253ce-4fbb-486c-9f2b-b3a6db6bfd8c
+    targetGuid: df66171d-48f2-449f-966d-16e132cb399a
+    portId: 3
+  - guid: df66171d-48f2-449f-966d-16e132cb399a
+    targetGuid: 54211c53-0ede-49f7-b2e5-9a940724124d
+    portId: 0
+  - guid: 54211c53-0ede-49f7-b2e5-9a940724124d
+    targetGuid: e95e0948-7917-4801-982f-2059815d8d8d
     portId: 0
   nodes:
   - guid: 9bbae3a9-8b0d-430c-b79d-1cf8956d80ac
@@ -365,25 +371,6 @@ MonoBehaviour:
       serializedVersion: 2
       x: 5725
       y: 271
-      width: 499
-      height: 305
-    soundEffect: {fileID: 0}
-    backgroundMusic: {fileID: 0}
-  - guid: e95e0948-7917-4801-982f-2059815d8d8d
-    characterSpr: {fileID: 0}
-    characterName: ---
-    dialogueText: Is that what you tell yourself?
-    backgroundSpr: {fileID: 0}
-    startNode: 0
-    endNode: 1
-    choices: 1
-    GoodOrBad: 0
-    choiceOptions:
-    - 
-    nodePosition:
-      serializedVersion: 2
-      x: 6592
-      y: 264
       width: 499
       height: 305
     soundEffect: {fileID: 0}
@@ -1064,25 +1051,6 @@ MonoBehaviour:
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 1787ac90-5ee9-41a5-af79-abab653068fe
-    characterSpr: {fileID: 0}
-    characterName: ---
-    dialogueText: Worry less about what other people think. "Je mag er zijn"
-    backgroundSpr: {fileID: 0}
-    startNode: 0
-    endNode: 1
-    choices: 1
-    GoodOrBad: 0
-    choiceOptions:
-    - 
-    nodePosition:
-      serializedVersion: 2
-      x: 18424
-      y: -1871
-      width: 499
-      height: 305
-    soundEffect: {fileID: 0}
-    backgroundMusic: {fileID: 0}
   - guid: b684fd14-76ed-45e4-8cc2-729b057d31ce
     characterSpr: {fileID: 0}
     characterName: ----
@@ -1160,26 +1128,6 @@ MonoBehaviour:
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  - guid: 31ccfc64-d768-417c-a6d2-d4744a035c4e
-    characterSpr: {fileID: 0}
-    characterName: ---
-    dialogueText: So talk a bit more. Worry less about what other people think. "Je
-      mag er zijn"
-    backgroundSpr: {fileID: 0}
-    startNode: 0
-    endNode: 1
-    choices: 1
-    GoodOrBad: 0
-    choiceOptions:
-    - 
-    nodePosition:
-      serializedVersion: 2
-      x: 20097
-      y: -1425
-      width: 499
-      height: 305
-    soundEffect: {fileID: 0}
-    backgroundMusic: {fileID: 0}
   - guid: d33d6405-91de-45c8-bef3-dea9561a9ea2
     characterSpr: {fileID: 0}
     characterName: 'Greg:'
@@ -1240,6 +1188,45 @@ MonoBehaviour:
       height: 453
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
+  - guid: 1787ac90-5ee9-41a5-af79-abab653068fe
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Worry less about what other people think. "Je mag er zijn"
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 42
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 18424
+      y: -1871
+      width: 499
+      height: 305
+    soundEffect: {fileID: 8300000, guid: e2e5ef46cf6b913439b72d24a5138f76, type: 3}
+    backgroundMusic: {fileID: 0}
+  - guid: 31ccfc64-d768-417c-a6d2-d4744a035c4e
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: So talk a bit more. Worry less about what other people think. "Je
+      mag er zijn"
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 42
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 20097
+      y: -1425
+      width: 499
+      height: 305
+    soundEffect: {fileID: 8300000, guid: e2e5ef46cf6b913439b72d24a5138f76, type: 3}
+    backgroundMusic: {fileID: 0}
   - guid: a2e128d6-a398-4a07-908f-0d166a931021
     characterSpr: {fileID: 0}
     characterName: ---
@@ -1248,7 +1235,7 @@ MonoBehaviour:
     startNode: 0
     endNode: 1
     choices: 1
-    GoodOrBad: 0
+    GoodOrBad: 20
     choiceOptions:
     - 
     nodePosition:
@@ -1259,4 +1246,42 @@ MonoBehaviour:
       height: 305
     soundEffect: {fileID: 0}
     backgroundMusic: {fileID: 0}
-  context: 
+  - guid: df66171d-48f2-449f-966d-16e132cb399a
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Very much true, this is all in your imagination, so fear not.
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 3801
+      y: 879
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: e95e0948-7917-4801-982f-2059815d8d8d
+    characterSpr: {fileID: 0}
+    characterName: ---
+    dialogueText: Is that what you tell yourself?
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 89
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 6592
+      y: 264
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  context: End

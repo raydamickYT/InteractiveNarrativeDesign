@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using BlackBoard;
-using Microsoft.Unity.VisualStudio.Editor;
 using Mouse;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using VNCreator;
 
 public class FinalCollider : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject imageObject;
-    private Image image;
+    public Image image;
     private Animator animator;
 
     void Awake()

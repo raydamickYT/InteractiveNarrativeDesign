@@ -12,6 +12,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d55d090c78b6240aa6dccd6042a022, type: 3}
   m_Name: Muskito
   m_EditorClassIdentifier: 
-  Links: []
-  nodes: []
+  Links:
+  - guid: 791ea14c-df29-4205-9cb7-9897f234d681
+    targetGuid: 5c15eb85-30a5-4cd9-9964-fcd9e8bb3904
+    portId: 0
+  - guid: 5c15eb85-30a5-4cd9-9964-fcd9e8bb3904
+    targetGuid: 6db6f253-9c36-4af6-b7e7-02c068f68b88
+    portId: 1
+  nodes:
+  - guid: 791ea14c-df29-4205-9cb7-9897f234d681
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: We've been having a bit of musquito issue
+    backgroundSpr: {fileID: 0}
+    startNode: 1
+    endNode: 0
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 848
+      y: 586
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 5c15eb85-30a5-4cd9-9964-fcd9e8bb3904
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: So I decided it's best to strike this plague with an electrifying
+      solution
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 0
+    choices: 2
+    GoodOrBad: 0
+    choiceOptions:
+    - AN ELECTRIC MUSQUITO SWATTER
+    - pun intended
+    nodePosition:
+      serializedVersion: 2
+      x: 1472
+      y: 541
+      width: 499
+      height: 367
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
+  - guid: 6db6f253-9c36-4af6-b7e7-02c068f68b88
+    characterSpr: {fileID: 0}
+    characterName: 'Greg:'
+    dialogueText: 'Oh yeah, Nothing better than the sound of these annoying little
+
+      bugs
+      zapping away.'
+    backgroundSpr: {fileID: 0}
+    startNode: 0
+    endNode: 1
+    choices: 1
+    GoodOrBad: 0
+    choiceOptions:
+    - 
+    nodePosition:
+      serializedVersion: 2
+      x: 2161
+      y: 525
+      width: 499
+      height: 305
+    soundEffect: {fileID: 0}
+    backgroundMusic: {fileID: 0}
   context: Muskito
