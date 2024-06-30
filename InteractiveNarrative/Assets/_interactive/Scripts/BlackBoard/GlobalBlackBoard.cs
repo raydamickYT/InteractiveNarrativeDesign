@@ -28,7 +28,7 @@ namespace BlackBoard
                 return _instance;
             }
         }
-        public GlobalBlackBoard()
+        private GlobalBlackBoard()
         {
             SetVariable("IsThinking", false);
         }
@@ -84,6 +84,14 @@ namespace BlackBoard
             EnableInputAction = null;
             StartIntrusiveThoughtAction = null;
             ChangeMouseToHandAction = null;
+        }
+        public void Cleanup()
+        {
+            dictionary.Clear();
+            enteredScenes.Clear();
+            StartIntrusiveThoughtAction = null;
+            ChangeMouseToHandAction = null;
+            EnableInputAction = null;
         }
     }
 }

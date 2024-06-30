@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using BlackBoard;
 using UnityEditor.EditorTools;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -31,12 +32,14 @@ public class ThoughtUIManager : MonoBehaviour
     }
     void Update()
     {
+        isGameOver = slider.value <= slider.minValue; //als de slider value gelijk is of minder dan de minvalue
         if (isGameOver)
         {
             StopCoroutine(coroutine);
             Debug.Log("Game Over");
             canvas.gameObject.SetActive(false);
             isGameOver = false;
+            SceneManager.LoadScene("GameOver");
         }
     }
 

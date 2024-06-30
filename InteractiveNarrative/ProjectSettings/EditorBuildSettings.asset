@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/_interactive/Scenes/use/Upstairs.unity
     guid: da7aa4d4490f3bc4fa136f9f65e84730
   - enabled: 1
+    path: Assets/_interactive/Scenes/use/GameOver.unity
+    guid: e4cadc557bed16344820d4ad9da78ade
+  - enabled: 1
     path: Assets/_interactive/Scenes/use/LivingRoom.unity
     guid: f76575ee05c6f1a4987070f850588a05
   - enabled: 1
