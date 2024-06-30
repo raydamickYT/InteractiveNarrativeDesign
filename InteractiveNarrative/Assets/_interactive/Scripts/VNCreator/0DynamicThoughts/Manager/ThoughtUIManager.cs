@@ -49,7 +49,11 @@ public class ThoughtUIManager : MonoBehaviour
 
         coroutine = StartCoroutine(DecreaseSliderValue());
     }
-    
+    public void DisableUI()
+    {
+        canvas.gameObject.SetActive(false);
+    }
+
     private IEnumerator DecreaseSliderValue()
     {
         while (isMoving)

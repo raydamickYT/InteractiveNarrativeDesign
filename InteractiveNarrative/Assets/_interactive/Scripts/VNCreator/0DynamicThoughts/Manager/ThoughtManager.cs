@@ -6,9 +6,12 @@ using VNCreator;
 
 public class ThoughtManager : MonoBehaviour
 {
-    public static ThoughtManager instance;
     public ThoughtDatabase thoughtDatabase;
     public ThoughtUIManager thoughtUIManager;
+
+    private List<StoryObject> runtimeStoryObjects; // Temporary list for runtime use
+
+
     private bool hasSubscribed;
 
     void Start()
@@ -23,6 +26,8 @@ public class ThoughtManager : MonoBehaviour
         {
             Debug.LogWarning($"{thoughtDatabase} is empty in {gameObject.name}.");
         }
+        runtimeStoryObjects = new List<StoryObject>(thoughtDatabase.storyObjects);
+
 
         if (thoughtUIManager == null)
             Debug.LogError($"{thoughtUIManager} is empty in {gameObject.name}.");
@@ -41,7 +46,7 @@ public class ThoughtManager : MonoBehaviour
         List<StoryObject> matchingStoryObjects = new List<StoryObject>();
 
         // Verzamel alle StoryObjects die overeenkomen met de context
-        foreach (var storyObject in thoughtDatabase.storyObjects)
+        foreach (var storyObject in runtimeStoryObjects)
         {
             if (storyObject.context == context)
             {
@@ -61,11 +66,11 @@ public class ThoughtManager : MonoBehaviour
         // Kies een willekeurige StoryObject uit de lijst
         int randomIndex = Random.Range(0, matchingStoryObjects.Count);
         StoryObject selectedStoryObject = matchingStoryObjects[randomIndex];
-        thoughtDatabase.storyObjects.Remove(selectedStoryObject); //verwijder hem daarna uit de lijst zodat hij maar een keer gecalled kan worden.
+        runtimeStoryObjects.Remove(selectedStoryObject); //verwijder hem daarna uit de lijst zodat hij maar een keer gecalled kan worden.
 
         // Voer de acties uit voor het geselecteerde StoryObject
         VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
-        if(!hasSubscribed)
+        if (!hasSubscribed)
             dispUI.OnGoodOrBadMetreChanged += UpdateSlider;
 
         if (dispUI != null)
@@ -87,7 +92,10 @@ public class ThoughtManager : MonoBehaviour
     private void UpdateSlider(int GoodOrBad)
     {
         Debug.Log(GoodOrBad);
-        if(GoodOrBad > 0)
+        if (GoodOrBad == 100)
+            thoughtUIManager.DisableUI(); //thought is klaar
+
+        else if(GoodOrBad > 0)
             thoughtUIManager.AddToSliderValue(5);
     }
 }

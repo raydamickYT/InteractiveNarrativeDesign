@@ -152,6 +152,7 @@ namespace VNCreator
             else
             {
                 Reset();
+                OnGoodOrBadMetreChanged?.Invoke(100); //specifiek 100 omdat ik dan laat weten aan een ander script dat de thought voorbij is
             }
         }
 
