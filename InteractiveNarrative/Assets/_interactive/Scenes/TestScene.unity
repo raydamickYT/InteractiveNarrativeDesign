@@ -2076,6 +2076,7 @@ GameObject:
   - component: {fileID: 910390497}
   - component: {fileID: 910390496}
   - component: {fileID: 910390498}
+  - component: {fileID: 910390499}
   m_Layer: 5
   m_Name: Vignette
   m_TagString: Vignette
@@ -2161,6 +2162,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &910390499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910390494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c635c830edd656b4682d8b48e45ba83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1022190598
 GameObject:
   m_ObjectHideFlags: 0

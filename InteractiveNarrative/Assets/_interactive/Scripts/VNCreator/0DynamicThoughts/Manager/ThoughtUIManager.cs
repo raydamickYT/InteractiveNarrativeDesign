@@ -53,9 +53,16 @@ public class ThoughtUIManager : MonoBehaviour
     public IEnumerator DisableUI()
     {
         Vignette.GetComponent<Animator>().SetBool("CanTransition", true);
-        yield return new WaitForSeconds(1);
-        Vignette.gameObject.SetActive(false);
+        slider.gameObject.SetActive(false);
+
+        while (Vignette.gameObject.activeSelf)
+        {
+            yield return null; // Wacht één frame
+        }
+
+        yield return new WaitForEndOfFrame();
         canvas.gameObject.SetActive(false);
+        slider.gameObject.SetActive(true);
     }
 
     private IEnumerator DecreaseSliderValue()
