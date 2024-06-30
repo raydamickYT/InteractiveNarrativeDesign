@@ -36,6 +36,7 @@ namespace VNCreator.Editors
                 _menu.AddItem(new GUIContent("Add Node (Start)"), false, () => graphView.GenerateNode("", mousePosition, 1, true, false));
                 _menu.AddItem(new GUIContent("Add Node (End)"), false, () => graphView.GenerateNode("", mousePosition, 1, false, true));
                 _menu.AddItem(new GUIContent("Add Node (SingleNode)"), false, () => graphView.GenerateNode("", mousePosition, 1, true, true));
+                _menu.AddItem(new GUIContent("Add startNode (2 Choices)"), false, () => graphView.GenerateNode("", mousePosition, 2, true, false));
                 _menu.ShowAsContext();
             }
         }
