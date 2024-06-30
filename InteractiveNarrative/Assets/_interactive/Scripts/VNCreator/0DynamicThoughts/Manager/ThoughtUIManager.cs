@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Threading.Tasks;
+using BlackBoard;
 using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,6 +42,7 @@ public class ThoughtUIManager : MonoBehaviour
 
     public void EnableUI()
     {
+        GlobalBlackBoard.Instance.SetVariable("IsThinking", true);
         Vignette.GetComponent<Animator>().SetBool("CanTransition", false);
         canvas.gameObject.SetActive(true);
         Vignette.gameObject.SetActive(true);

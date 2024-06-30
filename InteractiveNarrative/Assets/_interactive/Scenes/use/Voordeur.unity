@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 512658908}
   - component: {fileID: 512658907}
   m_Layer: 5
-  m_Name: Keuken
+  m_Name: Sink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

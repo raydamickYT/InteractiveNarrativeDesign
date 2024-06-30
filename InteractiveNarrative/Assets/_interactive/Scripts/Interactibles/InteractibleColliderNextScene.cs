@@ -24,25 +24,26 @@ public class InteractibleColliderNextScene : MonoBehaviour, IPointerDownHandler,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log(hasSpawned);
+        // Debug.Log(hasSpawned);
         if (PointerController.Instance.MouseInputEnabled)
         {
+            Debug.Log(PointerController.Instance.MouseInputEnabled);
             PointerController.Instance.ChangeMouseToHand();
-        }
 
-        if (!hasSpawned)
-        {
-            instantiatedObject = Instantiate(PopUp);
-            instantiatedObject.GetComponentInChildren<Text>().text = $"Go to {NextScene}?";
-            hasSpawned = true;
+            if (!hasSpawned)
+            {
+                instantiatedObject = Instantiate(PopUp);
+                instantiatedObject.GetComponentInChildren<Text>().text = $"Go to {NextScene}?";
+                hasSpawned = true;
+            }
+            else
+                instantiatedObject.SetActive(true);
         }
-        else
-            instantiatedObject.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (!hasLeft)
+        if (!hasLeft && PointerController.Instance.MouseInputEnabled)
         {
             PointerController.Instance.ChangeMouseToCursor();
             instantiatedObject.SetActive(false);

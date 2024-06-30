@@ -47,8 +47,10 @@ namespace VNCreator
 
         void Start()
         {
-            if (ShowTextAtTheStart)
+            var CheckIfSceneHasBeenActive = GlobalBlackBoard.Instance.GetVariable<bool>(SceneManager.GetActiveScene().name);
+            if (!CheckIfSceneHasBeenActive && ShowTextAtTheStart)
                 StartCoroutine(DisplayCurrentNode());
+            GlobalBlackBoard.Instance.SetVariable(SceneManager.GetActiveScene().name, true);
         }
         public override void Initialization()
         {
@@ -177,6 +179,7 @@ namespace VNCreator
 
         public IEnumerator DisplayCurrentNode()
         {
+            GlobalBlackBoard.Instance.EnableInputAction?.Invoke(false);
             lastNode = currentNode.endNode;
 
             if (characterNameTxt != null)

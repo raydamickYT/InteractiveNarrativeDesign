@@ -9,11 +9,15 @@ public class GoBackToLastRoom : MonoBehaviour
 {
     public void OnButtonPressed()
     {
-        var t = GlobalBlackBoard.Instance.LoadLastScene();
+        bool IsThinking = GlobalBlackBoard.Instance.GetVariable<bool>("IsThinking");
+        if (!IsThinking)
+        {
+            var t = GlobalBlackBoard.Instance.LoadLastScene();
 
-        if (t != null)
-            SceneManager.LoadScene(t);
-        else
-            Debug.LogWarning("no previous scene found");
+            if (t != null)
+                SceneManager.LoadScene(t);
+            else
+                Debug.LogWarning("no previous scene found");
+        }
     }
 }

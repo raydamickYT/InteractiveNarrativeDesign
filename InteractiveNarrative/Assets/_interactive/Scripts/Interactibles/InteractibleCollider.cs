@@ -8,7 +8,6 @@ using VNCreator;
 
 public class InteractibleCollider : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    private bool hasBeenClicked;
     public StoryObject MainStoryObject, SideStoryObject;
 
     void Awake()
@@ -31,11 +30,11 @@ public class InteractibleCollider : MonoBehaviour, IPointerDownHandler, IPointer
         if (PointerController.Instance.MouseInputEnabled)
         {
             VNCreator_DisplayUI dispUI = GlobalBlackBoard.Instance.GetVariable<VNCreator_DisplayUI>("DisplayUI");
-
-            if (!hasBeenClicked)
+            bool b = GlobalBlackBoard.Instance.GetVariable<bool>(gameObject.name);
+            if (!b)
             {
                 dispUI.story = MainStoryObject;
-                hasBeenClicked = true;
+                GlobalBlackBoard.Instance.SetVariable(gameObject.name, true);
             }
             else
             {
