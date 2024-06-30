@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05da218a992294e4f92669d72fc254b6, type: 3}
   m_Name: ThoughtDatabase
   m_EditorClassIdentifier: 
-  storyObjects: []
+  storyObjects:
+  - {fileID: 11400000, guid: 7fdeba8e6448f974b9797d71f4d668b8, type: 2}

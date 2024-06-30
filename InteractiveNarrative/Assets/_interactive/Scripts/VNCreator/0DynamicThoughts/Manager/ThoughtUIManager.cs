@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class ThoughtUIManager : MonoBehaviour
     public Slider slider;
     public RectTransform bar;
     public Canvas canvas;
+    private Image Vignette;
 
     [Tooltip("Step size at which the slider value decreases")]
     public int downStep = 1;
@@ -20,18 +22,14 @@ public class ThoughtUIManager : MonoBehaviour
 
     void Start()
     {
-
+        if (Vignette == null)
+        {
+            var t = canvas.gameObject.transform.Find("Vignette");
+            Vignette = t.GetComponent<Image>();
+        }
     }
     void Update()
     {
-
-        // if (Input.GetKeyDown(KeyCode.Space))
-        // {
-        //     Debug.Log("werkt");
-        //     isMoving = false;
-        //     AddToSliderValue(5);
-        // }
-
         if (isGameOver)
         {
             StopCoroutine(coroutine);
@@ -43,14 +41,20 @@ public class ThoughtUIManager : MonoBehaviour
 
     public void EnableUI()
     {
+        Vignette.GetComponent<Animator>().SetBool("CanTransition", false);
         canvas.gameObject.SetActive(true);
+        Vignette.gameObject.SetActive(true);
         slider.maxValue = duration;
         slider.value = slider.maxValue;
+        // Vignette.CrossFadeAlpha(1, 1, false);
 
         coroutine = StartCoroutine(DecreaseSliderValue());
     }
-    public void DisableUI()
+    public IEnumerator DisableUI()
     {
+        Vignette.GetComponent<Animator>().SetBool("CanTransition", true);
+        yield return new WaitForSeconds(1);
+        Vignette.gameObject.SetActive(false);
         canvas.gameObject.SetActive(false);
     }
 
@@ -69,7 +73,6 @@ public class ThoughtUIManager : MonoBehaviour
                 {
                     slider.value = slider.minValue;
                     isMoving = false;
-                    Debug.Log("Game Over");
                 }
 
                 // Hide the handle if the value is at the minimum value

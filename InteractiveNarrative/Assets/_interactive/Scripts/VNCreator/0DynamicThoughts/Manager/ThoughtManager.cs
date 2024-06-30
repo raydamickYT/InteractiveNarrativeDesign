@@ -93,7 +93,7 @@ public class ThoughtManager : MonoBehaviour
     {
         Debug.Log(GoodOrBad);
         if (GoodOrBad == 100)
-            thoughtUIManager.DisableUI(); //thought is klaar
+        StartCoroutine(thoughtUIManager.DisableUI());//thought is klaar
 
         else if(GoodOrBad > 0)
             thoughtUIManager.AddToSliderValue(5);
