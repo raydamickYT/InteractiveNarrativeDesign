@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUp: {fileID: 4705855789732557683, guid: c0749ed62b2f3834586eb25120641fbb, type: 3}
-  NextScene: living room
+  NextScene: livingroom
 --- !u!114 &459169006
 MonoBehaviour:
   m_ObjectHideFlags: 0

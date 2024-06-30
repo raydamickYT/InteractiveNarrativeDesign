@@ -98,4 +98,9 @@ public class ThoughtManager : MonoBehaviour
         else if(GoodOrBad > 0)
             thoughtUIManager.AddToSliderValue(5);
     }
+
+    void OnDestroy()
+    {
+        GlobalBlackBoard.Instance.StartIntrusiveThoughtAction -= StartThought;
+    }
 }
