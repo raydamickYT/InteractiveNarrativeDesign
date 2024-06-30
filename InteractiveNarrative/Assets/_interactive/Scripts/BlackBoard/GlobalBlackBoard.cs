@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 namespace BlackBoard
@@ -11,6 +13,7 @@ namespace BlackBoard
         public string ThoughtContextStr = "IntrusiveThoughtContext";
 
         private Dictionary<string, object> dictionary = new Dictionary<string, object>();
+        private List<string> enteredScenes = new List<string>();
         public Action StartIntrusiveThoughtAction, ChangeMouseToHandAction;
         public Action<bool> EnableInputAction;
 
@@ -25,7 +28,8 @@ namespace BlackBoard
                 return _instance;
             }
         }
-        public GlobalBlackBoard(){
+        public GlobalBlackBoard()
+        {
             SetVariable("IsThinking", false);
         }
 
@@ -41,6 +45,24 @@ namespace BlackBoard
         {
             // UnityEngine.Debug.Log(name + variable.ToString());
             dictionary[name] = variable;
+        }
+        public void SetScene(string scene)
+        {
+            enteredScenes.Add(scene);
+        }
+        public string LoadLastScene()
+        {
+            if (enteredScenes.Any())
+            {
+                var t = enteredScenes.Last();
+                enteredScenes.Remove(t);
+                return t;
+            }
+            else
+            {
+                Debug.LogWarning("No entered scenes left");
+                return null;
+            }
         }
 
         public void CheckForIntrusiveThoughts(string Context)

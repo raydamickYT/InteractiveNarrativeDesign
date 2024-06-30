@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Mouse;
+using BlackBoard;
 
 public class InteractibleColliderNextScene : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
@@ -13,11 +14,9 @@ public class InteractibleColliderNextScene : MonoBehaviour, IPointerDownHandler,
     private GameObject instantiatedObject;
     private bool hasSpawned;
 
-    void Start()
-    {
-    }
     public void OnPointerDown(PointerEventData eventData)
     {
+        GlobalBlackBoard.Instance.SetScene(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(NextScene);
     }
 
@@ -43,6 +42,10 @@ public class InteractibleColliderNextScene : MonoBehaviour, IPointerDownHandler,
     {
         PointerController.Instance.ChangeMouseToCursor();
         instantiatedObject.SetActive(false);
+    }
 
+    void OnDestroy()
+    {
+        instantiatedObject = null;
     }
 }

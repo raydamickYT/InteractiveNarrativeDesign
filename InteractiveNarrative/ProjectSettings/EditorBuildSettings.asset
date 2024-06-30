@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/_interactive/Scenes/use/Voordeur.unity
     guid: 924dddb3ef4b3ec46adfaf3c318956e4
   - enabled: 1
-    path: Assets/_interactive/Scenes/use/TestScene.unity
+    path: Assets/_interactive/Scenes/use/SlaapKamer.unity
     guid: 6b1a1bd865717024690d3ee96e3d14fa
+  - enabled: 1
+    path: Assets/_interactive/Scenes/use/Kitchen.unity
+    guid: c69c2c22fd2bb154f866eef09134dfc0
+  - enabled: 1
+    path: Assets/_interactive/Scenes/use/DiningTable.unity
+    guid: da7aa4d4490f3bc4fa136f9f65e84730
+  - enabled: 1
+    path: Assets/_interactive/Scenes/use/LivingRoom.unity
+    guid: f76575ee05c6f1a4987070f850588a05
+  - enabled: 1
+    path: Assets/_interactive/Scenes/use/Trap.unity
+    guid: 262fa2ee60d826047a7391ccbf9e7e46
   m_configObjects: {}
